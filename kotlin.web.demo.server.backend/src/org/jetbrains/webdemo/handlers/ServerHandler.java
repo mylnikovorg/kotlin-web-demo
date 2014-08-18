@@ -70,21 +70,19 @@ public class ServerHandler {
         String param = request.getRequestURI() + "?" + request.getQueryString();
         try {
             RequestParameters parameters = RequestParameters.parseRequest(param);
-            if (parameters.compareType("sendUserData")) {
-                sessionInfo = setSessionInfo(request, parameters.getSessionId());
-                MySqlConnector.getInstance().findUser(sessionInfo.getUserInfo());
-                sendUserInformation(request, response, sessionInfo);
-            } else if (parameters.compareType("getSessionId")) {
+
+            /*if (parameters.compareType("getSessionId")) {
                 sessionInfo = setSessionInfo(request, parameters.getSessionId());
                 sendSessionId(request, response, sessionInfo, param);
-            } else if (parameters.compareType("getUserName")) {
+            } else */
+            if (parameters.compareType("getUserName")) {
                 sessionInfo = setSessionInfo(request, parameters.getSessionId());
                 sendUserName(request, response, sessionInfo, param);
-            } else if (parameters.compareType("authorization")) {
+            /*} else if (parameters.compareType("authorization")) {
                 sessionInfo = setSessionInfo(request, parameters.getSessionId());
-                sendAuthorizationResult(request, response, parameters, sessionInfo);
-            } else if (parameters.compareType("updateExamples")) {
-                updateExamples(request, response);
+                sendAuthorizationResult(request, response, parameters, sessionInfo);*/
+            /*} else if (parameters.compareType("updateExamples")) {
+                updateExamples(request, response);*/
             /*} else if (param.startsWith("/logs") || parameters.compareType("updateStatistics")) {
                 ErrorWriterOnServer.LOG_FOR_INFO.info(SessionInfo.TypeOfRequest.GET_LOGS_LIST.name());
                 sessionInfo = setSessionInfo(request, parameters.getSessionId());
@@ -101,9 +99,9 @@ public class ServerHandler {
             } else if (parameters.compareType("loadExample") && parameters.getArgs().equals("all")) {
                 ErrorWriterOnServer.LOG_FOR_INFO.info(SessionInfo.TypeOfRequest.GET_EXAMPLES_LIST.name());
                 sendExamplesList(request, response);
-            } else if (parameters.compareType("loadHelpForWords")) {
+            /*} else if (parameters.compareType("loadHelpForWords")) {
                 ErrorWriterOnServer.LOG_FOR_INFO.info(SessionInfo.TypeOfRequest.GET_HELP_FOR_WORDS.name());
-                sendHelpContentForWords(request, response);
+                sendHelpContentForWords(request, response);*/
             } else if (parameters.compareType("highlight")
                     || parameters.compareType("complete")
                     || parameters.compareType("run")
