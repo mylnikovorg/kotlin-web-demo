@@ -23,8 +23,8 @@
           <element id="library" level="project" name="junit" />
         </element>
       </element>
-      <element id="javaee-facet-resources" facet="kotlin.web.demo/web/Web" />
       <element id="module-output" name="org.jetbrains.junit.runner" />
+      <element id="javaee-facet-resources" facet="kotlin.web.demo/web/Web" />
     </root>
   </artifact>
 </component>

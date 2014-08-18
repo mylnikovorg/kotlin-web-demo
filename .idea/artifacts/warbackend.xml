@@ -1,9 +1,28 @@
 <component name="ArtifactManager">
   <artifact type="war" name="warbackend">
-    <output-path>$PROJECT_DIR$/out/artifacts/warbackend</output-path>
+    <output-path>/opt/apache-tomcat-7.0.54/webapps</output-path>
     <root id="archive" name="warbackend.war">
       <element id="javaee-facet-resources" facet="kotlin.web.demo/web/Web2" />
-      <element id="directory" name="WEB-INF" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="com.fasterxml.jackson.core:com.springsource.com.fasterxml.jackson.core.jackson-databind:2.0.2" />
+          <element id="library" level="project" name="kotlin-compiler" />
+          <element id="library" level="project" name="kotlin-runtime" />
+          <element id="library" level="project" name="selenium" />
+          <element id="library" level="project" name="log4j" />
+          <element id="library" level="project" name="commons-codec" />
+          <element id="library" level="project" name="commons-lang" />
+          <element id="library" level="project" name="scribe" />
+          <element id="library" level="project" name="kotlin-j2kConverter" />
+          <element id="file-copy" path="$PROJECT_DIR$/lib/kotlin-plugin/Kotlin/kotlinc/lib/kotlin-jdk-annotations.jar" />
+        </element>
+        <element id="directory" name="classes">
+          <element id="module-output" name="kotlin.web.demo.core" />
+          <element id="module-output" name="kotlin.web.demo.server.backend" />
+          <element id="module-output" name="idea.pacth.server" />
+          <element id="extracted-dir" path="$PROJECT_DIR$/lib/log4j-1.2.16.jar" path-in-jar="/" />
+        </element>
+      </element>
       <element id="module-output" name="org.jetbrains.junit.runner" />
     </root>
   </artifact>
