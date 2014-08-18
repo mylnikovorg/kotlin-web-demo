@@ -1,0 +1,1707 @@
+08/17/2014 02:30:59 (ErrorWriterOnServer.java 57) [ERROR] 
+<error>
+<version>0.8.505</version>
+<type>UNKNOWN</type>
+<message>Could not initialize class org.jetbrains.webdemo.database.MySqlConnector</message>
+<stack>java.lang.NoClassDefFoundError: Could not initialize class org.jetbrains.webdemo.database.MySqlConnector
+	at org.jetbrains.webdemo.handlers.ServerHandler.handle(ServerHandler.java:75)
+	at org.jetbrains.webdemo.servlet.KotlinHttpServlet.service(KotlinHttpServlet.java:110)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1070)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+</stack>
+<moreinfo>
+Origin url: unknown
+/kotlinServer?sessionId=F41CA8272DC5663544286CC1192C3777&amp;type=sendUserData&amp;args=null
+</moreinfo>
+</error>
+08/17/2014 02:30:59 (ErrorWriterOnServer.java 57) [ERROR] 
+<error>
+<version>0.8.505</version>
+<type>UNKNOWN</type>
+<message>null</message>
+<stack>java.lang.ExceptionInInitializerError
+	at org.jetbrains.webdemo.handlers.ServerHandler.handle(ServerHandler.java:75)
+	at org.jetbrains.webdemo.servlet.KotlinHttpServlet.service(KotlinHttpServlet.java:110)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1070)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	at com.intellij.diagnostic.errordialog.Attachment.getBytes(Attachment.java:61)
+	at com.intellij.diagnostic.errordialog.Attachment.&amp;lt;init&amp;gt;(Attachment.java:41)
+	at org.jetbrains.webdemo.ErrorWriterOnServer.writeExceptionToExceptionAnalyzer(ErrorWriterOnServer.java:52)
+	at org.jetbrains.webdemo.database.MySqlConnector.connect(MySqlConnector.java:61)
+	at org.jetbrains.webdemo.database.MySqlConnector.&amp;lt;init&amp;gt;(MySqlConnector.java:44)
+	at org.jetbrains.webdemo.database.MySqlConnector.&amp;lt;clinit&amp;gt;(MySqlConnector.java:41)
+	... 23 more
+
+</stack>
+<moreinfo>
+Origin url: unknown
+/kotlinServer?sessionId=8A58EECB3C226F106BC7E1359D18C7C2&amp;type=sendUserData&amp;args=null
+</moreinfo>
+</error>
+08/17/2014 02:31:03 (ErrorWriterOnServer.java 57) [ERROR] 
+<error>
+<version>0.8.505</version>
+<type>RUN</type>
+<message>null</message>
+<stack>java.lang.ArrayStoreException
+	at java.lang.System.arraycopy(Native Method)
+	at org.jetbrains.webdemo.responseHelpers.JavaRunner.generateCommandString(JavaRunner.java:356)
+	at org.jetbrains.webdemo.responseHelpers.JavaRunner.getResult(JavaRunner.java:64)
+	at org.jetbrains.webdemo.responseHelpers.CompileAndRunExecutor.getResult(CompileAndRunExecutor.java:127)
+	at org.jetbrains.webdemo.sessions.HttpSession.sendExecutorResult(HttpSession.java:197)
+	at org.jetbrains.webdemo.sessions.HttpSession.handle(HttpSession.java:65)
+	at org.jetbrains.webdemo.handlers.ServerHandler.handle(ServerHandler.java:126)
+	at org.jetbrains.webdemo.servlet.KotlinHttpServlet.service(KotlinHttpServlet.java:110)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1070)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+</stack>
+<moreinfo>
+Origin url: http://localhost:8080
+fun main(args : Array&amp;lt;String&amp;gt;) {
+  for (name in args)
+    println("Hello, $name!")
+}
+</moreinfo>
+</error>
+08/17/2014 02:31:21 (ErrorWriterOnServer.java 57) [ERROR] 
+<error>
+<version>0.8.505</version>
+<type>RUN</type>
+<message>null</message>
+<stack>java.lang.ArrayStoreException
+	at java.lang.System.arraycopy(Native Method)
+	at org.jetbrains.webdemo.responseHelpers.JavaRunner.generateCommandString(JavaRunner.java:356)
+	at org.jetbrains.webdemo.responseHelpers.JavaRunner.getResult(JavaRunner.java:64)
+	at org.jetbrains.webdemo.responseHelpers.CompileAndRunExecutor.getResult(CompileAndRunExecutor.java:127)
+	at org.jetbrains.webdemo.sessions.HttpSession.sendExecutorResult(HttpSession.java:197)
+	at org.jetbrains.webdemo.sessions.HttpSession.handle(HttpSession.java:65)
+	at org.jetbrains.webdemo.handlers.ServerHandler.handle(ServerHandler.java:126)
+	at org.jetbrains.webdemo.servlet.KotlinHttpServlet.service(KotlinHttpServlet.java:110)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1070)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+</stack>
+<moreinfo>
+Origin url: http://localhost:8080
+fun main(args : Array&amp;lt;String&amp;gt;) {
+  for (arg in args)
+    println(arg)
+
+  // or
+  println()
+  for (i in args.indices)
+    println(args[i])
+}
+</moreinfo>
+</error>
+08/17/2014 02:33:33 (ErrorWriterOnServer.java 57) [ERROR] 
+<error>
+<version>0.8.505</version>
+<type>RUN</type>
+<message>null</message>
+<stack>java.lang.ArrayStoreException
+	at java.lang.System.arraycopy(Native Method)
+	at org.jetbrains.webdemo.responseHelpers.JavaRunner.generateCommandString(JavaRunner.java:356)
+	at org.jetbrains.webdemo.responseHelpers.JavaRunner.getResult(JavaRunner.java:64)
+	at org.jetbrains.webdemo.responseHelpers.CompileAndRunExecutor.getResult(CompileAndRunExecutor.java:127)
+	at org.jetbrains.webdemo.sessions.HttpSession.sendExecutorResult(HttpSession.java:197)
+	at org.jetbrains.webdemo.sessions.HttpSession.handle(HttpSession.java:65)
+	at org.jetbrains.webdemo.handlers.ServerHandler.handle(ServerHandler.java:126)
+	at org.jetbrains.webdemo.servlet.KotlinHttpServlet.service(KotlinHttpServlet.java:110)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1070)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+</stack>
+<moreinfo>
+Origin url: http://localhost:8080
+fun main(args : Array&amp;lt;String&amp;gt;) {
+  for (arg in args)
+    println(arg)
+
+  // or
+  println()
+  for (i in args.indices)
+    println(args[i])
+}
+</moreinfo>
+</error>
+08/17/2014 02:35:35 (ErrorWriterOnServer.java 57) [ERROR] 
+<error>
+<version>0.8.505</version>
+<type>RUN</type>
+<message>null</message>
+<stack>java.lang.ArrayStoreException
+	at java.lang.System.arraycopy(Native Method)
+	at org.jetbrains.webdemo.responseHelpers.JavaRunner.generateCommandString(JavaRunner.java:356)
+	at org.jetbrains.webdemo.responseHelpers.JavaRunner.getResult(JavaRunner.java:64)
+	at org.jetbrains.webdemo.responseHelpers.CompileAndRunExecutor.getResult(CompileAndRunExecutor.java:127)
+	at org.jetbrains.webdemo.sessions.HttpSession.sendExecutorResult(HttpSession.java:197)
+	at org.jetbrains.webdemo.sessions.HttpSession.handle(HttpSession.java:65)
+	at org.jetbrains.webdemo.handlers.ServerHandler.handle(ServerHandler.java:126)
+	at org.jetbrains.webdemo.servlet.KotlinHttpServlet.service(KotlinHttpServlet.java:110)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1070)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+</stack>
+<moreinfo>
+Origin url: http://localhost:8080
+fun main(args : Array&amp;lt;String&amp;gt;) {
+  for (arg in args)
+    println(arg)
+
+  // or
+  println()
+  for (i in args.indices)
+    println(args[i])
+}
+</moreinfo>
+</error>
+08/17/2014 02:35:56 (ErrorWriterOnServer.java 57) [ERROR] 
+<error>
+<version>0.8.505</version>
+<type>UNKNOWN</type>
+<message>null</message>
+<stack>java.lang.ExceptionInInitializerError
+	at org.jetbrains.webdemo.handlers.ServerHandler.handle(ServerHandler.java:75)
+	at org.jetbrains.webdemo.servlet.KotlinHttpServlet.service(KotlinHttpServlet.java:110)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1070)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	at com.intellij.diagnostic.errordialog.Attachment.getBytes(Attachment.java:61)
+	at com.intellij.diagnostic.errordialog.Attachment.&amp;lt;init&amp;gt;(Attachment.java:41)
+	at org.jetbrains.webdemo.ErrorWriterOnServer.writeExceptionToExceptionAnalyzer(ErrorWriterOnServer.java:52)
+	at org.jetbrains.webdemo.database.MySqlConnector.connect(MySqlConnector.java:61)
+	at org.jetbrains.webdemo.database.MySqlConnector.&amp;lt;init&amp;gt;(MySqlConnector.java:44)
+	at org.jetbrains.webdemo.database.MySqlConnector.&amp;lt;clinit&amp;gt;(MySqlConnector.java:41)
+	... 23 more
+
+</stack>
+<moreinfo>
+Origin url: unknown
+/kotlinServer?sessionId=8CBCE615363A8AB3E0F7F60E37A5371C&amp;type=sendUserData&amp;args=null
+</moreinfo>
+</error>
+08/17/2014 02:36:10 (ErrorWriterOnServer.java 57) [ERROR] 
+<error>
+<version>0.8.505</version>
+<type>RUN</type>
+<message>null</message>
+<stack>java.lang.ArrayStoreException
+	at java.lang.System.arraycopy(Native Method)
+	at org.jetbrains.webdemo.responseHelpers.JavaRunner.generateCommandString(JavaRunner.java:356)
+	at org.jetbrains.webdemo.responseHelpers.JavaRunner.getResult(JavaRunner.java:64)
+	at org.jetbrains.webdemo.responseHelpers.CompileAndRunExecutor.getResult(CompileAndRunExecutor.java:127)
+	at org.jetbrains.webdemo.sessions.HttpSession.sendExecutorResult(HttpSession.java:197)
+	at org.jetbrains.webdemo.sessions.HttpSession.handle(HttpSession.java:65)
+	at org.jetbrains.webdemo.handlers.ServerHandler.handle(ServerHandler.java:126)
+	at org.jetbrains.webdemo.servlet.KotlinHttpServlet.service(KotlinHttpServlet.java:110)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1070)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+</stack>
+<moreinfo>
+Origin url: http://localhost:8080
+fun main(args : Array&amp;lt;String&amp;gt;) {
+  for (arg in args)
+    println(arg)
+
+  // or
+  println()
+  for (i in args.indices)
+    println(args[i])
+}
+</moreinfo>
+</error>
+08/17/2014 02:37:21 (ErrorWriterOnServer.java 57) [ERROR] 
+<error>
+<version>0.8.505</version>
+<type>UNKNOWN</type>
+<message>null</message>
+<stack>java.lang.ExceptionInInitializerError
+	at org.jetbrains.webdemo.handlers.ServerHandler.handle(ServerHandler.java:75)
+	at org.jetbrains.webdemo.servlet.KotlinHttpServlet.service(KotlinHttpServlet.java:110)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1070)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	at com.intellij.diagnostic.errordialog.Attachment.getBytes(Attachment.java:61)
+	at com.intellij.diagnostic.errordialog.Attachment.&amp;lt;init&amp;gt;(Attachment.java:41)
+	at org.jetbrains.webdemo.ErrorWriterOnServer.writeExceptionToExceptionAnalyzer(ErrorWriterOnServer.java:52)
+	at org.jetbrains.webdemo.database.MySqlConnector.connect(MySqlConnector.java:61)
+	at org.jetbrains.webdemo.database.MySqlConnector.&amp;lt;init&amp;gt;(MySqlConnector.java:44)
+	at org.jetbrains.webdemo.database.MySqlConnector.&amp;lt;clinit&amp;gt;(MySqlConnector.java:41)
+	... 23 more
+
+</stack>
+<moreinfo>
+Origin url: unknown
+/kotlinServer?sessionId=D73D5A421BCFB37B5BE0D66110DDA836&amp;type=sendUserData&amp;args=null
+</moreinfo>
+</error>
+08/17/2014 02:40:27 (ErrorWriterOnServer.java 57) [ERROR] 
+<error>
+<version>0.8.505</version>
+<type>RUN</type>
+<message>null</message>
+<stack>java.lang.ArrayStoreException
+	at java.lang.System.arraycopy(Native Method)
+	at org.jetbrains.webdemo.responseHelpers.JavaRunner.generateCommandString(JavaRunner.java:356)
+	at org.jetbrains.webdemo.responseHelpers.JavaRunner.getResult(JavaRunner.java:64)
+	at org.jetbrains.webdemo.responseHelpers.CompileAndRunExecutor.getResult(CompileAndRunExecutor.java:127)
+	at org.jetbrains.webdemo.sessions.HttpSession.sendExecutorResult(HttpSession.java:197)
+	at org.jetbrains.webdemo.sessions.HttpSession.handle(HttpSession.java:65)
+	at org.jetbrains.webdemo.handlers.ServerHandler.handle(ServerHandler.java:126)
+	at org.jetbrains.webdemo.servlet.KotlinHttpServlet.service(KotlinHttpServlet.java:110)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1070)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+</stack>
+<moreinfo>
+Origin url: http://localhost:8080
+fun main(args : Array&amp;lt;String&amp;gt;) {
+  for (arg in args)
+    println(arg)
+
+  // or
+  println()
+  for (i in args.indices)
+    println(args[i])
+}
+</moreinfo>
+</error>
+08/17/2014 02:40:43 (ErrorWriterOnServer.java 57) [ERROR] 
+<error>
+<version>0.8.505</version>
+<type>UNKNOWN</type>
+<message>null</message>
+<stack>java.lang.ExceptionInInitializerError
+	at org.jetbrains.webdemo.handlers.ServerHandler.handle(ServerHandler.java:75)
+	at org.jetbrains.webdemo.servlet.KotlinHttpServlet.service(KotlinHttpServlet.java:110)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1070)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	at com.intellij.diagnostic.errordialog.Attachment.getBytes(Attachment.java:61)
+	at com.intellij.diagnostic.errordialog.Attachment.&amp;lt;init&amp;gt;(Attachment.java:41)
+	at org.jetbrains.webdemo.ErrorWriterOnServer.writeExceptionToExceptionAnalyzer(ErrorWriterOnServer.java:52)
+	at org.jetbrains.webdemo.database.MySqlConnector.connect(MySqlConnector.java:61)
+	at org.jetbrains.webdemo.database.MySqlConnector.&amp;lt;init&amp;gt;(MySqlConnector.java:44)
+	at org.jetbrains.webdemo.database.MySqlConnector.&amp;lt;clinit&amp;gt;(MySqlConnector.java:41)
+	... 23 more
+
+</stack>
+<moreinfo>
+Origin url: unknown
+/kotlinServer?sessionId=7B78827B5D589CDEC7F9A3A0F0905A76&amp;type=sendUserData&amp;args=null
+</moreinfo>
+</error>
+08/17/2014 02:42:51 (ErrorWriterOnServer.java 57) [ERROR] 
+<error>
+<version>0.8.505</version>
+<type>RUN</type>
+<message>null</message>
+<stack>java.lang.ArrayStoreException
+	at java.lang.System.arraycopy(Native Method)
+	at org.jetbrains.webdemo.responseHelpers.JavaRunner.generateCommandString(JavaRunner.java:356)
+	at org.jetbrains.webdemo.responseHelpers.JavaRunner.getResult(JavaRunner.java:64)
+	at org.jetbrains.webdemo.responseHelpers.CompileAndRunExecutor.getResult(CompileAndRunExecutor.java:127)
+	at org.jetbrains.webdemo.sessions.HttpSession.sendExecutorResult(HttpSession.java:197)
+	at org.jetbrains.webdemo.sessions.HttpSession.handle(HttpSession.java:65)
+	at org.jetbrains.webdemo.handlers.ServerHandler.handle(ServerHandler.java:126)
+	at org.jetbrains.webdemo.servlet.KotlinHttpServlet.service(KotlinHttpServlet.java:110)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1070)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+</stack>
+<moreinfo>
+Origin url: http://localhost:8080
+fun main(args : Array&amp;lt;String&amp;gt;) {
+  for (arg in args)
+    println(arg)
+
+  // or
+  println()
+  for (i in args.indices)
+    println(args[i])
+}
+</moreinfo>
+</error>
+08/17/2014 02:43:06 (ErrorWriterOnServer.java 57) [ERROR] 
+<error>
+<version>0.8.505</version>
+<type>UNKNOWN</type>
+<message>null</message>
+<stack>java.lang.ExceptionInInitializerError
+	at org.jetbrains.webdemo.handlers.ServerHandler.handle(ServerHandler.java:75)
+	at org.jetbrains.webdemo.servlet.KotlinHttpServlet.service(KotlinHttpServlet.java:110)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1070)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	at com.intellij.diagnostic.errordialog.Attachment.getBytes(Attachment.java:61)
+	at com.intellij.diagnostic.errordialog.Attachment.&amp;lt;init&amp;gt;(Attachment.java:41)
+	at org.jetbrains.webdemo.ErrorWriterOnServer.writeExceptionToExceptionAnalyzer(ErrorWriterOnServer.java:52)
+	at org.jetbrains.webdemo.database.MySqlConnector.connect(MySqlConnector.java:61)
+	at org.jetbrains.webdemo.database.MySqlConnector.&amp;lt;init&amp;gt;(MySqlConnector.java:44)
+	at org.jetbrains.webdemo.database.MySqlConnector.&amp;lt;clinit&amp;gt;(MySqlConnector.java:41)
+	... 23 more
+
+</stack>
+<moreinfo>
+Origin url: unknown
+/kotlinServer?sessionId=5E0A5EE1B919677E006896A9C2E35402&amp;type=sendUserData&amp;args=null
+</moreinfo>
+</error>
+08/17/2014 02:43:08 (ErrorWriterOnServer.java 57) [ERROR] 
+<error>
+<version>0.8.505</version>
+<type>UNKNOWN</type>
+<message>null</message>
+<stack>java.lang.NullPointerException
+	at org.jetbrains.webdemo.examplesLoader.ExamplesList.getExampleObject(ExamplesList.java:75)
+	at org.jetbrains.webdemo.sessions.HttpSession.sendExecutorResult(HttpSession.java:189)
+	at org.jetbrains.webdemo.sessions.HttpSession.handle(HttpSession.java:65)
+	at org.jetbrains.webdemo.handlers.ServerHandler.handle(ServerHandler.java:126)
+	at org.jetbrains.webdemo.servlet.KotlinHttpServlet.service(KotlinHttpServlet.java:110)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1070)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+</stack>
+<moreinfo>
+Origin url: unknown
+null
+</moreinfo>
+</error>
+08/17/2014 02:43:20 (ErrorWriterOnServer.java 57) [ERROR] 
+<error>
+<version>0.8.505</version>
+<type>UNKNOWN</type>
+<message>null</message>
+<stack>java.lang.NullPointerException
+	at org.jetbrains.webdemo.examplesLoader.ExamplesList.getExampleObject(ExamplesList.java:75)
+	at org.jetbrains.webdemo.sessions.HttpSession.sendExecutorResult(HttpSession.java:189)
+	at org.jetbrains.webdemo.sessions.HttpSession.handle(HttpSession.java:65)
+	at org.jetbrains.webdemo.handlers.ServerHandler.handle(ServerHandler.java:126)
+	at org.jetbrains.webdemo.servlet.KotlinHttpServlet.service(KotlinHttpServlet.java:110)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1070)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+</stack>
+<moreinfo>
+Origin url: unknown
+null
+</moreinfo>
+</error>
+08/17/2014 02:43:27 (ErrorWriterOnServer.java 57) [ERROR] 
+<error>
+<version>0.8.505</version>
+<type>UNKNOWN</type>
+<message>null</message>
+<stack>java.lang.NullPointerException
+	at org.jetbrains.webdemo.examplesLoader.ExamplesList.getExampleObject(ExamplesList.java:75)
+	at org.jetbrains.webdemo.sessions.HttpSession.sendExecutorResult(HttpSession.java:189)
+	at org.jetbrains.webdemo.sessions.HttpSession.handle(HttpSession.java:65)
+	at org.jetbrains.webdemo.handlers.ServerHandler.handle(ServerHandler.java:126)
+	at org.jetbrains.webdemo.servlet.KotlinHttpServlet.service(KotlinHttpServlet.java:110)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1070)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+</stack>
+<moreinfo>
+Origin url: unknown
+null
+</moreinfo>
+</error>
+08/17/2014 02:43:58 (ErrorWriterOnServer.java 57) [ERROR] 
+<error>
+<version>0.8.505</version>
+<type>UNKNOWN</type>
+<message>null</message>
+<stack>java.lang.ExceptionInInitializerError
+	at org.jetbrains.webdemo.handlers.ServerHandler.handle(ServerHandler.java:75)
+	at org.jetbrains.webdemo.servlet.KotlinHttpServlet.service(KotlinHttpServlet.java:110)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1070)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	at com.intellij.diagnostic.errordialog.Attachment.getBytes(Attachment.java:61)
+	at com.intellij.diagnostic.errordialog.Attachment.&amp;lt;init&amp;gt;(Attachment.java:41)
+	at org.jetbrains.webdemo.ErrorWriterOnServer.writeExceptionToExceptionAnalyzer(ErrorWriterOnServer.java:52)
+	at org.jetbrains.webdemo.database.MySqlConnector.connect(MySqlConnector.java:61)
+	at org.jetbrains.webdemo.database.MySqlConnector.&amp;lt;init&amp;gt;(MySqlConnector.java:44)
+	at org.jetbrains.webdemo.database.MySqlConnector.&amp;lt;clinit&amp;gt;(MySqlConnector.java:41)
+	... 23 more
+
+</stack>
+<moreinfo>
+Origin url: unknown
+/kotlinServer?sessionId=CB3AE9632A1D526467FC9F0641B371AD&amp;type=sendUserData&amp;args=null
+</moreinfo>
+</error>
+08/17/2014 02:44:23 (ErrorWriterOnServer.java 57) [ERROR] 
+<error>
+<version>0.8.505</version>
+<type>UNKNOWN</type>
+<message>null</message>
+<stack>java.lang.NullPointerException
+	at org.jetbrains.webdemo.examplesLoader.ExamplesList.getExampleObject(ExamplesList.java:75)
+	at org.jetbrains.webdemo.sessions.HttpSession.sendExecutorResult(HttpSession.java:189)
+	at org.jetbrains.webdemo.sessions.HttpSession.handle(HttpSession.java:65)
+	at org.jetbrains.webdemo.handlers.ServerHandler.handle(ServerHandler.java:126)
+	at org.jetbrains.webdemo.servlet.KotlinHttpServlet.service(KotlinHttpServlet.java:110)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1070)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+</stack>
+<moreinfo>
+Origin url: unknown
+null
+</moreinfo>
+</error>
+08/17/2014 02:45:21 (ErrorWriterOnServer.java 57) [ERROR] 
+<error>
+<version>0.8.505</version>
+<type>UNKNOWN</type>
+<message>null</message>
+<stack>java.lang.ExceptionInInitializerError
+	at org.jetbrains.webdemo.handlers.ServerHandler.handle(ServerHandler.java:75)
+	at org.jetbrains.webdemo.servlet.KotlinHttpServlet.service(KotlinHttpServlet.java:110)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1070)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	at com.intellij.diagnostic.errordialog.Attachment.getBytes(Attachment.java:61)
+	at com.intellij.diagnostic.errordialog.Attachment.&amp;lt;init&amp;gt;(Attachment.java:41)
+	at org.jetbrains.webdemo.ErrorWriterOnServer.writeExceptionToExceptionAnalyzer(ErrorWriterOnServer.java:52)
+	at org.jetbrains.webdemo.database.MySqlConnector.connect(MySqlConnector.java:61)
+	at org.jetbrains.webdemo.database.MySqlConnector.&amp;lt;init&amp;gt;(MySqlConnector.java:44)
+	at org.jetbrains.webdemo.database.MySqlConnector.&amp;lt;clinit&amp;gt;(MySqlConnector.java:41)
+	... 23 more
+
+</stack>
+<moreinfo>
+Origin url: unknown
+/kotlinServer?sessionId=CA00F633331D985E8701131A7792D7B6&amp;type=sendUserData&amp;args=null
+</moreinfo>
+</error>
+08/17/2014 02:45:22 (ErrorWriterOnServer.java 57) [ERROR] 
+<error>
+<version>0.8.505</version>
+<type>UNKNOWN</type>
+<message>null</message>
+<stack>java.lang.NullPointerException
+	at org.jetbrains.webdemo.examplesLoader.ExamplesList.getExampleObject(ExamplesList.java:75)
+	at org.jetbrains.webdemo.sessions.HttpSession.sendExecutorResult(HttpSession.java:189)
+	at org.jetbrains.webdemo.sessions.HttpSession.handle(HttpSession.java:65)
+	at org.jetbrains.webdemo.handlers.ServerHandler.handle(ServerHandler.java:126)
+	at org.jetbrains.webdemo.servlet.KotlinHttpServlet.service(KotlinHttpServlet.java:110)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1070)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+</stack>
+<moreinfo>
+Origin url: unknown
+null
+</moreinfo>
+</error>
+08/17/2014 02:45:22 (ErrorWriterOnServer.java 57) [ERROR] 
+<error>
+<version>0.8.505</version>
+<type>UNKNOWN</type>
+<message>null</message>
+<stack>java.lang.NullPointerException
+	at org.jetbrains.webdemo.examplesLoader.ExamplesList.getExampleObject(ExamplesList.java:75)
+	at org.jetbrains.webdemo.sessions.HttpSession.sendExecutorResult(HttpSession.java:189)
+	at org.jetbrains.webdemo.sessions.HttpSession.handle(HttpSession.java:65)
+	at org.jetbrains.webdemo.handlers.ServerHandler.handle(ServerHandler.java:126)
+	at org.jetbrains.webdemo.servlet.KotlinHttpServlet.service(KotlinHttpServlet.java:110)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1070)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+</stack>
+<moreinfo>
+Origin url: unknown
+null
+</moreinfo>
+</error>
+08/17/2014 02:45:25 (ErrorWriterOnServer.java 57) [ERROR] 
+<error>
+<version>0.8.505</version>
+<type>UNKNOWN</type>
+<message>null</message>
+<stack>java.lang.NullPointerException
+	at org.jetbrains.webdemo.examplesLoader.ExamplesList.getExampleObject(ExamplesList.java:75)
+	at org.jetbrains.webdemo.sessions.HttpSession.sendExecutorResult(HttpSession.java:189)
+	at org.jetbrains.webdemo.sessions.HttpSession.handle(HttpSession.java:65)
+	at org.jetbrains.webdemo.handlers.ServerHandler.handle(ServerHandler.java:126)
+	at org.jetbrains.webdemo.servlet.KotlinHttpServlet.service(KotlinHttpServlet.java:110)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1070)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+</stack>
+<moreinfo>
+Origin url: unknown
+null
+</moreinfo>
+</error>
+08/17/2014 02:45:26 (ErrorWriterOnServer.java 57) [ERROR] 
+<error>
+<version>0.8.505</version>
+<type>UNKNOWN</type>
+<message>null</message>
+<stack>java.lang.NullPointerException
+	at org.jetbrains.webdemo.examplesLoader.ExamplesList.getExampleObject(ExamplesList.java:75)
+	at org.jetbrains.webdemo.sessions.HttpSession.sendExecutorResult(HttpSession.java:189)
+	at org.jetbrains.webdemo.sessions.HttpSession.handle(HttpSession.java:65)
+	at org.jetbrains.webdemo.handlers.ServerHandler.handle(ServerHandler.java:126)
+	at org.jetbrains.webdemo.servlet.KotlinHttpServlet.service(KotlinHttpServlet.java:110)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1070)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+</stack>
+<moreinfo>
+Origin url: unknown
+null
+</moreinfo>
+</error>
+08/17/2014 02:45:26 (ErrorWriterOnServer.java 57) [ERROR] 
+<error>
+<version>0.8.505</version>
+<type>UNKNOWN</type>
+<message>null</message>
+<stack>java.lang.NullPointerException
+	at org.jetbrains.webdemo.examplesLoader.ExamplesList.getExampleObject(ExamplesList.java:75)
+	at org.jetbrains.webdemo.sessions.HttpSession.sendExecutorResult(HttpSession.java:189)
+	at org.jetbrains.webdemo.sessions.HttpSession.handle(HttpSession.java:65)
+	at org.jetbrains.webdemo.handlers.ServerHandler.handle(ServerHandler.java:126)
+	at org.jetbrains.webdemo.servlet.KotlinHttpServlet.service(KotlinHttpServlet.java:110)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1070)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+</stack>
+<moreinfo>
+Origin url: unknown
+null
+</moreinfo>
+</error>
+08/17/2014 02:45:26 (ErrorWriterOnServer.java 57) [ERROR] 
+<error>
+<version>0.8.505</version>
+<type>UNKNOWN</type>
+<message>null</message>
+<stack>java.lang.NullPointerException
+	at org.jetbrains.webdemo.examplesLoader.ExamplesList.getExampleObject(ExamplesList.java:75)
+	at org.jetbrains.webdemo.sessions.HttpSession.sendExecutorResult(HttpSession.java:189)
+	at org.jetbrains.webdemo.sessions.HttpSession.handle(HttpSession.java:65)
+	at org.jetbrains.webdemo.handlers.ServerHandler.handle(ServerHandler.java:126)
+	at org.jetbrains.webdemo.servlet.KotlinHttpServlet.service(KotlinHttpServlet.java:110)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1070)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+</stack>
+<moreinfo>
+Origin url: unknown
+null
+</moreinfo>
+</error>
+08/17/2014 02:45:33 (ErrorWriterOnServer.java 57) [ERROR] 
+<error>
+<version>0.8.505</version>
+<type>UNKNOWN</type>
+<message>null</message>
+<stack>java.lang.NullPointerException
+	at org.jetbrains.webdemo.examplesLoader.ExamplesList.getExampleObject(ExamplesList.java:75)
+	at org.jetbrains.webdemo.sessions.HttpSession.sendExecutorResult(HttpSession.java:189)
+	at org.jetbrains.webdemo.sessions.HttpSession.handle(HttpSession.java:65)
+	at org.jetbrains.webdemo.handlers.ServerHandler.handle(ServerHandler.java:126)
+	at org.jetbrains.webdemo.servlet.KotlinHttpServlet.service(KotlinHttpServlet.java:110)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1070)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+</stack>
+<moreinfo>
+Origin url: unknown
+null
+</moreinfo>
+</error>
+08/17/2014 02:46:02 (ErrorWriterOnServer.java 57) [ERROR] 
+<error>
+<version>0.8.505</version>
+<type>UNKNOWN</type>
+<message>null</message>
+<stack>java.lang.NullPointerException
+	at org.jetbrains.webdemo.examplesLoader.ExamplesList.getExampleObject(ExamplesList.java:75)
+	at org.jetbrains.webdemo.sessions.HttpSession.sendExecutorResult(HttpSession.java:189)
+	at org.jetbrains.webdemo.sessions.HttpSession.handle(HttpSession.java:65)
+	at org.jetbrains.webdemo.handlers.ServerHandler.handle(ServerHandler.java:126)
+	at org.jetbrains.webdemo.servlet.KotlinHttpServlet.service(KotlinHttpServlet.java:110)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1070)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+</stack>
+<moreinfo>
+Origin url: unknown
+null
+</moreinfo>
+</error>
+08/17/2014 02:46:30 (ErrorWriterOnServer.java 57) [ERROR] 
+<error>
+<version>0.8.505</version>
+<type>UNKNOWN</type>
+<message>null</message>
+<stack>java.lang.ExceptionInInitializerError
+	at org.jetbrains.webdemo.handlers.ServerHandler.handle(ServerHandler.java:75)
+	at org.jetbrains.webdemo.servlet.KotlinHttpServlet.service(KotlinHttpServlet.java:110)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1070)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	at com.intellij.diagnostic.errordialog.Attachment.getBytes(Attachment.java:61)
+	at com.intellij.diagnostic.errordialog.Attachment.&amp;lt;init&amp;gt;(Attachment.java:41)
+	at org.jetbrains.webdemo.ErrorWriterOnServer.writeExceptionToExceptionAnalyzer(ErrorWriterOnServer.java:52)
+	at org.jetbrains.webdemo.database.MySqlConnector.connect(MySqlConnector.java:61)
+	at org.jetbrains.webdemo.database.MySqlConnector.&amp;lt;init&amp;gt;(MySqlConnector.java:44)
+	at org.jetbrains.webdemo.database.MySqlConnector.&amp;lt;clinit&amp;gt;(MySqlConnector.java:41)
+	... 23 more
+
+</stack>
+<moreinfo>
+Origin url: unknown
+/kotlinServer?sessionId=AD544E7ED320E601B1F5EA25FB53785C&amp;type=sendUserData&amp;args=null
+</moreinfo>
+</error>
+08/17/2014 12:04:05 (ErrorWriterOnServer.java 57) [ERROR] 
+<error>
+<version>0.8.505</version>
+<type>UNKNOWN</type>
+<message>null</message>
+<stack>java.lang.NullPointerException
+	at org.jetbrains.webdemo.examplesLoader.ExamplesList.getExampleObject(ExamplesList.java:75)
+	at org.jetbrains.webdemo.sessions.HttpSession.sendExecutorResult(HttpSession.java:189)
+	at org.jetbrains.webdemo.sessions.HttpSession.handle(HttpSession.java:65)
+	at org.jetbrains.webdemo.handlers.ServerHandler.handle(ServerHandler.java:126)
+	at org.jetbrains.webdemo.servlet.KotlinHttpServlet.service(KotlinHttpServlet.java:110)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1070)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+</stack>
+<moreinfo>
+Origin url: unknown
+null
+</moreinfo>
+</error>
+08/17/2014 12:04:41 (ErrorWriterOnServer.java 57) [ERROR] 
+<error>
+<version>0.8.505</version>
+<type>UNKNOWN</type>
+<message>null</message>
+<stack>java.lang.ExceptionInInitializerError
+	at org.jetbrains.webdemo.handlers.ServerHandler.handle(ServerHandler.java:75)
+	at org.jetbrains.webdemo.servlet.KotlinHttpServlet.service(KotlinHttpServlet.java:110)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1070)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	at com.intellij.diagnostic.errordialog.Attachment.getBytes(Attachment.java:61)
+	at com.intellij.diagnostic.errordialog.Attachment.&amp;lt;init&amp;gt;(Attachment.java:41)
+	at org.jetbrains.webdemo.ErrorWriterOnServer.writeExceptionToExceptionAnalyzer(ErrorWriterOnServer.java:52)
+	at org.jetbrains.webdemo.database.MySqlConnector.connect(MySqlConnector.java:61)
+	at org.jetbrains.webdemo.database.MySqlConnector.&amp;lt;init&amp;gt;(MySqlConnector.java:44)
+	at org.jetbrains.webdemo.database.MySqlConnector.&amp;lt;clinit&amp;gt;(MySqlConnector.java:41)
+	... 23 more
+
+</stack>
+<moreinfo>
+Origin url: unknown
+/kotlinServer?sessionId=BF284F008192495DA53A204F5DD8B82E&amp;type=sendUserData&amp;args=null
+</moreinfo>
+</error>
+08/17/2014 12:04:45 (ErrorWriterOnServer.java 57) [ERROR] 
+<error>
+<version>0.8.505</version>
+<type>UNKNOWN</type>
+<message>null</message>
+<stack>java.lang.NullPointerException
+	at org.jetbrains.webdemo.examplesLoader.ExamplesList.getExampleObject(ExamplesList.java:75)
+	at org.jetbrains.webdemo.sessions.HttpSession.sendExecutorResult(HttpSession.java:189)
+	at org.jetbrains.webdemo.sessions.HttpSession.handle(HttpSession.java:65)
+	at org.jetbrains.webdemo.handlers.ServerHandler.handle(ServerHandler.java:126)
+	at org.jetbrains.webdemo.servlet.KotlinHttpServlet.service(KotlinHttpServlet.java:110)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1070)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+</stack>
+<moreinfo>
+Origin url: unknown
+null
+</moreinfo>
+</error>
+08/17/2014 12:04:48 (ErrorWriterOnServer.java 57) [ERROR] 
+<error>
+<version>0.8.505</version>
+<type>UNKNOWN</type>
+<message>null</message>
+<stack>java.lang.NullPointerException
+	at org.jetbrains.webdemo.examplesLoader.ExamplesList.getExampleObject(ExamplesList.java:75)
+	at org.jetbrains.webdemo.sessions.HttpSession.sendExecutorResult(HttpSession.java:189)
+	at org.jetbrains.webdemo.sessions.HttpSession.handle(HttpSession.java:65)
+	at org.jetbrains.webdemo.handlers.ServerHandler.handle(ServerHandler.java:126)
+	at org.jetbrains.webdemo.servlet.KotlinHttpServlet.service(KotlinHttpServlet.java:110)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1070)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+</stack>
+<moreinfo>
+Origin url: unknown
+null
+</moreinfo>
+</error>
+08/17/2014 12:05:54 (ErrorWriterOnServer.java 57) [ERROR] 
+<error>
+<version>0.8.505</version>
+<type>UNKNOWN</type>
+<message>null</message>
+<stack>java.lang.ExceptionInInitializerError
+	at org.jetbrains.webdemo.handlers.ServerHandler.handle(ServerHandler.java:75)
+	at org.jetbrains.webdemo.servlet.KotlinHttpServlet.service(KotlinHttpServlet.java:110)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1070)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	at com.intellij.diagnostic.errordialog.Attachment.getBytes(Attachment.java:61)
+	at com.intellij.diagnostic.errordialog.Attachment.&amp;lt;init&amp;gt;(Attachment.java:41)
+	at org.jetbrains.webdemo.ErrorWriterOnServer.writeExceptionToExceptionAnalyzer(ErrorWriterOnServer.java:52)
+	at org.jetbrains.webdemo.database.MySqlConnector.connect(MySqlConnector.java:61)
+	at org.jetbrains.webdemo.database.MySqlConnector.&amp;lt;init&amp;gt;(MySqlConnector.java:44)
+	at org.jetbrains.webdemo.database.MySqlConnector.&amp;lt;clinit&amp;gt;(MySqlConnector.java:41)
+	... 23 more
+
+</stack>
+<moreinfo>
+Origin url: unknown
+/kotlinServer?sessionId=58845C4EA70293CAC053FFCD05D0CF1F&amp;type=sendUserData&amp;args=null
+</moreinfo>
+</error>
+08/17/2014 12:06:32 (ErrorWriterOnServer.java 57) [ERROR] 
+<error>
+<version>0.8.505</version>
+<type>UNKNOWN</type>
+<message>null</message>
+<stack>java.lang.ExceptionInInitializerError
+	at org.jetbrains.webdemo.handlers.ServerHandler.handle(ServerHandler.java:75)
+	at org.jetbrains.webdemo.servlet.KotlinHttpServlet.service(KotlinHttpServlet.java:110)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1070)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	at com.intellij.diagnostic.errordialog.Attachment.getBytes(Attachment.java:61)
+	at com.intellij.diagnostic.errordialog.Attachment.&amp;lt;init&amp;gt;(Attachment.java:41)
+	at org.jetbrains.webdemo.ErrorWriterOnServer.writeExceptionToExceptionAnalyzer(ErrorWriterOnServer.java:52)
+	at org.jetbrains.webdemo.database.MySqlConnector.connect(MySqlConnector.java:61)
+	at org.jetbrains.webdemo.database.MySqlConnector.&amp;lt;init&amp;gt;(MySqlConnector.java:44)
+	at org.jetbrains.webdemo.database.MySqlConnector.&amp;lt;clinit&amp;gt;(MySqlConnector.java:41)
+	... 23 more
+
+</stack>
+<moreinfo>
+Origin url: unknown
+/kotlinServer?sessionId=504BD20E0389A9980FA79C86CBA44894&amp;type=sendUserData&amp;args=null
+</moreinfo>
+</error>
+08/17/2014 12:06:43 (ErrorWriterOnServer.java 57) [ERROR] 
+<error>
+<version>0.8.505</version>
+<type>UNKNOWN</type>
+<message>null</message>
+<stack>java.lang.ExceptionInInitializerError
+	at org.jetbrains.webdemo.handlers.ServerHandler.handle(ServerHandler.java:75)
+	at org.jetbrains.webdemo.servlet.KotlinHttpServlet.service(KotlinHttpServlet.java:110)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1070)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	at com.intellij.diagnostic.errordialog.Attachment.getBytes(Attachment.java:61)
+	at com.intellij.diagnostic.errordialog.Attachment.&amp;lt;init&amp;gt;(Attachment.java:41)
+	at org.jetbrains.webdemo.ErrorWriterOnServer.writeExceptionToExceptionAnalyzer(ErrorWriterOnServer.java:52)
+	at org.jetbrains.webdemo.database.MySqlConnector.connect(MySqlConnector.java:61)
+	at org.jetbrains.webdemo.database.MySqlConnector.&amp;lt;init&amp;gt;(MySqlConnector.java:44)
+	at org.jetbrains.webdemo.database.MySqlConnector.&amp;lt;clinit&amp;gt;(MySqlConnector.java:41)
+	... 23 more
+
+</stack>
+<moreinfo>
+Origin url: unknown
+/kotlinServer?sessionId=27ABCB76C1876E2D3C6D4F0B42D26396&amp;type=sendUserData&amp;args=null
+</moreinfo>
+</error>
+08/17/2014 12:06:44 (ErrorWriterOnServer.java 57) [ERROR] 
+<error>
+<version>0.8.505</version>
+<type>UNKNOWN</type>
+<message>Could not initialize class org.jetbrains.webdemo.database.MySqlConnector</message>
+<stack>java.lang.NoClassDefFoundError: Could not initialize class org.jetbrains.webdemo.database.MySqlConnector
+	at org.jetbrains.webdemo.handlers.ServerHandler.handle(ServerHandler.java:75)
+	at org.jetbrains.webdemo.servlet.KotlinHttpServlet.service(KotlinHttpServlet.java:110)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1070)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+</stack>
+<moreinfo>
+Origin url: unknown
+/kotlinServer?sessionId=27ABCB76C1876E2D3C6D4F0B42D26396&amp;type=sendUserData&amp;args=null
+</moreinfo>
+</error>
+08/17/2014 12:07:39 (ErrorWriterOnServer.java 57) [ERROR] 
+<error>
+<version>0.8.505</version>
+<type>UNKNOWN</type>
+<message>null</message>
+<stack>java.lang.NullPointerException
+	at org.jetbrains.webdemo.examplesLoader.ExamplesList.getExampleObject(ExamplesList.java:75)
+	at org.jetbrains.webdemo.sessions.HttpSession.sendExecutorResult(HttpSession.java:189)
+	at org.jetbrains.webdemo.sessions.HttpSession.handle(HttpSession.java:65)
+	at org.jetbrains.webdemo.handlers.ServerHandler.handle(ServerHandler.java:126)
+	at org.jetbrains.webdemo.servlet.KotlinHttpServlet.service(KotlinHttpServlet.java:110)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1070)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+</stack>
+<moreinfo>
+Origin url: unknown
+null
+</moreinfo>
+</error>
+08/17/2014 12:07:56 (ErrorWriterOnServer.java 57) [ERROR] 
+<error>
+<version>0.8.505</version>
+<type>UNKNOWN</type>
+<message>null</message>
+<stack>java.lang.ExceptionInInitializerError
+	at org.jetbrains.webdemo.handlers.ServerHandler.handle(ServerHandler.java:75)
+	at org.jetbrains.webdemo.servlet.KotlinHttpServlet.service(KotlinHttpServlet.java:110)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1070)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	at com.intellij.diagnostic.errordialog.Attachment.getBytes(Attachment.java:61)
+	at com.intellij.diagnostic.errordialog.Attachment.&amp;lt;init&amp;gt;(Attachment.java:41)
+	at org.jetbrains.webdemo.ErrorWriterOnServer.writeExceptionToExceptionAnalyzer(ErrorWriterOnServer.java:52)
+	at org.jetbrains.webdemo.database.MySqlConnector.connect(MySqlConnector.java:61)
+	at org.jetbrains.webdemo.database.MySqlConnector.&amp;lt;init&amp;gt;(MySqlConnector.java:44)
+	at org.jetbrains.webdemo.database.MySqlConnector.&amp;lt;clinit&amp;gt;(MySqlConnector.java:41)
+	... 23 more
+
+</stack>
+<moreinfo>
+Origin url: unknown
+/kotlinServer?sessionId=4170CF15EA9F3A1DD64ED7290AEB883A&amp;type=sendUserData&amp;args=null
+</moreinfo>
+</error>
+08/17/2014 12:27:02 (ErrorWriterOnServer.java 57) [ERROR] 
+<error>
+<version>0.8.505</version>
+<type>RUN</type>
+<message>Stream closed</message>
+<stack>java.io.IOException: Stream closed
+	at java.io.BufferedInputStream.getBufIfOpen(BufferedInputStream.java:170)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:336)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.io.BufferedReader.readLine(BufferedReader.java:324)
+	at java.io.BufferedReader.readLine(BufferedReader.java:389)
+	at org.jetbrains.webdemo.responseHelpers.JavaRunner$2.run(JavaRunner.java:103)
+
+</stack>
+<moreinfo>
+Origin url: http://localhost:8080
+fun main(args : Array&amp;lt;String&amp;gt;) {
+  println("Hello, world!")
+}
+</moreinfo>
+</error>
+08/17/2014 12:27:04 (ErrorWriterOnServer.java 57) [ERROR] 
+<error>
+<version>0.8.505</version>
+<type>RUN</type>
+<message>Stream closed</message>
+<stack>java.io.IOException: Stream closed
+	at java.io.BufferedInputStream.getBufIfOpen(BufferedInputStream.java:170)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:336)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.io.BufferedReader.readLine(BufferedReader.java:324)
+	at java.io.BufferedReader.readLine(BufferedReader.java:389)
+	at org.jetbrains.webdemo.responseHelpers.JavaRunner$3.run(JavaRunner.java:119)
+
+</stack>
+<moreinfo>
+Origin url: http://localhost:8080
+fun main(args : Array&amp;lt;String&amp;gt;) {
+  println("Hello, world!")
+}
+</moreinfo>
+</error>
+08/17/2014 12:30:12 (ErrorWriterOnServer.java 57) [ERROR] 
+<error>
+<version>0.8.505</version>
+<type>UNKNOWN</type>
+<message>null</message>
+<stack>java.lang.ExceptionInInitializerError
+	at org.jetbrains.webdemo.handlers.ServerHandler.handle(ServerHandler.java:75)
+	at org.jetbrains.webdemo.servlet.KotlinHttpServlet.service(KotlinHttpServlet.java:110)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1070)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	at com.intellij.diagnostic.errordialog.Attachment.getBytes(Attachment.java:61)
+	at com.intellij.diagnostic.errordialog.Attachment.&amp;lt;init&amp;gt;(Attachment.java:41)
+	at org.jetbrains.webdemo.ErrorWriterOnServer.writeExceptionToExceptionAnalyzer(ErrorWriterOnServer.java:52)
+	at org.jetbrains.webdemo.database.MySqlConnector.connect(MySqlConnector.java:61)
+	at org.jetbrains.webdemo.database.MySqlConnector.&amp;lt;init&amp;gt;(MySqlConnector.java:44)
+	at org.jetbrains.webdemo.database.MySqlConnector.&amp;lt;clinit&amp;gt;(MySqlConnector.java:41)
+	... 23 more
+
+</stack>
+<moreinfo>
+Origin url: unknown
+/kotlinServer?sessionId=18F4A2A244B994C5FCE0285E58DD8FBE&amp;type=sendUserData&amp;args=null
+</moreinfo>
+</error>

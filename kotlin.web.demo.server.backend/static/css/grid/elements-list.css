@@ -1,0 +1,118 @@
+/*
+ * Copyright 2000-2014 JetBrains s.r.o.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+.examples-list {
+    height: 100%;
+    width: 25%;
+    float: left;
+    border-right: 1px solid;
+    border-color: #969696;
+}
+
+.examples-folder{
+    padding: 8px;
+}
+
+.examples-closed-folder-icon{
+    display: inline-block;
+    width: 37px;
+    height: 15px;
+    background: url("/static/images/icons.png") no-repeat -42px -40px;
+}
+
+#examples-list .ui-state-active{
+    cursor: default;
+    color: #000000;
+}
+
+#examples-list .ui-accordion-header{
+    outline: none;
+    cursor: pointer;
+    color: #3164a0;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.examples-open-folder-icon{
+    display: inline-block;
+    width: 37px;
+    height: 15px;
+    background: url("/static/images/icons.png") no-repeat -19px -76px;
+}
+
+.folder-name-div{
+    padding-left: 43px;
+    padding-top: 2px;
+    padding-right: 10px;
+}
+
+.examples-folder-name{
+    /*display: inline-block;*/
+    font-size: 14px;
+    padding-left: 6px;
+}
+
+.file-name-span{
+    display: inline-block;
+    max-width: 85%;
+}
+
+.examples-file-name{
+    display: block;
+    color: #3164a0;
+    font-size: 14px;
+    padding: 6px;
+    padding-left: 45px;
+}
+
+.right-arrow{
+    display: inline-block;
+    float: left;
+    margin-top: 3px;
+    margin-right: 5px;
+    width: 4px;
+    height: 7px;
+    background: url("/static/images/icons.png") -58px -58px;
+}
+
+#examples-list .ui-icon{
+    margin-right: 6px;
+    float: left;
+}
+
+.login-link{
+    font-size: 14px;
+    padding-left: 6px;
+    color: #3164a0;
+}
+
+.delete-img{
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    float: right;
+    margin-top: 2px;
+    background: url("/static/images/icons.png") no-repeat -20px -39px;
+}
+
+.selected-example{
+    display: block;
+    font-size: 14px;
+    padding: 6px;
+    padding-left: 45px;
+    color: #000000;
+    background-color: #d8d8d8;
+}
