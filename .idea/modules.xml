@@ -5,7 +5,6 @@
       <module fileurl="file://$PROJECT_DIR$/idea.pacth.server/idea.pacth.server.iml" filepath="$PROJECT_DIR$/idea.pacth.server/idea.pacth.server.iml" />
       <module fileurl="file://$PROJECT_DIR$/kotlin.web.demo.iml" filepath="$PROJECT_DIR$/kotlin.web.demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/kotlin.web.demo.core/kotlin.web.demo.core.iml" filepath="$PROJECT_DIR$/kotlin.web.demo.core/kotlin.web.demo.core.iml" />
-      <module fileurl="file://$PROJECT_DIR$/kotlin.web.demo.server/kotlin.web.demo.server.iml" filepath="$PROJECT_DIR$/kotlin.web.demo.server/kotlin.web.demo.server.iml" />
       <module fileurl="file://$PROJECT_DIR$/kotlin.web.demo.server.backend/kotlin.web.demo.server.backend.iml" filepath="$PROJECT_DIR$/kotlin.web.demo.server.backend/kotlin.web.demo.server.backend.iml" />
       <module fileurl="file://$PROJECT_DIR$/kotlin.web.demo.server.mylnikov/kotlin.web.demo.server.mylnikov.iml" filepath="$PROJECT_DIR$/kotlin.web.demo.server.mylnikov/kotlin.web.demo.server.mylnikov.iml" />
       <module fileurl="file://$PROJECT_DIR$/org.jetbrains.junit.runner/org.jetbrains.junit.runner.iml" filepath="$PROJECT_DIR$/org.jetbrains.junit.runner/org.jetbrains.junit.runner.iml" />

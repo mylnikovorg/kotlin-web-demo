@@ -26,10 +26,8 @@ public class CommandRunner {
         ErrorWriter.writeInfoToConsole("Loaded from config file: " + setting + " " + value);
         if (value.isEmpty()) {
 
-        /*} else if (setting.equals("java_home")) {
-            ApplicationSettings.JAVA_HOME = value;*/
-        System.out.println(System.getenv("JAVA_HOME"));
-        ApplicationSettings.JAVA_HOME=System.getenv("JAVA_HOME");
+        } else if (setting.equals("java_home")) {
+            ApplicationSettings.JAVA_HOME = value;
         } else if (setting.equals("java_execute")) {
             ApplicationSettings.JAVA_EXECUTE = value;
         } else if (setting.equals("timeout")) {

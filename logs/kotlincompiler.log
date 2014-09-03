@@ -4157,3 +4157,1048 @@ fun, main(args:, Array<String>), {
 08/18/2014 05:50:28 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: 936A010C1C46D631E97B6875CC9C4F6D
 08/18/2014 05:50:28 (HttpSession.java 235) [INFO] type=HIGHLIGHT userId=936A010C1C46D631E97B6875CC9C4F6D message=PARSER 0 size: = 278
 08/18/2014 05:50:28 (HttpSession.java 342) [INFO] type=HIGHLIGHT userId=936A010C1C46D631E97B6875CC9C4F6D message=ALL 56 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/19/2014 03:01:32 (ServerHandler.java 121) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/19/2014 03:01:32 (ServerHandler.java 121) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/19/2014 03:01:32 (ServerHandler.java 328) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/19/2014 03:01:32 (ServerHandler.java 328) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/19/2014 03:01:32 (ServerHandler.java 100) [INFO] GET_EXAMPLES_LIST
+08/19/2014 03:01:33 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version ip: 5A0C5DF61A9E24817910BB27D229064D
+08/19/2014 03:01:33 (HttpSession.java 69) [INFO] type=INC_NUMBER_OF_REQUESTS userId=5A0C5DF61A9E24817910BB27D229064D ip=0 message=LOAD_EXAMPLE
+08/19/2014 03:01:33 (HttpSession.java 342) [INFO] type=LOAD_EXAMPLE userId=5A0C5DF61A9E24817910BB27D229064D message=ALL 21 request=/kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version
+08/19/2014 03:01:33 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: 5A0C5DF61A9E24817910BB27D229064D
+08/19/2014 03:01:33 (HttpSession.java 235) [INFO] type=HIGHLIGHT userId=5A0C5DF61A9E24817910BB27D229064D message=PARSER 21 size: = 61
+08/19/2014 03:01:36 (HttpSession.java 342) [INFO] type=HIGHLIGHT userId=5A0C5DF61A9E24817910BB27D229064D message=ALL 2602 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/19/2014 03:15:27 (ServerHandler.java 121) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/19/2014 03:15:27 (ServerHandler.java 121) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/19/2014 03:15:27 (ServerHandler.java 328) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/19/2014 03:15:27 (ServerHandler.java 328) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/19/2014 03:15:27 (ServerHandler.java 100) [INFO] GET_EXAMPLES_LIST
+08/19/2014 03:15:28 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version ip: D42E33F091C8567B52714D18C98691B6
+08/19/2014 03:15:28 (HttpSession.java 69) [INFO] type=INC_NUMBER_OF_REQUESTS userId=D42E33F091C8567B52714D18C98691B6 ip=0 message=LOAD_EXAMPLE
+08/19/2014 03:15:28 (HttpSession.java 342) [INFO] type=LOAD_EXAMPLE userId=D42E33F091C8567B52714D18C98691B6 message=ALL 24 request=/kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version
+08/19/2014 03:15:28 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: D42E33F091C8567B52714D18C98691B6
+08/19/2014 03:15:28 (HttpSession.java 235) [INFO] type=HIGHLIGHT userId=D42E33F091C8567B52714D18C98691B6 message=PARSER 17 size: = 61
+08/19/2014 03:15:30 (HttpSession.java 342) [INFO] type=HIGHLIGHT userId=D42E33F091C8567B52714D18C98691B6 message=ALL 1699 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/19/2014 03:15:52 (ServerHandler.java 121) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/19/2014 03:15:52 (ServerHandler.java 121) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/19/2014 03:15:52 (ServerHandler.java 328) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/19/2014 03:15:52 (ServerHandler.java 328) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/19/2014 03:15:52 (ServerHandler.java 100) [INFO] GET_EXAMPLES_LIST
+08/19/2014 03:15:53 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version ip: C932DC8EDC0B8884CBFFB9AF6D506D54
+08/19/2014 03:15:53 (HttpSession.java 69) [INFO] type=INC_NUMBER_OF_REQUESTS userId=C932DC8EDC0B8884CBFFB9AF6D506D54 ip=0 message=LOAD_EXAMPLE
+08/19/2014 03:15:53 (HttpSession.java 342) [INFO] type=LOAD_EXAMPLE userId=C932DC8EDC0B8884CBFFB9AF6D506D54 message=ALL 20 request=/kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version
+08/19/2014 03:15:53 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: C932DC8EDC0B8884CBFFB9AF6D506D54
+08/19/2014 03:15:53 (HttpSession.java 235) [INFO] type=HIGHLIGHT userId=C932DC8EDC0B8884CBFFB9AF6D506D54 message=PARSER 37 size: = 61
+08/19/2014 03:15:55 (HttpSession.java 342) [INFO] type=HIGHLIGHT userId=C932DC8EDC0B8884CBFFB9AF6D506D54 message=ALL 2009 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/19/2014 03:18:31 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: C932DC8EDC0B8884CBFFB9AF6D506D54
+08/19/2014 03:18:31 (HttpSession.java 235) [INFO] type=HIGHLIGHT userId=C932DC8EDC0B8884CBFFB9AF6D506D54 message=PARSER 0 size: = 61
+08/19/2014 03:18:31 (HttpSession.java 342) [INFO] type=HIGHLIGHT userId=C932DC8EDC0B8884CBFFB9AF6D506D54 message=ALL 64 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/19/2014 03:18:31 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=run&args=java ip: C932DC8EDC0B8884CBFFB9AF6D506D54
+08/19/2014 03:18:31 (HttpSession.java 65) [INFO] type=INC_NUMBER_OF_REQUESTS userId=C932DC8EDC0B8884CBFFB9AF6D506D54 ip=0 message=GET_RESOURCE
+08/19/2014 03:18:31 (HttpSession.java 235) [INFO] type=RUN userId=C932DC8EDC0B8884CBFFB9AF6D506D54 message=PARSER 0 size: = 61
+08/19/2014 03:18:32 (CompileAndRunExecutor.java 87) [INFO] type=RUN userId=C932DC8EDC0B8884CBFFB9AF6D506D54 message=COMPILE correctNamespaces 522
+08/19/2014 03:18:32 (CompileAndRunExecutor.java 119) [INFO] type=RUN userId=C932DC8EDC0B8884CBFFB9AF6D506D54 message=Write files on disk 4
+08/19/2014 03:18:32 (JavaRunner.java 137) [INFO] type=RUN userId=C932DC8EDC0B8884CBFFB9AF6D506D54 message=RunUserProgram 347 timeout=false commandString=[/root/docs/java/jdk1.8.0_11/bin/java, -classpath, /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp781585655:/opt/apache-tomcat-7.0.55/webapps/ROOT/WEB-INF/lib/kotlin-runtime.jar:/opt/apache-tomcat-7.0.55/webapps/ROOT/, -Djava.security.manager, _DefaultPackage]
+08/19/2014 03:18:32 (JavaRunner.java 325) [INFO] type=RUN userId=C932DC8EDC0B8884CBFFB9AF6D506D54 message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp781585655/_DefaultPackage-dummy-b9f6f59e.class
+08/19/2014 03:18:32 (JavaRunner.java 325) [INFO] type=RUN userId=C932DC8EDC0B8884CBFFB9AF6D506D54 message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp781585655/_DefaultPackage.class
+08/19/2014 03:18:32 (JavaRunner.java 316) [INFO] type=RUN userId=C932DC8EDC0B8884CBFFB9AF6D506D54 message=Directory is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp781585655
+08/19/2014 03:18:32 (HttpSession.java 342) [INFO] type=RUN userId=C932DC8EDC0B8884CBFFB9AF6D506D54 message=ALL 1039 request=/kotlinServer?sessionId=-1&type=run&args=java
+08/19/2014 03:18:36 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Reading_a_name_from_the_command_line ip: C932DC8EDC0B8884CBFFB9AF6D506D54
+08/19/2014 03:18:36 (HttpSession.java 69) [INFO] type=INC_NUMBER_OF_REQUESTS userId=C932DC8EDC0B8884CBFFB9AF6D506D54 ip=0 message=LOAD_EXAMPLE
+08/19/2014 03:18:36 (HttpSession.java 342) [INFO] type=LOAD_EXAMPLE userId=C932DC8EDC0B8884CBFFB9AF6D506D54 message=ALL 1 request=/kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Reading_a_name_from_the_command_line
+08/19/2014 03:18:36 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: C932DC8EDC0B8884CBFFB9AF6D506D54
+08/19/2014 03:18:36 (HttpSession.java 235) [INFO] type=HIGHLIGHT userId=C932DC8EDC0B8884CBFFB9AF6D506D54 message=PARSER 0 size: = 169
+08/19/2014 03:18:37 (HttpSession.java 342) [INFO] type=HIGHLIGHT userId=C932DC8EDC0B8884CBFFB9AF6D506D54 message=ALL 174 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/19/2014 03:18:37 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: C932DC8EDC0B8884CBFFB9AF6D506D54
+08/19/2014 03:18:37 (HttpSession.java 235) [INFO] type=HIGHLIGHT userId=C932DC8EDC0B8884CBFFB9AF6D506D54 message=PARSER 0 size: = 169
+08/19/2014 03:18:37 (HttpSession.java 342) [INFO] type=HIGHLIGHT userId=C932DC8EDC0B8884CBFFB9AF6D506D54 message=ALL 62 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/19/2014 03:18:37 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=run&args=java ip: C932DC8EDC0B8884CBFFB9AF6D506D54
+08/19/2014 03:18:37 (HttpSession.java 65) [INFO] type=INC_NUMBER_OF_REQUESTS userId=C932DC8EDC0B8884CBFFB9AF6D506D54 ip=0 message=GET_RESOURCE
+08/19/2014 03:18:37 (HttpSession.java 235) [INFO] type=RUN userId=C932DC8EDC0B8884CBFFB9AF6D506D54 message=PARSER 0 size: = 169
+08/19/2014 03:18:38 (CompileAndRunExecutor.java 87) [INFO] type=RUN userId=C932DC8EDC0B8884CBFFB9AF6D506D54 message=COMPILE correctNamespaces 68
+08/19/2014 03:18:38 (CompileAndRunExecutor.java 119) [INFO] type=RUN userId=C932DC8EDC0B8884CBFFB9AF6D506D54 message=Write files on disk 0
+08/19/2014 03:18:38 (JavaRunner.java 137) [INFO] type=RUN userId=C932DC8EDC0B8884CBFFB9AF6D506D54 message=RunUserProgram 135 timeout=false commandString=[/root/docs/java/jdk1.8.0_11/bin/java, -classpath, /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1638596791:/opt/apache-tomcat-7.0.55/webapps/ROOT/WEB-INF/lib/kotlin-runtime.jar:/opt/apache-tomcat-7.0.55/webapps/ROOT/, -Djava.security.manager, _DefaultPackage, guest]
+08/19/2014 03:18:38 (JavaRunner.java 325) [INFO] type=RUN userId=C932DC8EDC0B8884CBFFB9AF6D506D54 message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1638596791/_DefaultPackage-dummy-b9f6f59e.class
+08/19/2014 03:18:38 (JavaRunner.java 325) [INFO] type=RUN userId=C932DC8EDC0B8884CBFFB9AF6D506D54 message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1638596791/_DefaultPackage.class
+08/19/2014 03:18:38 (JavaRunner.java 316) [INFO] type=RUN userId=C932DC8EDC0B8884CBFFB9AF6D506D54 message=Directory is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1638596791
+08/19/2014 03:18:38 (HttpSession.java 342) [INFO] type=RUN userId=C932DC8EDC0B8884CBFFB9AF6D506D54 message=ALL 281 request=/kotlinServer?sessionId=-1&type=run&args=java
+08/19/2014 04:23:38 (ServerHandler.java 121) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/19/2014 04:23:38 (ServerHandler.java 121) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/19/2014 04:23:38 (ServerHandler.java 328) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/19/2014 04:23:38 (ServerHandler.java 328) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/19/2014 04:23:39 (ServerHandler.java 100) [INFO] GET_EXAMPLES_LIST
+08/19/2014 04:23:39 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version ip: 6B861268C952152CBF331A0317600DB7
+08/19/2014 04:23:39 (HttpSession.java 69) [INFO] type=INC_NUMBER_OF_REQUESTS userId=6B861268C952152CBF331A0317600DB7 ip=0 message=LOAD_EXAMPLE
+08/19/2014 04:23:39 (HttpSession.java 342) [INFO] type=LOAD_EXAMPLE userId=6B861268C952152CBF331A0317600DB7 message=ALL 15 request=/kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version
+08/19/2014 04:23:39 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: 6B861268C952152CBF331A0317600DB7
+08/19/2014 04:23:39 (HttpSession.java 235) [INFO] type=HIGHLIGHT userId=6B861268C952152CBF331A0317600DB7 message=PARSER 11 size: = 61
+08/19/2014 04:23:41 (HttpSession.java 342) [INFO] type=HIGHLIGHT userId=6B861268C952152CBF331A0317600DB7 message=ALL 1633 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/19/2014 04:29:38 (ServerHandler.java 121) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/19/2014 04:29:38 (ServerHandler.java 328) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/19/2014 04:29:38 (ServerHandler.java 121) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/19/2014 04:29:38 (ServerHandler.java 328) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/19/2014 04:29:38 (ServerHandler.java 100) [INFO] GET_EXAMPLES_LIST
+08/19/2014 04:29:38 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version ip: 6B861268C952152CBF331A0317600DB7
+08/19/2014 04:29:38 (HttpSession.java 69) [INFO] type=INC_NUMBER_OF_REQUESTS userId=6B861268C952152CBF331A0317600DB7 ip=0 message=LOAD_EXAMPLE
+08/19/2014 04:29:38 (HttpSession.java 342) [INFO] type=LOAD_EXAMPLE userId=6B861268C952152CBF331A0317600DB7 message=ALL 0 request=/kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version
+08/19/2014 04:29:39 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: 6B861268C952152CBF331A0317600DB7
+08/19/2014 04:29:39 (HttpSession.java 235) [INFO] type=HIGHLIGHT userId=6B861268C952152CBF331A0317600DB7 message=PARSER 2 size: = 61
+08/19/2014 04:29:39 (HttpSession.java 342) [INFO] type=HIGHLIGHT userId=6B861268C952152CBF331A0317600DB7 message=ALL 134 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/19/2014 04:47:59 (ServerHandler.java 121) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/19/2014 04:47:59 (ServerHandler.java 121) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/19/2014 04:47:59 (ServerHandler.java 328) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/19/2014 04:47:59 (ServerHandler.java 328) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/19/2014 04:47:59 (ServerHandler.java 100) [INFO] GET_EXAMPLES_LIST
+08/19/2014 04:47:59 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version ip: 63BF3BAB463D9D4A5C3CAA4B6C2B1D0D
+08/19/2014 04:47:59 (HttpSession.java 69) [INFO] type=INC_NUMBER_OF_REQUESTS userId=63BF3BAB463D9D4A5C3CAA4B6C2B1D0D ip=0 message=LOAD_EXAMPLE
+08/19/2014 04:47:59 (HttpSession.java 342) [INFO] type=LOAD_EXAMPLE userId=63BF3BAB463D9D4A5C3CAA4B6C2B1D0D message=ALL 16 request=/kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version
+08/19/2014 04:48:00 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: 63BF3BAB463D9D4A5C3CAA4B6C2B1D0D
+08/19/2014 04:48:00 (HttpSession.java 235) [INFO] type=HIGHLIGHT userId=63BF3BAB463D9D4A5C3CAA4B6C2B1D0D message=PARSER 22 size: = 61
+08/19/2014 04:48:01 (HttpSession.java 342) [INFO] type=HIGHLIGHT userId=63BF3BAB463D9D4A5C3CAA4B6C2B1D0D message=ALL 1934 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/19/2014 05:37:49 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: 63BF3BAB463D9D4A5C3CAA4B6C2B1D0D
+08/19/2014 05:37:49 (HttpSession.java 235) [INFO] type=HIGHLIGHT userId=63BF3BAB463D9D4A5C3CAA4B6C2B1D0D message=PARSER 31 size: = 61
+08/19/2014 05:37:51 (HttpSession.java 342) [INFO] type=HIGHLIGHT userId=63BF3BAB463D9D4A5C3CAA4B6C2B1D0D message=ALL 1178 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/19/2014 05:37:51 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=run&args=java ip: 63BF3BAB463D9D4A5C3CAA4B6C2B1D0D
+08/19/2014 05:37:51 (HttpSession.java 65) [INFO] type=INC_NUMBER_OF_REQUESTS userId=63BF3BAB463D9D4A5C3CAA4B6C2B1D0D ip=0 message=GET_RESOURCE
+08/19/2014 05:37:51 (HttpSession.java 235) [INFO] type=RUN userId=63BF3BAB463D9D4A5C3CAA4B6C2B1D0D message=PARSER 7 size: = 61
+08/19/2014 05:37:53 (CompileAndRunExecutor.java 87) [INFO] type=RUN userId=63BF3BAB463D9D4A5C3CAA4B6C2B1D0D message=COMPILE correctNamespaces 1513
+08/19/2014 05:37:53 (CompileAndRunExecutor.java 119) [INFO] type=RUN userId=63BF3BAB463D9D4A5C3CAA4B6C2B1D0D message=Write files on disk 7
+08/19/2014 05:37:53 (JavaRunner.java 137) [INFO] type=RUN userId=63BF3BAB463D9D4A5C3CAA4B6C2B1D0D message=RunUserProgram 660 timeout=false commandString=[/root/docs/java/jdk1.8.0_11/bin/java, -classpath, /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1309626462:/opt/apache-tomcat-7.0.55/webapps/ROOT/WEB-INF/lib/kotlin-runtime.jar:/opt/apache-tomcat-7.0.55/webapps/ROOT/, -Djava.security.manager, _DefaultPackage]
+08/19/2014 05:37:53 (JavaRunner.java 325) [INFO] type=RUN userId=63BF3BAB463D9D4A5C3CAA4B6C2B1D0D message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1309626462/_DefaultPackage-dummy-b9f6f59e.class
+08/19/2014 05:37:53 (JavaRunner.java 325) [INFO] type=RUN userId=63BF3BAB463D9D4A5C3CAA4B6C2B1D0D message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1309626462/_DefaultPackage.class
+08/19/2014 05:37:53 (JavaRunner.java 316) [INFO] type=RUN userId=63BF3BAB463D9D4A5C3CAA4B6C2B1D0D message=Directory is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1309626462
+08/19/2014 05:37:53 (HttpSession.java 342) [INFO] type=RUN userId=63BF3BAB463D9D4A5C3CAA4B6C2B1D0D message=ALL 2810 request=/kotlinServer?sessionId=-1&type=run&args=java
+08/19/2014 05:37:54 (ServerHandler.java 121) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/19/2014 05:37:54 (ServerHandler.java 328) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/19/2014 05:37:54 (ServerHandler.java 121) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/19/2014 05:37:54 (ServerHandler.java 328) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/19/2014 05:37:54 (ServerHandler.java 100) [INFO] GET_EXAMPLES_LIST
+08/19/2014 05:37:54 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version ip: 63BF3BAB463D9D4A5C3CAA4B6C2B1D0D
+08/19/2014 05:37:54 (HttpSession.java 69) [INFO] type=INC_NUMBER_OF_REQUESTS userId=63BF3BAB463D9D4A5C3CAA4B6C2B1D0D ip=0 message=LOAD_EXAMPLE
+08/19/2014 05:37:54 (HttpSession.java 342) [INFO] type=LOAD_EXAMPLE userId=63BF3BAB463D9D4A5C3CAA4B6C2B1D0D message=ALL 1 request=/kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version
+08/19/2014 05:37:55 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: 63BF3BAB463D9D4A5C3CAA4B6C2B1D0D
+08/19/2014 05:37:55 (HttpSession.java 235) [INFO] type=HIGHLIGHT userId=63BF3BAB463D9D4A5C3CAA4B6C2B1D0D message=PARSER 0 size: = 61
+08/19/2014 05:37:55 (HttpSession.java 342) [INFO] type=HIGHLIGHT userId=63BF3BAB463D9D4A5C3CAA4B6C2B1D0D message=ALL 199 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/19/2014 05:37:56 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: 63BF3BAB463D9D4A5C3CAA4B6C2B1D0D
+08/19/2014 05:37:56 (HttpSession.java 235) [INFO] type=HIGHLIGHT userId=63BF3BAB463D9D4A5C3CAA4B6C2B1D0D message=PARSER 0 size: = 61
+08/19/2014 05:37:56 (HttpSession.java 342) [INFO] type=HIGHLIGHT userId=63BF3BAB463D9D4A5C3CAA4B6C2B1D0D message=ALL 164 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/19/2014 05:37:56 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=run&args=java ip: 63BF3BAB463D9D4A5C3CAA4B6C2B1D0D
+08/19/2014 05:37:56 (HttpSession.java 65) [INFO] type=INC_NUMBER_OF_REQUESTS userId=63BF3BAB463D9D4A5C3CAA4B6C2B1D0D ip=0 message=GET_RESOURCE
+08/19/2014 05:37:56 (HttpSession.java 235) [INFO] type=RUN userId=63BF3BAB463D9D4A5C3CAA4B6C2B1D0D message=PARSER 0 size: = 61
+08/19/2014 05:37:56 (CompileAndRunExecutor.java 87) [INFO] type=RUN userId=63BF3BAB463D9D4A5C3CAA4B6C2B1D0D message=COMPILE correctNamespaces 107
+08/19/2014 05:37:56 (CompileAndRunExecutor.java 119) [INFO] type=RUN userId=63BF3BAB463D9D4A5C3CAA4B6C2B1D0D message=Write files on disk 0
+08/19/2014 05:37:56 (JavaRunner.java 137) [INFO] type=RUN userId=63BF3BAB463D9D4A5C3CAA4B6C2B1D0D message=RunUserProgram 107 timeout=false commandString=[/root/docs/java/jdk1.8.0_11/bin/java, -classpath, /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-571299206:/opt/apache-tomcat-7.0.55/webapps/ROOT/WEB-INF/lib/kotlin-runtime.jar:/opt/apache-tomcat-7.0.55/webapps/ROOT/, -Djava.security.manager, _DefaultPackage]
+08/19/2014 05:37:56 (JavaRunner.java 325) [INFO] type=RUN userId=63BF3BAB463D9D4A5C3CAA4B6C2B1D0D message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-571299206/_DefaultPackage-dummy-b9f6f59e.class
+08/19/2014 05:37:56 (JavaRunner.java 325) [INFO] type=RUN userId=63BF3BAB463D9D4A5C3CAA4B6C2B1D0D message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-571299206/_DefaultPackage.class
+08/19/2014 05:37:56 (JavaRunner.java 316) [INFO] type=RUN userId=63BF3BAB463D9D4A5C3CAA4B6C2B1D0D message=Directory is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-571299206
+08/19/2014 05:37:56 (HttpSession.java 342) [INFO] type=RUN userId=63BF3BAB463D9D4A5C3CAA4B6C2B1D0D message=ALL 439 request=/kotlinServer?sessionId=-1&type=run&args=java
+08/19/2014 05:41:54 (ServerHandler.java 121) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/19/2014 05:41:54 (ServerHandler.java 328) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/19/2014 05:41:54 (ServerHandler.java 121) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/19/2014 05:41:54 (ServerHandler.java 328) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/19/2014 05:41:54 (ServerHandler.java 100) [INFO] GET_EXAMPLES_LIST
+08/19/2014 05:41:54 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version ip: 7704752BC6F3FDBD7AF0CC35D3BFC1E7
+08/19/2014 05:41:54 (HttpSession.java 69) [INFO] type=INC_NUMBER_OF_REQUESTS userId=7704752BC6F3FDBD7AF0CC35D3BFC1E7 ip=0 message=LOAD_EXAMPLE
+08/19/2014 05:41:54 (HttpSession.java 342) [INFO] type=LOAD_EXAMPLE userId=7704752BC6F3FDBD7AF0CC35D3BFC1E7 message=ALL 33 request=/kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version
+08/19/2014 05:41:55 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: 7704752BC6F3FDBD7AF0CC35D3BFC1E7
+08/19/2014 05:41:55 (HttpSession.java 235) [INFO] type=HIGHLIGHT userId=7704752BC6F3FDBD7AF0CC35D3BFC1E7 message=PARSER 11 size: = 61
+08/19/2014 05:41:56 (HttpSession.java 342) [INFO] type=HIGHLIGHT userId=7704752BC6F3FDBD7AF0CC35D3BFC1E7 message=ALL 1335 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/19/2014 05:42:02 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: 7704752BC6F3FDBD7AF0CC35D3BFC1E7
+08/19/2014 05:42:02 (HttpSession.java 235) [INFO] type=HIGHLIGHT userId=7704752BC6F3FDBD7AF0CC35D3BFC1E7 message=PARSER 0 size: = 61
+08/19/2014 05:42:02 (HttpSession.java 342) [INFO] type=HIGHLIGHT userId=7704752BC6F3FDBD7AF0CC35D3BFC1E7 message=ALL 79 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/19/2014 05:42:02 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=run&args=java ip: 7704752BC6F3FDBD7AF0CC35D3BFC1E7
+08/19/2014 05:42:02 (HttpSession.java 65) [INFO] type=INC_NUMBER_OF_REQUESTS userId=7704752BC6F3FDBD7AF0CC35D3BFC1E7 ip=0 message=GET_RESOURCE
+08/19/2014 05:42:02 (HttpSession.java 235) [INFO] type=RUN userId=7704752BC6F3FDBD7AF0CC35D3BFC1E7 message=PARSER 0 size: = 61
+08/19/2014 05:42:02 (CompileAndRunExecutor.java 87) [INFO] type=RUN userId=7704752BC6F3FDBD7AF0CC35D3BFC1E7 message=COMPILE correctNamespaces 299
+08/19/2014 05:42:02 (CompileAndRunExecutor.java 119) [INFO] type=RUN userId=7704752BC6F3FDBD7AF0CC35D3BFC1E7 message=Write files on disk 5
+08/19/2014 05:42:03 (JavaRunner.java 137) [INFO] type=RUN userId=7704752BC6F3FDBD7AF0CC35D3BFC1E7 message=RunUserProgram 458 timeout=false commandString=[/root/docs/java/jdk1.8.0_11/bin/java, -classpath, /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1790012487:/opt/apache-tomcat-7.0.55/webapps/ROOT/WEB-INF/lib/kotlin-runtime.jar:/opt/apache-tomcat-7.0.55/webapps/ROOT/, -Djava.security.manager, _DefaultPackage]
+08/19/2014 05:42:03 (JavaRunner.java 325) [INFO] type=RUN userId=7704752BC6F3FDBD7AF0CC35D3BFC1E7 message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1790012487/_DefaultPackage-dummy-b9f6f59e.class
+08/19/2014 05:42:03 (JavaRunner.java 325) [INFO] type=RUN userId=7704752BC6F3FDBD7AF0CC35D3BFC1E7 message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1790012487/_DefaultPackage.class
+08/19/2014 05:42:03 (JavaRunner.java 316) [INFO] type=RUN userId=7704752BC6F3FDBD7AF0CC35D3BFC1E7 message=Directory is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1790012487
+08/19/2014 05:42:03 (HttpSession.java 342) [INFO] type=RUN userId=7704752BC6F3FDBD7AF0CC35D3BFC1E7 message=ALL 850 request=/kotlinServer?sessionId=-1&type=run&args=java
+08/19/2014 05:42:04 (ServerHandler.java 121) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/19/2014 05:42:04 (ServerHandler.java 328) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/19/2014 05:42:04 (ServerHandler.java 121) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/19/2014 05:42:04 (ServerHandler.java 328) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/19/2014 05:42:04 (ServerHandler.java 100) [INFO] GET_EXAMPLES_LIST
+08/19/2014 05:42:04 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version ip: 7704752BC6F3FDBD7AF0CC35D3BFC1E7
+08/19/2014 05:42:04 (HttpSession.java 69) [INFO] type=INC_NUMBER_OF_REQUESTS userId=7704752BC6F3FDBD7AF0CC35D3BFC1E7 ip=0 message=LOAD_EXAMPLE
+08/19/2014 05:42:04 (HttpSession.java 342) [INFO] type=LOAD_EXAMPLE userId=7704752BC6F3FDBD7AF0CC35D3BFC1E7 message=ALL 0 request=/kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version
+08/19/2014 05:42:05 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: 7704752BC6F3FDBD7AF0CC35D3BFC1E7
+08/19/2014 05:42:05 (HttpSession.java 235) [INFO] type=HIGHLIGHT userId=7704752BC6F3FDBD7AF0CC35D3BFC1E7 message=PARSER 0 size: = 61
+08/19/2014 05:42:05 (HttpSession.java 342) [INFO] type=HIGHLIGHT userId=7704752BC6F3FDBD7AF0CC35D3BFC1E7 message=ALL 61 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/19/2014 05:42:06 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: 7704752BC6F3FDBD7AF0CC35D3BFC1E7
+08/19/2014 05:42:06 (HttpSession.java 235) [INFO] type=HIGHLIGHT userId=7704752BC6F3FDBD7AF0CC35D3BFC1E7 message=PARSER 0 size: = 61
+08/19/2014 05:42:06 (HttpSession.java 342) [INFO] type=HIGHLIGHT userId=7704752BC6F3FDBD7AF0CC35D3BFC1E7 message=ALL 57 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/19/2014 05:42:06 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=run&args=java ip: 7704752BC6F3FDBD7AF0CC35D3BFC1E7
+08/19/2014 05:42:06 (HttpSession.java 65) [INFO] type=INC_NUMBER_OF_REQUESTS userId=7704752BC6F3FDBD7AF0CC35D3BFC1E7 ip=0 message=GET_RESOURCE
+08/19/2014 05:42:06 (HttpSession.java 235) [INFO] type=RUN userId=7704752BC6F3FDBD7AF0CC35D3BFC1E7 message=PARSER 0 size: = 61
+08/19/2014 05:42:06 (CompileAndRunExecutor.java 87) [INFO] type=RUN userId=7704752BC6F3FDBD7AF0CC35D3BFC1E7 message=COMPILE correctNamespaces 35
+08/19/2014 05:42:06 (CompileAndRunExecutor.java 119) [INFO] type=RUN userId=7704752BC6F3FDBD7AF0CC35D3BFC1E7 message=Write files on disk 0
+08/19/2014 05:42:06 (JavaRunner.java 137) [INFO] type=RUN userId=7704752BC6F3FDBD7AF0CC35D3BFC1E7 message=RunUserProgram 110 timeout=false commandString=[/root/docs/java/jdk1.8.0_11/bin/java, -classpath, /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1049559622:/opt/apache-tomcat-7.0.55/webapps/ROOT/WEB-INF/lib/kotlin-runtime.jar:/opt/apache-tomcat-7.0.55/webapps/ROOT/, -Djava.security.manager, _DefaultPackage]
+08/19/2014 05:42:06 (JavaRunner.java 325) [INFO] type=RUN userId=7704752BC6F3FDBD7AF0CC35D3BFC1E7 message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1049559622/_DefaultPackage-dummy-b9f6f59e.class
+08/19/2014 05:42:06 (JavaRunner.java 325) [INFO] type=RUN userId=7704752BC6F3FDBD7AF0CC35D3BFC1E7 message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1049559622/_DefaultPackage.class
+08/19/2014 05:42:06 (JavaRunner.java 316) [INFO] type=RUN userId=7704752BC6F3FDBD7AF0CC35D3BFC1E7 message=Directory is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1049559622
+08/19/2014 05:42:06 (HttpSession.java 342) [INFO] type=RUN userId=7704752BC6F3FDBD7AF0CC35D3BFC1E7 message=ALL 184 request=/kotlinServer?sessionId=-1&type=run&args=java
+08/19/2014 05:49:18 (ServerHandler.java 121) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/19/2014 05:49:18 (ServerHandler.java 121) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/19/2014 05:49:18 (ServerHandler.java 328) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/19/2014 05:49:18 (ServerHandler.java 328) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/19/2014 05:49:18 (ServerHandler.java 100) [INFO] GET_EXAMPLES_LIST
+08/19/2014 05:49:18 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version ip: 3D383509591E7E58E051472E398FE0E3
+08/19/2014 05:49:18 (HttpSession.java 69) [INFO] type=INC_NUMBER_OF_REQUESTS userId=3D383509591E7E58E051472E398FE0E3 ip=0 message=LOAD_EXAMPLE
+08/19/2014 05:49:18 (HttpSession.java 342) [INFO] type=LOAD_EXAMPLE userId=3D383509591E7E58E051472E398FE0E3 message=ALL 39 request=/kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version
+08/19/2014 05:49:19 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: 3D383509591E7E58E051472E398FE0E3
+08/19/2014 05:49:19 (HttpSession.java 235) [INFO] type=HIGHLIGHT userId=3D383509591E7E58E051472E398FE0E3 message=PARSER 26 size: = 61
+08/19/2014 05:49:20 (ServerHandler.java 121) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/19/2014 05:49:20 (ServerHandler.java 328) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/19/2014 05:49:20 (ServerHandler.java 121) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/19/2014 05:49:20 (ServerHandler.java 328) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/19/2014 05:49:21 (HttpSession.java 342) [INFO] type=HIGHLIGHT userId=3D383509591E7E58E051472E398FE0E3 message=ALL 2350 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/19/2014 05:49:22 (ServerHandler.java 100) [INFO] GET_EXAMPLES_LIST
+08/19/2014 05:49:22 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version ip: 3D383509591E7E58E051472E398FE0E3
+08/19/2014 05:49:22 (HttpSession.java 69) [INFO] type=INC_NUMBER_OF_REQUESTS userId=3D383509591E7E58E051472E398FE0E3 ip=0 message=LOAD_EXAMPLE
+08/19/2014 05:49:22 (HttpSession.java 342) [INFO] type=LOAD_EXAMPLE userId=3D383509591E7E58E051472E398FE0E3 message=ALL 0 request=/kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version
+08/19/2014 05:49:23 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: 3D383509591E7E58E051472E398FE0E3
+08/19/2014 05:49:23 (HttpSession.java 235) [INFO] type=HIGHLIGHT userId=3D383509591E7E58E051472E398FE0E3 message=PARSER 0 size: = 61
+08/19/2014 05:49:23 (HttpSession.java 342) [INFO] type=HIGHLIGHT userId=3D383509591E7E58E051472E398FE0E3 message=ALL 94 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/19/2014 05:49:25 (ServerHandler.java 121) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/19/2014 05:49:25 (ServerHandler.java 328) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/19/2014 05:49:25 (ServerHandler.java 121) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/19/2014 05:49:25 (ServerHandler.java 328) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/19/2014 05:49:25 (ServerHandler.java 100) [INFO] GET_EXAMPLES_LIST
+08/19/2014 05:49:25 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version ip: 3D383509591E7E58E051472E398FE0E3
+08/19/2014 05:49:25 (HttpSession.java 69) [INFO] type=INC_NUMBER_OF_REQUESTS userId=3D383509591E7E58E051472E398FE0E3 ip=0 message=LOAD_EXAMPLE
+08/19/2014 05:49:25 (HttpSession.java 342) [INFO] type=LOAD_EXAMPLE userId=3D383509591E7E58E051472E398FE0E3 message=ALL 0 request=/kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version
+08/19/2014 05:49:26 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: 3D383509591E7E58E051472E398FE0E3
+08/19/2014 05:49:26 (HttpSession.java 235) [INFO] type=HIGHLIGHT userId=3D383509591E7E58E051472E398FE0E3 message=PARSER 0 size: = 61
+08/19/2014 05:49:26 (HttpSession.java 342) [INFO] type=HIGHLIGHT userId=3D383509591E7E58E051472E398FE0E3 message=ALL 65 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/19/2014 05:49:27 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: 3D383509591E7E58E051472E398FE0E3
+08/19/2014 05:49:27 (HttpSession.java 235) [INFO] type=HIGHLIGHT userId=3D383509591E7E58E051472E398FE0E3 message=PARSER 0 size: = 61
+08/19/2014 05:49:27 (HttpSession.java 342) [INFO] type=HIGHLIGHT userId=3D383509591E7E58E051472E398FE0E3 message=ALL 57 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/19/2014 05:49:27 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=run&args=java ip: 3D383509591E7E58E051472E398FE0E3
+08/19/2014 05:49:27 (HttpSession.java 65) [INFO] type=INC_NUMBER_OF_REQUESTS userId=3D383509591E7E58E051472E398FE0E3 ip=0 message=GET_RESOURCE
+08/19/2014 05:49:27 (HttpSession.java 235) [INFO] type=RUN userId=3D383509591E7E58E051472E398FE0E3 message=PARSER 0 size: = 61
+08/19/2014 05:49:27 (CompileAndRunExecutor.java 87) [INFO] type=RUN userId=3D383509591E7E58E051472E398FE0E3 message=COMPILE correctNamespaces 326
+08/19/2014 05:49:27 (CompileAndRunExecutor.java 119) [INFO] type=RUN userId=3D383509591E7E58E051472E398FE0E3 message=Write files on disk 4
+08/19/2014 05:49:28 (JavaRunner.java 137) [INFO] type=RUN userId=3D383509591E7E58E051472E398FE0E3 message=RunUserProgram 481 timeout=false commandString=[/root/docs/java/jdk1.8.0_11/bin/java, -classpath, /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1484288544:/opt/apache-tomcat-7.0.55/webapps/ROOT/WEB-INF/lib/kotlin-runtime.jar:/opt/apache-tomcat-7.0.55/webapps/ROOT/, -Djava.security.manager, _DefaultPackage]
+08/19/2014 05:49:28 (JavaRunner.java 325) [INFO] type=RUN userId=3D383509591E7E58E051472E398FE0E3 message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1484288544/_DefaultPackage-dummy-b9f6f59e.class
+08/19/2014 05:49:28 (JavaRunner.java 325) [INFO] type=RUN userId=3D383509591E7E58E051472E398FE0E3 message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1484288544/_DefaultPackage.class
+08/19/2014 05:49:28 (JavaRunner.java 316) [INFO] type=RUN userId=3D383509591E7E58E051472E398FE0E3 message=Directory is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1484288544
+08/19/2014 05:49:28 (HttpSession.java 342) [INFO] type=RUN userId=3D383509591E7E58E051472E398FE0E3 message=ALL 866 request=/kotlinServer?sessionId=-1&type=run&args=java
+08/19/2014 05:53:15 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: 3D383509591E7E58E051472E398FE0E3
+08/19/2014 05:53:15 (HttpSession.java 235) [INFO] type=HIGHLIGHT userId=3D383509591E7E58E051472E398FE0E3 message=PARSER 1 size: = 61
+08/19/2014 05:53:16 (HttpSession.java 342) [INFO] type=HIGHLIGHT userId=3D383509591E7E58E051472E398FE0E3 message=ALL 234 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/19/2014 05:53:16 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=run&args=java ip: 3D383509591E7E58E051472E398FE0E3
+08/19/2014 05:53:16 (HttpSession.java 65) [INFO] type=INC_NUMBER_OF_REQUESTS userId=3D383509591E7E58E051472E398FE0E3 ip=0 message=GET_RESOURCE
+08/19/2014 05:53:16 (HttpSession.java 235) [INFO] type=RUN userId=3D383509591E7E58E051472E398FE0E3 message=PARSER 0 size: = 61
+08/19/2014 05:53:16 (CompileAndRunExecutor.java 87) [INFO] type=RUN userId=3D383509591E7E58E051472E398FE0E3 message=COMPILE correctNamespaces 62
+08/19/2014 05:53:16 (CompileAndRunExecutor.java 119) [INFO] type=RUN userId=3D383509591E7E58E051472E398FE0E3 message=Write files on disk 3
+08/19/2014 05:53:16 (JavaRunner.java 137) [INFO] type=RUN userId=3D383509591E7E58E051472E398FE0E3 message=RunUserProgram 416 timeout=false commandString=[/root/docs/java/jdk1.8.0_11/bin/java, -classpath, /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1224701406:/opt/apache-tomcat-7.0.55/webapps/ROOT/WEB-INF/lib/kotlin-runtime.jar:/opt/apache-tomcat-7.0.55/webapps/ROOT/, -Djava.security.manager, _DefaultPackage]
+08/19/2014 05:53:16 (JavaRunner.java 325) [INFO] type=RUN userId=3D383509591E7E58E051472E398FE0E3 message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1224701406/_DefaultPackage-dummy-b9f6f59e.class
+08/19/2014 05:53:16 (JavaRunner.java 325) [INFO] type=RUN userId=3D383509591E7E58E051472E398FE0E3 message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1224701406/_DefaultPackage.class
+08/19/2014 05:53:16 (JavaRunner.java 316) [INFO] type=RUN userId=3D383509591E7E58E051472E398FE0E3 message=Directory is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1224701406
+08/19/2014 05:53:16 (HttpSession.java 342) [INFO] type=RUN userId=3D383509591E7E58E051472E398FE0E3 message=ALL 532 request=/kotlinServer?sessionId=-1&type=run&args=java
+08/19/2014 05:53:44 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: 3D383509591E7E58E051472E398FE0E3
+08/19/2014 05:53:44 (HttpSession.java 235) [INFO] type=HIGHLIGHT userId=3D383509591E7E58E051472E398FE0E3 message=PARSER 0 size: = 61
+08/19/2014 05:53:44 (HttpSession.java 342) [INFO] type=HIGHLIGHT userId=3D383509591E7E58E051472E398FE0E3 message=ALL 46 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/19/2014 05:53:44 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=run&args=java ip: 3D383509591E7E58E051472E398FE0E3
+08/19/2014 05:53:44 (HttpSession.java 65) [INFO] type=INC_NUMBER_OF_REQUESTS userId=3D383509591E7E58E051472E398FE0E3 ip=0 message=GET_RESOURCE
+08/19/2014 05:53:44 (HttpSession.java 235) [INFO] type=RUN userId=3D383509591E7E58E051472E398FE0E3 message=PARSER 0 size: = 61
+08/19/2014 05:53:44 (CompileAndRunExecutor.java 87) [INFO] type=RUN userId=3D383509591E7E58E051472E398FE0E3 message=COMPILE correctNamespaces 71
+08/19/2014 05:53:44 (CompileAndRunExecutor.java 119) [INFO] type=RUN userId=3D383509591E7E58E051472E398FE0E3 message=Write files on disk 0
+08/19/2014 05:53:44 (JavaRunner.java 137) [INFO] type=RUN userId=3D383509591E7E58E051472E398FE0E3 message=RunUserProgram 131 timeout=false commandString=[/root/docs/java/jdk1.8.0_11/bin/java, -classpath, /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp2081391177:/opt/apache-tomcat-7.0.55/webapps/ROOT/WEB-INF/lib/kotlin-runtime.jar:/opt/apache-tomcat-7.0.55/webapps/ROOT/, -Djava.security.manager, _DefaultPackage]
+08/19/2014 05:53:44 (JavaRunner.java 325) [INFO] type=RUN userId=3D383509591E7E58E051472E398FE0E3 message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp2081391177/_DefaultPackage-dummy-b9f6f59e.class
+08/19/2014 05:53:44 (JavaRunner.java 325) [INFO] type=RUN userId=3D383509591E7E58E051472E398FE0E3 message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp2081391177/_DefaultPackage.class
+08/19/2014 05:53:44 (JavaRunner.java 316) [INFO] type=RUN userId=3D383509591E7E58E051472E398FE0E3 message=Directory is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp2081391177
+08/19/2014 05:53:44 (HttpSession.java 342) [INFO] type=RUN userId=3D383509591E7E58E051472E398FE0E3 message=ALL 283 request=/kotlinServer?sessionId=-1&type=run&args=java
+08/19/2014 06:07:07 (ServerHandler.java 121) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/19/2014 06:07:07 (ServerHandler.java 121) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/19/2014 06:07:07 (ServerHandler.java 328) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/19/2014 06:07:07 (ServerHandler.java 328) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/19/2014 06:07:08 (ServerHandler.java 100) [INFO] GET_EXAMPLES_LIST
+08/19/2014 06:07:08 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version ip: 344864716D366530FAD2206158CA8DF3
+08/19/2014 06:07:08 (HttpSession.java 69) [INFO] type=INC_NUMBER_OF_REQUESTS userId=344864716D366530FAD2206158CA8DF3 ip=0 message=LOAD_EXAMPLE
+08/19/2014 06:07:08 (HttpSession.java 342) [INFO] type=LOAD_EXAMPLE userId=344864716D366530FAD2206158CA8DF3 message=ALL 14 request=/kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version
+08/19/2014 06:07:08 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: 344864716D366530FAD2206158CA8DF3
+08/19/2014 06:07:08 (HttpSession.java 235) [INFO] type=HIGHLIGHT userId=344864716D366530FAD2206158CA8DF3 message=PARSER 12 size: = 61
+08/19/2014 06:07:09 (HttpSession.java 342) [INFO] type=HIGHLIGHT userId=344864716D366530FAD2206158CA8DF3 message=ALL 1248 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/19/2014 06:08:00 (ServerHandler.java 121) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/19/2014 06:08:00 (ServerHandler.java 328) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/19/2014 06:08:00 (ServerHandler.java 121) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/19/2014 06:08:00 (ServerHandler.java 328) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/19/2014 06:08:00 (ServerHandler.java 100) [INFO] GET_EXAMPLES_LIST
+08/19/2014 06:08:01 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version ip: 6E88FC75C77096DB92548D08FD80E313
+08/19/2014 06:08:01 (HttpSession.java 69) [INFO] type=INC_NUMBER_OF_REQUESTS userId=6E88FC75C77096DB92548D08FD80E313 ip=0 message=LOAD_EXAMPLE
+08/19/2014 06:08:01 (HttpSession.java 342) [INFO] type=LOAD_EXAMPLE userId=6E88FC75C77096DB92548D08FD80E313 message=ALL 14 request=/kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version
+08/19/2014 06:08:01 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: 6E88FC75C77096DB92548D08FD80E313
+08/19/2014 06:08:01 (HttpSession.java 235) [INFO] type=HIGHLIGHT userId=6E88FC75C77096DB92548D08FD80E313 message=PARSER 16 size: = 61
+08/19/2014 06:08:03 (HttpSession.java 342) [INFO] type=HIGHLIGHT userId=6E88FC75C77096DB92548D08FD80E313 message=ALL 1587 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/19/2014 06:08:09 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: 6E88FC75C77096DB92548D08FD80E313
+08/19/2014 06:08:09 (HttpSession.java 235) [INFO] type=HIGHLIGHT userId=6E88FC75C77096DB92548D08FD80E313 message=PARSER 0 size: = 61
+08/19/2014 06:08:09 (HttpSession.java 342) [INFO] type=HIGHLIGHT userId=6E88FC75C77096DB92548D08FD80E313 message=ALL 71 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/19/2014 06:08:09 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=run&args=java ip: 6E88FC75C77096DB92548D08FD80E313
+08/19/2014 06:08:09 (HttpSession.java 65) [INFO] type=INC_NUMBER_OF_REQUESTS userId=6E88FC75C77096DB92548D08FD80E313 ip=0 message=GET_RESOURCE
+08/19/2014 06:08:09 (HttpSession.java 235) [INFO] type=RUN userId=6E88FC75C77096DB92548D08FD80E313 message=PARSER 0 size: = 61
+08/19/2014 06:08:10 (CompileAndRunExecutor.java 87) [INFO] type=RUN userId=6E88FC75C77096DB92548D08FD80E313 message=COMPILE correctNamespaces 307
+08/19/2014 06:08:10 (CompileAndRunExecutor.java 119) [INFO] type=RUN userId=6E88FC75C77096DB92548D08FD80E313 message=Write files on disk 2
+08/19/2014 06:08:10 (JavaRunner.java 137) [INFO] type=RUN userId=6E88FC75C77096DB92548D08FD80E313 message=RunUserProgram 117 timeout=false commandString=[/root/docs/java/jdk1.8.0_11/bin/java, -classpath, /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1273837385:/opt/apache-tomcat-7.0.55/webapps/ROOT/WEB-INF/lib/kotlin-runtime.jar:/opt/apache-tomcat-7.0.55/webapps/ROOT/, -Djava.security.manager, _DefaultPackage]
+08/19/2014 06:08:10 (JavaRunner.java 325) [INFO] type=RUN userId=6E88FC75C77096DB92548D08FD80E313 message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1273837385/_DefaultPackage-dummy-b9f6f59e.class
+08/19/2014 06:08:10 (JavaRunner.java 325) [INFO] type=RUN userId=6E88FC75C77096DB92548D08FD80E313 message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1273837385/_DefaultPackage.class
+08/19/2014 06:08:10 (JavaRunner.java 316) [INFO] type=RUN userId=6E88FC75C77096DB92548D08FD80E313 message=Directory is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1273837385
+08/19/2014 06:08:10 (HttpSession.java 342) [INFO] type=RUN userId=6E88FC75C77096DB92548D08FD80E313 message=ALL 481 request=/kotlinServer?sessionId=-1&type=run&args=java
+08/19/2014 06:08:11 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Reading_a_name_from_the_command_line ip: 6E88FC75C77096DB92548D08FD80E313
+08/19/2014 06:08:11 (HttpSession.java 69) [INFO] type=INC_NUMBER_OF_REQUESTS userId=6E88FC75C77096DB92548D08FD80E313 ip=0 message=LOAD_EXAMPLE
+08/19/2014 06:08:11 (HttpSession.java 342) [INFO] type=LOAD_EXAMPLE userId=6E88FC75C77096DB92548D08FD80E313 message=ALL 3 request=/kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Reading_a_name_from_the_command_line
+08/19/2014 06:08:12 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: 6E88FC75C77096DB92548D08FD80E313
+08/19/2014 06:08:12 (HttpSession.java 235) [INFO] type=HIGHLIGHT userId=6E88FC75C77096DB92548D08FD80E313 message=PARSER 0 size: = 169
+08/19/2014 06:08:12 (HttpSession.java 342) [INFO] type=HIGHLIGHT userId=6E88FC75C77096DB92548D08FD80E313 message=ALL 155 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/19/2014 06:08:12 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: 6E88FC75C77096DB92548D08FD80E313
+08/19/2014 06:08:12 (HttpSession.java 235) [INFO] type=HIGHLIGHT userId=6E88FC75C77096DB92548D08FD80E313 message=PARSER 0 size: = 169
+08/19/2014 06:08:12 (HttpSession.java 342) [INFO] type=HIGHLIGHT userId=6E88FC75C77096DB92548D08FD80E313 message=ALL 92 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/19/2014 06:08:12 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=run&args=java ip: 6E88FC75C77096DB92548D08FD80E313
+08/19/2014 06:08:12 (HttpSession.java 65) [INFO] type=INC_NUMBER_OF_REQUESTS userId=6E88FC75C77096DB92548D08FD80E313 ip=0 message=GET_RESOURCE
+08/19/2014 06:08:12 (HttpSession.java 235) [INFO] type=RUN userId=6E88FC75C77096DB92548D08FD80E313 message=PARSER 0 size: = 169
+08/19/2014 06:08:13 (CompileAndRunExecutor.java 87) [INFO] type=RUN userId=6E88FC75C77096DB92548D08FD80E313 message=COMPILE correctNamespaces 55
+08/19/2014 06:08:13 (CompileAndRunExecutor.java 119) [INFO] type=RUN userId=6E88FC75C77096DB92548D08FD80E313 message=Write files on disk 0
+08/19/2014 06:08:13 (JavaRunner.java 137) [INFO] type=RUN userId=6E88FC75C77096DB92548D08FD80E313 message=RunUserProgram 119 timeout=false commandString=[/root/docs/java/jdk1.8.0_11/bin/java, -classpath, /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1413551125:/opt/apache-tomcat-7.0.55/webapps/ROOT/WEB-INF/lib/kotlin-runtime.jar:/opt/apache-tomcat-7.0.55/webapps/ROOT/, -Djava.security.manager, _DefaultPackage, guest]
+08/19/2014 06:08:13 (JavaRunner.java 325) [INFO] type=RUN userId=6E88FC75C77096DB92548D08FD80E313 message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1413551125/_DefaultPackage-dummy-b9f6f59e.class
+08/19/2014 06:08:13 (JavaRunner.java 325) [INFO] type=RUN userId=6E88FC75C77096DB92548D08FD80E313 message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1413551125/_DefaultPackage.class
+08/19/2014 06:08:13 (JavaRunner.java 316) [INFO] type=RUN userId=6E88FC75C77096DB92548D08FD80E313 message=Directory is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1413551125
+08/19/2014 06:08:13 (HttpSession.java 342) [INFO] type=RUN userId=6E88FC75C77096DB92548D08FD80E313 message=ALL 240 request=/kotlinServer?sessionId=-1&type=run&args=java
+08/19/2014 06:14:05 (ServerHandler.java 121) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/19/2014 06:14:05 (ServerHandler.java 121) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/19/2014 06:14:05 (ServerHandler.java 328) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/19/2014 06:14:05 (ServerHandler.java 328) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/19/2014 06:14:05 (ServerHandler.java 100) [INFO] GET_EXAMPLES_LIST
+08/19/2014 06:14:06 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version ip: A45E77B15FE4C2AA676C46372CA1B3FE
+08/19/2014 06:14:06 (HttpSession.java 69) [INFO] type=INC_NUMBER_OF_REQUESTS userId=A45E77B15FE4C2AA676C46372CA1B3FE ip=0 message=LOAD_EXAMPLE
+08/19/2014 06:14:06 (HttpSession.java 342) [INFO] type=LOAD_EXAMPLE userId=A45E77B15FE4C2AA676C46372CA1B3FE message=ALL 16 request=/kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version
+08/19/2014 06:14:07 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: A45E77B15FE4C2AA676C46372CA1B3FE
+08/19/2014 06:14:07 (HttpSession.java 235) [INFO] type=HIGHLIGHT userId=A45E77B15FE4C2AA676C46372CA1B3FE message=PARSER 33 size: = 61
+08/19/2014 06:14:08 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: A45E77B15FE4C2AA676C46372CA1B3FE
+08/19/2014 06:14:08 (HttpSession.java 235) [INFO] type=HIGHLIGHT userId=A45E77B15FE4C2AA676C46372CA1B3FE message=PARSER 0 size: = 0
+08/19/2014 06:14:09 (HttpSession.java 342) [INFO] type=HIGHLIGHT userId=A45E77B15FE4C2AA676C46372CA1B3FE message=ALL 677 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/19/2014 06:14:09 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=run&args=java ip: A45E77B15FE4C2AA676C46372CA1B3FE
+08/19/2014 06:14:09 (HttpSession.java 65) [INFO] type=INC_NUMBER_OF_REQUESTS userId=A45E77B15FE4C2AA676C46372CA1B3FE ip=0 message=GET_RESOURCE
+08/19/2014 06:14:09 (HttpSession.java 342) [INFO] type=GET_RESOURCE userId=A45E77B15FE4C2AA676C46372CA1B3FE message=ALL 5 request=/kotlinServer?sessionId=-1&type=run&args=java
+08/19/2014 06:14:09 (HttpSession.java 342) [INFO] type=HIGHLIGHT userId=A45E77B15FE4C2AA676C46372CA1B3FE message=ALL 1793 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/19/2014 06:14:18 (ServerHandler.java 121) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/19/2014 06:14:18 (ServerHandler.java 328) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/19/2014 06:14:18 (ServerHandler.java 121) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/19/2014 06:14:18 (ServerHandler.java 328) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/19/2014 06:14:18 (ServerHandler.java 100) [INFO] GET_EXAMPLES_LIST
+08/19/2014 06:14:19 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version ip: A45E77B15FE4C2AA676C46372CA1B3FE
+08/19/2014 06:14:19 (HttpSession.java 69) [INFO] type=INC_NUMBER_OF_REQUESTS userId=A45E77B15FE4C2AA676C46372CA1B3FE ip=0 message=LOAD_EXAMPLE
+08/19/2014 06:14:19 (HttpSession.java 342) [INFO] type=LOAD_EXAMPLE userId=A45E77B15FE4C2AA676C46372CA1B3FE message=ALL 0 request=/kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version
+08/19/2014 06:14:19 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: A45E77B15FE4C2AA676C46372CA1B3FE
+08/19/2014 06:14:19 (HttpSession.java 235) [INFO] type=HIGHLIGHT userId=A45E77B15FE4C2AA676C46372CA1B3FE message=PARSER 0 size: = 61
+08/19/2014 06:14:19 (HttpSession.java 342) [INFO] type=HIGHLIGHT userId=A45E77B15FE4C2AA676C46372CA1B3FE message=ALL 63 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/19/2014 06:14:25 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: A45E77B15FE4C2AA676C46372CA1B3FE
+08/19/2014 06:14:25 (HttpSession.java 235) [INFO] type=HIGHLIGHT userId=A45E77B15FE4C2AA676C46372CA1B3FE message=PARSER 0 size: = 61
+08/19/2014 06:14:25 (HttpSession.java 342) [INFO] type=HIGHLIGHT userId=A45E77B15FE4C2AA676C46372CA1B3FE message=ALL 50 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/19/2014 06:14:25 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=run&args=java ip: A45E77B15FE4C2AA676C46372CA1B3FE
+08/19/2014 06:14:25 (HttpSession.java 65) [INFO] type=INC_NUMBER_OF_REQUESTS userId=A45E77B15FE4C2AA676C46372CA1B3FE ip=0 message=GET_RESOURCE
+08/19/2014 06:14:25 (HttpSession.java 235) [INFO] type=RUN userId=A45E77B15FE4C2AA676C46372CA1B3FE message=PARSER 0 size: = 61
+08/19/2014 06:14:26 (CompileAndRunExecutor.java 87) [INFO] type=RUN userId=A45E77B15FE4C2AA676C46372CA1B3FE message=COMPILE correctNamespaces 278
+08/19/2014 06:14:26 (CompileAndRunExecutor.java 119) [INFO] type=RUN userId=A45E77B15FE4C2AA676C46372CA1B3FE message=Write files on disk 3
+08/19/2014 06:14:26 (JavaRunner.java 137) [INFO] type=RUN userId=A45E77B15FE4C2AA676C46372CA1B3FE message=RunUserProgram 421 timeout=false commandString=[/root/docs/java/jdk1.8.0_11/bin/java, -classpath, /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp767851398:/opt/apache-tomcat-7.0.55/webapps/ROOT/WEB-INF/lib/kotlin-runtime.jar:/opt/apache-tomcat-7.0.55/webapps/ROOT/, -Djava.security.manager, _DefaultPackage]
+08/19/2014 06:14:26 (JavaRunner.java 325) [INFO] type=RUN userId=A45E77B15FE4C2AA676C46372CA1B3FE message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp767851398/_DefaultPackage-dummy-b9f6f59e.class
+08/19/2014 06:14:26 (JavaRunner.java 325) [INFO] type=RUN userId=A45E77B15FE4C2AA676C46372CA1B3FE message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp767851398/_DefaultPackage.class
+08/19/2014 06:14:26 (JavaRunner.java 316) [INFO] type=RUN userId=A45E77B15FE4C2AA676C46372CA1B3FE message=Directory is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp767851398
+08/19/2014 06:14:26 (HttpSession.java 342) [INFO] type=RUN userId=A45E77B15FE4C2AA676C46372CA1B3FE message=ALL 791 request=/kotlinServer?sessionId=-1&type=run&args=java
+08/19/2014 06:24:26 (ServerHandler.java 121) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/19/2014 06:24:26 (ServerHandler.java 328) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/19/2014 06:24:26 (ServerHandler.java 121) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/19/2014 06:24:26 (ServerHandler.java 328) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/19/2014 06:24:26 (ServerHandler.java 100) [INFO] GET_EXAMPLES_LIST
+08/19/2014 06:24:26 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version ip: 27EE471DD9011445EC7D805C8D750F7A
+08/19/2014 06:24:26 (HttpSession.java 69) [INFO] type=INC_NUMBER_OF_REQUESTS userId=27EE471DD9011445EC7D805C8D750F7A ip=0 message=LOAD_EXAMPLE
+08/19/2014 06:24:26 (HttpSession.java 342) [INFO] type=LOAD_EXAMPLE userId=27EE471DD9011445EC7D805C8D750F7A message=ALL 18 request=/kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version
+08/19/2014 06:24:27 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: 27EE471DD9011445EC7D805C8D750F7A
+08/19/2014 06:24:27 (HttpSession.java 235) [INFO] type=HIGHLIGHT userId=27EE471DD9011445EC7D805C8D750F7A message=PARSER 9 size: = 61
+08/19/2014 06:24:28 (HttpSession.java 342) [INFO] type=HIGHLIGHT userId=27EE471DD9011445EC7D805C8D750F7A message=ALL 1541 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/19/2014 06:25:23 (ServerHandler.java 121) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/19/2014 06:25:23 (ServerHandler.java 328) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/19/2014 06:25:24 (ServerHandler.java 121) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/19/2014 06:25:24 (ServerHandler.java 328) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/19/2014 06:25:24 (ServerHandler.java 100) [INFO] GET_EXAMPLES_LIST
+08/19/2014 06:25:24 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version ip: 27EE471DD9011445EC7D805C8D750F7A
+08/19/2014 06:25:24 (HttpSession.java 69) [INFO] type=INC_NUMBER_OF_REQUESTS userId=27EE471DD9011445EC7D805C8D750F7A ip=0 message=LOAD_EXAMPLE
+08/19/2014 06:25:24 (HttpSession.java 342) [INFO] type=LOAD_EXAMPLE userId=27EE471DD9011445EC7D805C8D750F7A message=ALL 1 request=/kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version
+08/19/2014 06:25:24 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: 27EE471DD9011445EC7D805C8D750F7A
+08/19/2014 06:25:24 (HttpSession.java 235) [INFO] type=HIGHLIGHT userId=27EE471DD9011445EC7D805C8D750F7A message=PARSER 0 size: = 61
+08/19/2014 06:25:24 (HttpSession.java 342) [INFO] type=HIGHLIGHT userId=27EE471DD9011445EC7D805C8D750F7A message=ALL 91 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/19/2014 06:25:25 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: 27EE471DD9011445EC7D805C8D750F7A
+08/19/2014 06:25:25 (HttpSession.java 235) [INFO] type=HIGHLIGHT userId=27EE471DD9011445EC7D805C8D750F7A message=PARSER 0 size: = 61
+08/19/2014 06:25:26 (HttpSession.java 342) [INFO] type=HIGHLIGHT userId=27EE471DD9011445EC7D805C8D750F7A message=ALL 51 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/19/2014 06:25:26 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=run&args=java ip: 27EE471DD9011445EC7D805C8D750F7A
+08/19/2014 06:25:26 (HttpSession.java 65) [INFO] type=INC_NUMBER_OF_REQUESTS userId=27EE471DD9011445EC7D805C8D750F7A ip=0 message=GET_RESOURCE
+08/19/2014 06:25:26 (HttpSession.java 235) [INFO] type=RUN userId=27EE471DD9011445EC7D805C8D750F7A message=PARSER 0 size: = 61
+08/19/2014 06:25:26 (CompileAndRunExecutor.java 87) [INFO] type=RUN userId=27EE471DD9011445EC7D805C8D750F7A message=COMPILE correctNamespaces 333
+08/19/2014 06:25:26 (CompileAndRunExecutor.java 119) [INFO] type=RUN userId=27EE471DD9011445EC7D805C8D750F7A message=Write files on disk 3
+08/19/2014 06:25:26 (JavaRunner.java 137) [INFO] type=RUN userId=27EE471DD9011445EC7D805C8D750F7A message=RunUserProgram 516 timeout=false commandString=[/root/docs/java/jdk1.8.0_11/bin/java, -classpath, /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1039851493:/opt/apache-tomcat-7.0.55/webapps/ROOT/WEB-INF/lib/kotlin-runtime.jar:/opt/apache-tomcat-7.0.55/webapps/ROOT/, -Djava.security.manager, _DefaultPackage]
+08/19/2014 06:25:26 (JavaRunner.java 325) [INFO] type=RUN userId=27EE471DD9011445EC7D805C8D750F7A message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1039851493/_DefaultPackage-dummy-b9f6f59e.class
+08/19/2014 06:25:26 (JavaRunner.java 325) [INFO] type=RUN userId=27EE471DD9011445EC7D805C8D750F7A message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1039851493/_DefaultPackage.class
+08/19/2014 06:25:26 (JavaRunner.java 316) [INFO] type=RUN userId=27EE471DD9011445EC7D805C8D750F7A message=Directory is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1039851493
+08/19/2014 06:25:26 (HttpSession.java 342) [INFO] type=RUN userId=27EE471DD9011445EC7D805C8D750F7A message=ALL 914 request=/kotlinServer?sessionId=-1&type=run&args=java
+08/19/2014 06:30:52 (ServerHandler.java 121) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/19/2014 06:30:52 (ServerHandler.java 328) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/19/2014 06:30:53 (ServerHandler.java 121) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/19/2014 06:30:53 (ServerHandler.java 328) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/19/2014 06:30:53 (ServerHandler.java 100) [INFO] GET_EXAMPLES_LIST
+08/19/2014 06:30:53 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version ip: 27EE471DD9011445EC7D805C8D750F7A
+08/19/2014 06:30:53 (HttpSession.java 69) [INFO] type=INC_NUMBER_OF_REQUESTS userId=27EE471DD9011445EC7D805C8D750F7A ip=0 message=LOAD_EXAMPLE
+08/19/2014 06:30:53 (HttpSession.java 342) [INFO] type=LOAD_EXAMPLE userId=27EE471DD9011445EC7D805C8D750F7A message=ALL 3 request=/kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version
+08/19/2014 06:30:53 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: 27EE471DD9011445EC7D805C8D750F7A
+08/19/2014 06:30:53 (HttpSession.java 235) [INFO] type=HIGHLIGHT userId=27EE471DD9011445EC7D805C8D750F7A message=PARSER 2 size: = 61
+08/19/2014 06:30:53 (HttpSession.java 342) [INFO] type=HIGHLIGHT userId=27EE471DD9011445EC7D805C8D750F7A message=ALL 252 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/19/2014 06:32:17 (ServerHandler.java 121) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/19/2014 06:32:17 (ServerHandler.java 328) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/19/2014 06:32:17 (ServerHandler.java 121) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/19/2014 06:32:17 (ServerHandler.java 328) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/19/2014 06:32:17 (ServerHandler.java 100) [INFO] GET_EXAMPLES_LIST
+08/19/2014 06:32:17 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version ip: 27EE471DD9011445EC7D805C8D750F7A
+08/19/2014 06:32:17 (HttpSession.java 69) [INFO] type=INC_NUMBER_OF_REQUESTS userId=27EE471DD9011445EC7D805C8D750F7A ip=0 message=LOAD_EXAMPLE
+08/19/2014 06:32:17 (HttpSession.java 342) [INFO] type=LOAD_EXAMPLE userId=27EE471DD9011445EC7D805C8D750F7A message=ALL 3 request=/kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version
+08/19/2014 06:32:18 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: 27EE471DD9011445EC7D805C8D750F7A
+08/19/2014 06:32:18 (HttpSession.java 235) [INFO] type=HIGHLIGHT userId=27EE471DD9011445EC7D805C8D750F7A message=PARSER 0 size: = 61
+08/19/2014 06:32:18 (HttpSession.java 342) [INFO] type=HIGHLIGHT userId=27EE471DD9011445EC7D805C8D750F7A message=ALL 92 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/19/2014 06:32:19 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: 27EE471DD9011445EC7D805C8D750F7A
+08/19/2014 06:32:19 (HttpSession.java 235) [INFO] type=HIGHLIGHT userId=27EE471DD9011445EC7D805C8D750F7A message=PARSER 0 size: = 61
+08/19/2014 06:32:19 (HttpSession.java 342) [INFO] type=HIGHLIGHT userId=27EE471DD9011445EC7D805C8D750F7A message=ALL 55 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/19/2014 06:32:19 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=run&args=java ip: 27EE471DD9011445EC7D805C8D750F7A
+08/19/2014 06:32:19 (HttpSession.java 65) [INFO] type=INC_NUMBER_OF_REQUESTS userId=27EE471DD9011445EC7D805C8D750F7A ip=0 message=GET_RESOURCE
+08/19/2014 06:32:19 (HttpSession.java 235) [INFO] type=RUN userId=27EE471DD9011445EC7D805C8D750F7A message=PARSER 0 size: = 61
+08/19/2014 06:32:19 (CompileAndRunExecutor.java 87) [INFO] type=RUN userId=27EE471DD9011445EC7D805C8D750F7A message=COMPILE correctNamespaces 87
+08/19/2014 06:32:19 (CompileAndRunExecutor.java 119) [INFO] type=RUN userId=27EE471DD9011445EC7D805C8D750F7A message=Write files on disk 3
+08/19/2014 06:32:20 (JavaRunner.java 137) [INFO] type=RUN userId=27EE471DD9011445EC7D805C8D750F7A message=RunUserProgram 539 timeout=false commandString=[/root/docs/java/jdk1.8.0_11/bin/java, -classpath, /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-274939613:/opt/apache-tomcat-7.0.55/webapps/ROOT/WEB-INF/lib/kotlin-runtime.jar:/opt/apache-tomcat-7.0.55/webapps/ROOT/, -Djava.security.manager, _DefaultPackage]
+08/19/2014 06:32:20 (JavaRunner.java 325) [INFO] type=RUN userId=27EE471DD9011445EC7D805C8D750F7A message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-274939613/_DefaultPackage-dummy-b9f6f59e.class
+08/19/2014 06:32:20 (JavaRunner.java 325) [INFO] type=RUN userId=27EE471DD9011445EC7D805C8D750F7A message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-274939613/_DefaultPackage.class
+08/19/2014 06:32:20 (JavaRunner.java 316) [INFO] type=RUN userId=27EE471DD9011445EC7D805C8D750F7A message=Directory is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-274939613
+08/19/2014 06:32:20 (HttpSession.java 342) [INFO] type=RUN userId=27EE471DD9011445EC7D805C8D750F7A message=ALL 688 request=/kotlinServer?sessionId=-1&type=run&args=java
+08/19/2014 07:06:39 (ServerHandler.java 121) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/19/2014 07:06:39 (ServerHandler.java 121) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/19/2014 07:06:39 (ServerHandler.java 328) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/19/2014 07:06:39 (ServerHandler.java 328) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/19/2014 07:06:39 (ServerHandler.java 100) [INFO] GET_EXAMPLES_LIST
+08/19/2014 07:06:40 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version ip: D703340275052B1B9259D33C683A9924
+08/19/2014 07:06:40 (HttpSession.java 69) [INFO] type=INC_NUMBER_OF_REQUESTS userId=D703340275052B1B9259D33C683A9924 ip=0 message=LOAD_EXAMPLE
+08/19/2014 07:06:40 (HttpSession.java 342) [INFO] type=LOAD_EXAMPLE userId=D703340275052B1B9259D33C683A9924 message=ALL 34 request=/kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version
+08/19/2014 07:06:40 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: D703340275052B1B9259D33C683A9924
+08/19/2014 07:06:40 (HttpSession.java 235) [INFO] type=HIGHLIGHT userId=D703340275052B1B9259D33C683A9924 message=PARSER 37 size: = 61
+08/19/2014 07:06:42 (HttpSession.java 342) [INFO] type=HIGHLIGHT userId=D703340275052B1B9259D33C683A9924 message=ALL 1732 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/19/2014 07:06:47 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Reading_a_name_from_the_command_line ip: D703340275052B1B9259D33C683A9924
+08/19/2014 07:06:47 (HttpSession.java 69) [INFO] type=INC_NUMBER_OF_REQUESTS userId=D703340275052B1B9259D33C683A9924 ip=0 message=LOAD_EXAMPLE
+08/19/2014 07:06:47 (HttpSession.java 342) [INFO] type=LOAD_EXAMPLE userId=D703340275052B1B9259D33C683A9924 message=ALL 18 request=/kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Reading_a_name_from_the_command_line
+08/19/2014 07:06:48 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: D703340275052B1B9259D33C683A9924
+08/19/2014 07:06:48 (HttpSession.java 235) [INFO] type=HIGHLIGHT userId=D703340275052B1B9259D33C683A9924 message=PARSER 0 size: = 169
+08/19/2014 07:06:48 (HttpSession.java 342) [INFO] type=HIGHLIGHT userId=D703340275052B1B9259D33C683A9924 message=ALL 234 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/19/2014 07:07:14 (ServerHandler.java 121) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/19/2014 07:07:14 (ServerHandler.java 328) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/19/2014 07:07:14 (ServerHandler.java 121) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/19/2014 07:07:14 (ServerHandler.java 328) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/19/2014 07:07:14 (ServerHandler.java 100) [INFO] GET_EXAMPLES_LIST
+08/19/2014 07:07:14 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version ip: D703340275052B1B9259D33C683A9924
+08/19/2014 07:07:14 (HttpSession.java 69) [INFO] type=INC_NUMBER_OF_REQUESTS userId=D703340275052B1B9259D33C683A9924 ip=0 message=LOAD_EXAMPLE
+08/19/2014 07:07:14 (HttpSession.java 342) [INFO] type=LOAD_EXAMPLE userId=D703340275052B1B9259D33C683A9924 message=ALL 0 request=/kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version
+08/19/2014 07:07:15 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: D703340275052B1B9259D33C683A9924
+08/19/2014 07:07:15 (HttpSession.java 235) [INFO] type=HIGHLIGHT userId=D703340275052B1B9259D33C683A9924 message=PARSER 0 size: = 61
+08/19/2014 07:07:15 (HttpSession.java 342) [INFO] type=HIGHLIGHT userId=D703340275052B1B9259D33C683A9924 message=ALL 343 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/19/2014 07:07:16 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Reading_a_name_from_the_command_line ip: D703340275052B1B9259D33C683A9924
+08/19/2014 07:07:16 (HttpSession.java 69) [INFO] type=INC_NUMBER_OF_REQUESTS userId=D703340275052B1B9259D33C683A9924 ip=0 message=LOAD_EXAMPLE
+08/19/2014 07:07:16 (HttpSession.java 342) [INFO] type=LOAD_EXAMPLE userId=D703340275052B1B9259D33C683A9924 message=ALL 1 request=/kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Reading_a_name_from_the_command_line
+08/19/2014 07:07:17 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: D703340275052B1B9259D33C683A9924
+08/19/2014 07:07:17 (HttpSession.java 235) [INFO] type=HIGHLIGHT userId=D703340275052B1B9259D33C683A9924 message=PARSER 0 size: = 169
+08/19/2014 07:07:17 (HttpSession.java 342) [INFO] type=HIGHLIGHT userId=D703340275052B1B9259D33C683A9924 message=ALL 80 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/19/2014 07:07:18 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: D703340275052B1B9259D33C683A9924
+08/19/2014 07:07:18 (HttpSession.java 235) [INFO] type=HIGHLIGHT userId=D703340275052B1B9259D33C683A9924 message=PARSER 0 size: = 169
+08/19/2014 07:07:18 (HttpSession.java 342) [INFO] type=HIGHLIGHT userId=D703340275052B1B9259D33C683A9924 message=ALL 65 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/19/2014 07:07:18 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=run&args=java ip: D703340275052B1B9259D33C683A9924
+08/19/2014 07:07:18 (HttpSession.java 65) [INFO] type=INC_NUMBER_OF_REQUESTS userId=D703340275052B1B9259D33C683A9924 ip=0 message=GET_RESOURCE
+08/19/2014 07:07:18 (HttpSession.java 235) [INFO] type=RUN userId=D703340275052B1B9259D33C683A9924 message=PARSER 0 size: = 169
+08/19/2014 07:07:19 (CompileAndRunExecutor.java 87) [INFO] type=RUN userId=D703340275052B1B9259D33C683A9924 message=COMPILE correctNamespaces 528
+08/19/2014 07:07:19 (CompileAndRunExecutor.java 119) [INFO] type=RUN userId=D703340275052B1B9259D33C683A9924 message=Write files on disk 3
+08/19/2014 07:07:19 (JavaRunner.java 137) [INFO] type=RUN userId=D703340275052B1B9259D33C683A9924 message=RunUserProgram 240 timeout=false commandString=[/root/docs/java/jdk1.8.0_11/bin/java, -classpath, /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1211537995:/opt/apache-tomcat-7.0.55/webapps/ROOT/WEB-INF/lib/kotlin-runtime.jar:/opt/apache-tomcat-7.0.55/webapps/ROOT/, -Djava.security.manager, _DefaultPackage, guest]
+08/19/2014 07:07:19 (JavaRunner.java 325) [INFO] type=RUN userId=D703340275052B1B9259D33C683A9924 message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1211537995/_DefaultPackage-dummy-b9f6f59e.class
+08/19/2014 07:07:19 (JavaRunner.java 325) [INFO] type=RUN userId=D703340275052B1B9259D33C683A9924 message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1211537995/_DefaultPackage.class
+08/19/2014 07:07:19 (JavaRunner.java 316) [INFO] type=RUN userId=D703340275052B1B9259D33C683A9924 message=Directory is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1211537995
+08/19/2014 07:07:19 (HttpSession.java 342) [INFO] type=RUN userId=D703340275052B1B9259D33C683A9924 message=ALL 828 request=/kotlinServer?sessionId=-1&type=run&args=java
+08/21/2014 07:45:55 (ServerHandler.java 121) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/21/2014 07:45:55 (ServerHandler.java 121) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/21/2014 07:45:55 (ServerHandler.java 328) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/21/2014 07:45:55 (ServerHandler.java 328) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/21/2014 07:45:55 (ServerHandler.java 100) [INFO] GET_EXAMPLES_LIST
+08/21/2014 07:45:55 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version ip: DC36D41B67F99D32B3F83C88A43AF5DE
+08/21/2014 07:45:55 (HttpSession.java 69) [INFO] type=INC_NUMBER_OF_REQUESTS userId=DC36D41B67F99D32B3F83C88A43AF5DE ip=0 message=LOAD_EXAMPLE
+08/21/2014 07:45:55 (HttpSession.java 500) [INFO] type=LOAD_EXAMPLE userId=DC36D41B67F99D32B3F83C88A43AF5DE message=ALL 10 request=/kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version
+08/21/2014 07:45:56 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: DC36D41B67F99D32B3F83C88A43AF5DE
+08/21/2014 07:45:56 (HttpSession.java 393) [INFO] type=HIGHLIGHT userId=DC36D41B67F99D32B3F83C88A43AF5DE message=PARSER 37 size: = 61
+08/21/2014 07:45:58 (HttpSession.java 500) [INFO] type=HIGHLIGHT userId=DC36D41B67F99D32B3F83C88A43AF5DE message=ALL 2766 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/21/2014 07:46:04 (ServerHandler.java 121) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/21/2014 07:46:04 (ServerHandler.java 328) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/21/2014 07:46:04 (ServerHandler.java 121) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/21/2014 07:46:04 (ServerHandler.java 328) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/21/2014 07:46:04 (ServerHandler.java 100) [INFO] GET_EXAMPLES_LIST
+08/21/2014 07:46:04 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version ip: DC36D41B67F99D32B3F83C88A43AF5DE
+08/21/2014 07:46:04 (HttpSession.java 69) [INFO] type=INC_NUMBER_OF_REQUESTS userId=DC36D41B67F99D32B3F83C88A43AF5DE ip=0 message=LOAD_EXAMPLE
+08/21/2014 07:46:04 (HttpSession.java 500) [INFO] type=LOAD_EXAMPLE userId=DC36D41B67F99D32B3F83C88A43AF5DE message=ALL 0 request=/kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version
+08/21/2014 07:46:04 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: DC36D41B67F99D32B3F83C88A43AF5DE
+08/21/2014 07:46:04 (HttpSession.java 393) [INFO] type=HIGHLIGHT userId=DC36D41B67F99D32B3F83C88A43AF5DE message=PARSER 0 size: = 61
+08/21/2014 07:46:05 (HttpSession.java 500) [INFO] type=HIGHLIGHT userId=DC36D41B67F99D32B3F83C88A43AF5DE message=ALL 66 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/21/2014 07:46:06 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: DC36D41B67F99D32B3F83C88A43AF5DE
+08/21/2014 07:46:06 (HttpSession.java 393) [INFO] type=HIGHLIGHT userId=DC36D41B67F99D32B3F83C88A43AF5DE message=PARSER 0 size: = 61
+08/21/2014 07:46:06 (HttpSession.java 500) [INFO] type=HIGHLIGHT userId=DC36D41B67F99D32B3F83C88A43AF5DE message=ALL 36 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/21/2014 07:46:06 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=run&args=java ip: DC36D41B67F99D32B3F83C88A43AF5DE
+08/21/2014 07:46:06 (HttpSession.java 65) [INFO] type=INC_NUMBER_OF_REQUESTS userId=DC36D41B67F99D32B3F83C88A43AF5DE ip=0 message=GET_RESOURCE
+08/21/2014 07:46:06 (HttpSession.java 393) [INFO] type=RUN userId=DC36D41B67F99D32B3F83C88A43AF5DE message=PARSER 0 size: = 61
+08/21/2014 07:46:06 (CompileAndRunExecutor.java 87) [INFO] type=RUN userId=DC36D41B67F99D32B3F83C88A43AF5DE message=COMPILE correctNamespaces 481
+08/21/2014 07:46:06 (CompileAndRunExecutor.java 119) [INFO] type=RUN userId=DC36D41B67F99D32B3F83C88A43AF5DE message=Write files on disk 7
+08/21/2014 07:46:07 (JavaRunner.java 137) [INFO] type=RUN userId=DC36D41B67F99D32B3F83C88A43AF5DE message=RunUserProgram 563 timeout=false commandString=[/root/docs/java/jdk1.8.0_11/bin/java, -classpath, /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp731214580:/opt/apache-tomcat-7.0.55/webapps/ROOT/WEB-INF/lib/kotlin-runtime.jar:/opt/apache-tomcat-7.0.55/webapps/ROOT/, -Djava.security.manager, _DefaultPackage]
+08/21/2014 07:46:07 (JavaRunner.java 325) [INFO] type=RUN userId=DC36D41B67F99D32B3F83C88A43AF5DE message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp731214580/_DefaultPackage-dummy-b9f6f59e.class
+08/21/2014 07:46:07 (JavaRunner.java 325) [INFO] type=RUN userId=DC36D41B67F99D32B3F83C88A43AF5DE message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp731214580/_DefaultPackage.class
+08/21/2014 07:46:07 (JavaRunner.java 316) [INFO] type=RUN userId=DC36D41B67F99D32B3F83C88A43AF5DE message=Directory is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp731214580
+08/21/2014 07:46:07 (HttpSession.java 500) [INFO] type=RUN userId=DC36D41B67F99D32B3F83C88A43AF5DE message=ALL 1124 request=/kotlinServer?sessionId=-1&type=run&args=java
+08/21/2014 07:46:12 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: DC36D41B67F99D32B3F83C88A43AF5DE
+08/21/2014 07:46:12 (HttpSession.java 393) [INFO] type=HIGHLIGHT userId=DC36D41B67F99D32B3F83C88A43AF5DE message=PARSER 0 size: = 61
+08/21/2014 07:46:12 (HttpSession.java 500) [INFO] type=HIGHLIGHT userId=DC36D41B67F99D32B3F83C88A43AF5DE message=ALL 63 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/21/2014 07:46:12 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=run&args=java ip: DC36D41B67F99D32B3F83C88A43AF5DE
+08/21/2014 07:46:12 (HttpSession.java 65) [INFO] type=INC_NUMBER_OF_REQUESTS userId=DC36D41B67F99D32B3F83C88A43AF5DE ip=0 message=GET_RESOURCE
+08/21/2014 07:46:12 (HttpSession.java 393) [INFO] type=RUN userId=DC36D41B67F99D32B3F83C88A43AF5DE message=PARSER 0 size: = 61
+08/21/2014 07:46:12 (CompileAndRunExecutor.java 87) [INFO] type=RUN userId=DC36D41B67F99D32B3F83C88A43AF5DE message=COMPILE correctNamespaces 34
+08/21/2014 07:46:12 (CompileAndRunExecutor.java 119) [INFO] type=RUN userId=DC36D41B67F99D32B3F83C88A43AF5DE message=Write files on disk 9
+08/21/2014 07:46:12 (JavaRunner.java 137) [INFO] type=RUN userId=DC36D41B67F99D32B3F83C88A43AF5DE message=RunUserProgram 515 timeout=false commandString=[/root/docs/java/jdk1.8.0_11/bin/java, -classpath, /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1340593382:/opt/apache-tomcat-7.0.55/webapps/ROOT/WEB-INF/lib/kotlin-runtime.jar:/opt/apache-tomcat-7.0.55/webapps/ROOT/, -Djava.security.manager, _DefaultPackage]
+08/21/2014 07:46:12 (JavaRunner.java 325) [INFO] type=RUN userId=DC36D41B67F99D32B3F83C88A43AF5DE message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1340593382/_DefaultPackage-dummy-b9f6f59e.class
+08/21/2014 07:46:12 (JavaRunner.java 325) [INFO] type=RUN userId=DC36D41B67F99D32B3F83C88A43AF5DE message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1340593382/_DefaultPackage.class
+08/21/2014 07:46:12 (JavaRunner.java 316) [INFO] type=RUN userId=DC36D41B67F99D32B3F83C88A43AF5DE message=Directory is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1340593382
+08/21/2014 07:46:12 (HttpSession.java 500) [INFO] type=RUN userId=DC36D41B67F99D32B3F83C88A43AF5DE message=ALL 632 request=/kotlinServer?sessionId=-1&type=run&args=java
+08/21/2014 07:46:25 (ServerHandler.java 121) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=test&args=java
+08/21/2014 07:46:25 (ServerHandler.java 328) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=test&args=java
+08/21/2014 07:48:51 (ServerHandler.java 122) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/21/2014 07:48:51 (ServerHandler.java 122) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/21/2014 07:48:51 (ServerHandler.java 329) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/21/2014 07:48:51 (ServerHandler.java 329) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/21/2014 07:48:51 (ServerHandler.java 100) [INFO] GET_EXAMPLES_LIST
+08/21/2014 07:48:52 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version ip: 3FCE3A5DDD4FAE7A49D609FD5FC2EBE2
+08/21/2014 07:48:52 (HttpSession.java 69) [INFO] type=INC_NUMBER_OF_REQUESTS userId=3FCE3A5DDD4FAE7A49D609FD5FC2EBE2 ip=0 message=LOAD_EXAMPLE
+08/21/2014 07:48:52 (HttpSession.java 500) [INFO] type=LOAD_EXAMPLE userId=3FCE3A5DDD4FAE7A49D609FD5FC2EBE2 message=ALL 17 request=/kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version
+08/21/2014 07:48:52 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: 3FCE3A5DDD4FAE7A49D609FD5FC2EBE2
+08/21/2014 07:48:52 (HttpSession.java 393) [INFO] type=HIGHLIGHT userId=3FCE3A5DDD4FAE7A49D609FD5FC2EBE2 message=PARSER 34 size: = 61
+08/21/2014 07:48:55 (HttpSession.java 500) [INFO] type=HIGHLIGHT userId=3FCE3A5DDD4FAE7A49D609FD5FC2EBE2 message=ALL 2421 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/21/2014 07:48:55 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=test&args=java ip: 3FCE3A5DDD4FAE7A49D609FD5FC2EBE2
+08/21/2014 07:48:55 (HttpSession.java 76) [INFO] type=INC_NUMBER_OF_REQUESTS userId=3FCE3A5DDD4FAE7A49D609FD5FC2EBE2 ip=0 message=GET_RESOURCE
+08/21/2014 07:48:55 (HttpSession.java 500) [INFO] type=GET_RESOURCE userId=3FCE3A5DDD4FAE7A49D609FD5FC2EBE2 message=ALL 21 request=/kotlinServer?sessionId=-1&type=test&args=java
+08/21/2014 07:48:56 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=test&args=java ip: 3FCE3A5DDD4FAE7A49D609FD5FC2EBE2
+08/21/2014 07:48:56 (HttpSession.java 76) [INFO] type=INC_NUMBER_OF_REQUESTS userId=3FCE3A5DDD4FAE7A49D609FD5FC2EBE2 ip=0 message=GET_RESOURCE
+08/21/2014 07:48:56 (HttpSession.java 500) [INFO] type=GET_RESOURCE userId=3FCE3A5DDD4FAE7A49D609FD5FC2EBE2 message=ALL 4 request=/kotlinServer?sessionId=-1&type=test&args=java
+08/21/2014 07:48:57 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=test&args=java ip: 3FCE3A5DDD4FAE7A49D609FD5FC2EBE2
+08/21/2014 07:48:57 (HttpSession.java 76) [INFO] type=INC_NUMBER_OF_REQUESTS userId=3FCE3A5DDD4FAE7A49D609FD5FC2EBE2 ip=0 message=GET_RESOURCE
+08/21/2014 07:48:57 (HttpSession.java 500) [INFO] type=GET_RESOURCE userId=3FCE3A5DDD4FAE7A49D609FD5FC2EBE2 message=ALL 5 request=/kotlinServer?sessionId=-1&type=test&args=java
+08/21/2014 07:48:57 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=test&args=java ip: 3FCE3A5DDD4FAE7A49D609FD5FC2EBE2
+08/21/2014 07:48:57 (HttpSession.java 76) [INFO] type=INC_NUMBER_OF_REQUESTS userId=3FCE3A5DDD4FAE7A49D609FD5FC2EBE2 ip=0 message=GET_RESOURCE
+08/21/2014 07:48:57 (HttpSession.java 500) [INFO] type=GET_RESOURCE userId=3FCE3A5DDD4FAE7A49D609FD5FC2EBE2 message=ALL 5 request=/kotlinServer?sessionId=-1&type=test&args=java
+08/21/2014 07:48:58 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=test&args=java ip: 3FCE3A5DDD4FAE7A49D609FD5FC2EBE2
+08/21/2014 07:48:58 (HttpSession.java 76) [INFO] type=INC_NUMBER_OF_REQUESTS userId=3FCE3A5DDD4FAE7A49D609FD5FC2EBE2 ip=0 message=GET_RESOURCE
+08/21/2014 07:48:58 (HttpSession.java 500) [INFO] type=GET_RESOURCE userId=3FCE3A5DDD4FAE7A49D609FD5FC2EBE2 message=ALL 6 request=/kotlinServer?sessionId=-1&type=test&args=java
+08/21/2014 07:48:58 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=test&args=java ip: 3FCE3A5DDD4FAE7A49D609FD5FC2EBE2
+08/21/2014 07:48:58 (HttpSession.java 76) [INFO] type=INC_NUMBER_OF_REQUESTS userId=3FCE3A5DDD4FAE7A49D609FD5FC2EBE2 ip=0 message=GET_RESOURCE
+08/21/2014 07:48:58 (HttpSession.java 500) [INFO] type=GET_RESOURCE userId=3FCE3A5DDD4FAE7A49D609FD5FC2EBE2 message=ALL 6 request=/kotlinServer?sessionId=-1&type=test&args=java
+08/21/2014 07:48:58 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=test&args=java ip: 3FCE3A5DDD4FAE7A49D609FD5FC2EBE2
+08/21/2014 07:48:58 (HttpSession.java 76) [INFO] type=INC_NUMBER_OF_REQUESTS userId=3FCE3A5DDD4FAE7A49D609FD5FC2EBE2 ip=0 message=GET_RESOURCE
+08/21/2014 07:48:58 (HttpSession.java 500) [INFO] type=GET_RESOURCE userId=3FCE3A5DDD4FAE7A49D609FD5FC2EBE2 message=ALL 1 request=/kotlinServer?sessionId=-1&type=test&args=java
+08/21/2014 07:50:30 (ServerHandler.java 122) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/21/2014 07:50:30 (ServerHandler.java 122) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/21/2014 07:50:30 (ServerHandler.java 329) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/21/2014 07:50:30 (ServerHandler.java 329) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/21/2014 07:50:30 (ServerHandler.java 100) [INFO] GET_EXAMPLES_LIST
+08/21/2014 07:50:30 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version ip: A53A2E9B099267DE26C1AF829C82A0F3
+08/21/2014 07:50:30 (HttpSession.java 69) [INFO] type=INC_NUMBER_OF_REQUESTS userId=A53A2E9B099267DE26C1AF829C82A0F3 ip=0 message=LOAD_EXAMPLE
+08/21/2014 07:50:30 (HttpSession.java 500) [INFO] type=LOAD_EXAMPLE userId=A53A2E9B099267DE26C1AF829C82A0F3 message=ALL 20 request=/kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version
+08/21/2014 07:50:30 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: A53A2E9B099267DE26C1AF829C82A0F3
+08/21/2014 07:50:30 (HttpSession.java 393) [INFO] type=HIGHLIGHT userId=A53A2E9B099267DE26C1AF829C82A0F3 message=PARSER 36 size: = 61
+08/21/2014 07:50:32 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=test&args=java ip: A53A2E9B099267DE26C1AF829C82A0F3
+08/21/2014 07:50:32 (HttpSession.java 76) [INFO] type=INC_NUMBER_OF_REQUESTS userId=A53A2E9B099267DE26C1AF829C82A0F3 ip=0 message=GET_RESOURCE
+08/21/2014 07:50:32 (HttpSession.java 393) [INFO] type=RUN userId=A53A2E9B099267DE26C1AF829C82A0F3 message=PARSER 0 size: = 3316
+08/21/2014 07:50:32 (HttpSession.java 500) [INFO] type=HIGHLIGHT userId=A53A2E9B099267DE26C1AF829C82A0F3 message=ALL 1347 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/21/2014 07:50:33 (HttpSession.java 500) [INFO] type=RUN userId=A53A2E9B099267DE26C1AF829C82A0F3 message=ALL 1935 request=/kotlinServer?sessionId=-1&type=test&args=java
+08/21/2014 07:50:35 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=test&args=java ip: A53A2E9B099267DE26C1AF829C82A0F3
+08/21/2014 07:50:35 (HttpSession.java 76) [INFO] type=INC_NUMBER_OF_REQUESTS userId=A53A2E9B099267DE26C1AF829C82A0F3 ip=0 message=GET_RESOURCE
+08/21/2014 07:50:35 (HttpSession.java 393) [INFO] type=RUN userId=A53A2E9B099267DE26C1AF829C82A0F3 message=PARSER 0 size: = 3316
+08/21/2014 07:50:35 (HttpSession.java 500) [INFO] type=RUN userId=A53A2E9B099267DE26C1AF829C82A0F3 message=ALL 547 request=/kotlinServer?sessionId=-1&type=test&args=java
+08/21/2014 07:50:36 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=test&args=java ip: A53A2E9B099267DE26C1AF829C82A0F3
+08/21/2014 07:50:36 (HttpSession.java 76) [INFO] type=INC_NUMBER_OF_REQUESTS userId=A53A2E9B099267DE26C1AF829C82A0F3 ip=0 message=GET_RESOURCE
+08/21/2014 07:50:36 (HttpSession.java 393) [INFO] type=RUN userId=A53A2E9B099267DE26C1AF829C82A0F3 message=PARSER 0 size: = 3316
+08/21/2014 07:50:36 (HttpSession.java 500) [INFO] type=RUN userId=A53A2E9B099267DE26C1AF829C82A0F3 message=ALL 472 request=/kotlinServer?sessionId=-1&type=test&args=java
+08/21/2014 07:51:08 (ServerHandler.java 122) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/21/2014 07:51:08 (ServerHandler.java 329) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/21/2014 07:51:08 (ServerHandler.java 122) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/21/2014 07:51:08 (ServerHandler.java 329) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/21/2014 07:51:08 (ServerHandler.java 100) [INFO] GET_EXAMPLES_LIST
+08/21/2014 07:51:08 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version ip: C9C86A7573EE92763714DCA35DE35433
+08/21/2014 07:51:08 (HttpSession.java 69) [INFO] type=INC_NUMBER_OF_REQUESTS userId=C9C86A7573EE92763714DCA35DE35433 ip=0 message=LOAD_EXAMPLE
+08/21/2014 07:51:08 (HttpSession.java 500) [INFO] type=LOAD_EXAMPLE userId=C9C86A7573EE92763714DCA35DE35433 message=ALL 64 request=/kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version
+08/21/2014 07:51:09 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: C9C86A7573EE92763714DCA35DE35433
+08/21/2014 07:51:09 (HttpSession.java 393) [INFO] type=HIGHLIGHT userId=C9C86A7573EE92763714DCA35DE35433 message=PARSER 19 size: = 61
+08/21/2014 07:51:10 (HttpSession.java 500) [INFO] type=HIGHLIGHT userId=C9C86A7573EE92763714DCA35DE35433 message=ALL 1681 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/21/2014 07:51:16 (ServerHandler.java 122) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/21/2014 07:51:16 (ServerHandler.java 329) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/21/2014 07:51:16 (ServerHandler.java 122) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/21/2014 07:51:16 (ServerHandler.java 329) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/21/2014 07:51:17 (ServerHandler.java 100) [INFO] GET_EXAMPLES_LIST
+08/21/2014 07:51:17 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version ip: C9C86A7573EE92763714DCA35DE35433
+08/21/2014 07:51:17 (HttpSession.java 69) [INFO] type=INC_NUMBER_OF_REQUESTS userId=C9C86A7573EE92763714DCA35DE35433 ip=0 message=LOAD_EXAMPLE
+08/21/2014 07:51:17 (HttpSession.java 500) [INFO] type=LOAD_EXAMPLE userId=C9C86A7573EE92763714DCA35DE35433 message=ALL 1 request=/kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version
+08/21/2014 07:51:17 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: C9C86A7573EE92763714DCA35DE35433
+08/21/2014 07:51:17 (HttpSession.java 393) [INFO] type=HIGHLIGHT userId=C9C86A7573EE92763714DCA35DE35433 message=PARSER 0 size: = 61
+08/21/2014 07:51:17 (HttpSession.java 500) [INFO] type=HIGHLIGHT userId=C9C86A7573EE92763714DCA35DE35433 message=ALL 56 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/21/2014 07:51:18 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: C9C86A7573EE92763714DCA35DE35433
+08/21/2014 07:51:18 (HttpSession.java 393) [INFO] type=HIGHLIGHT userId=C9C86A7573EE92763714DCA35DE35433 message=PARSER 0 size: = 61
+08/21/2014 07:51:18 (HttpSession.java 500) [INFO] type=HIGHLIGHT userId=C9C86A7573EE92763714DCA35DE35433 message=ALL 39 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/21/2014 07:51:18 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=run&args=java ip: C9C86A7573EE92763714DCA35DE35433
+08/21/2014 07:51:18 (HttpSession.java 65) [INFO] type=INC_NUMBER_OF_REQUESTS userId=C9C86A7573EE92763714DCA35DE35433 ip=0 message=GET_RESOURCE
+08/21/2014 07:51:18 (HttpSession.java 393) [INFO] type=RUN userId=C9C86A7573EE92763714DCA35DE35433 message=PARSER 0 size: = 61
+08/21/2014 07:51:19 (CompileAndRunExecutor.java 87) [INFO] type=RUN userId=C9C86A7573EE92763714DCA35DE35433 message=COMPILE correctNamespaces 262
+08/21/2014 07:51:19 (CompileAndRunExecutor.java 119) [INFO] type=RUN userId=C9C86A7573EE92763714DCA35DE35433 message=Write files on disk 3
+08/21/2014 07:51:19 (JavaRunner.java 137) [INFO] type=RUN userId=C9C86A7573EE92763714DCA35DE35433 message=RunUserProgram 228 timeout=false commandString=[/root/docs/java/jdk1.8.0_11/bin/java, -classpath, /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1414757771:/opt/apache-tomcat-7.0.55/webapps/ROOT/WEB-INF/lib/kotlin-runtime.jar:/opt/apache-tomcat-7.0.55/webapps/ROOT/, -Djava.security.manager, _DefaultPackage]
+08/21/2014 07:51:19 (JavaRunner.java 325) [INFO] type=RUN userId=C9C86A7573EE92763714DCA35DE35433 message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1414757771/_DefaultPackage-dummy-b9f6f59e.class
+08/21/2014 07:51:19 (JavaRunner.java 325) [INFO] type=RUN userId=C9C86A7573EE92763714DCA35DE35433 message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1414757771/_DefaultPackage.class
+08/21/2014 07:51:19 (JavaRunner.java 316) [INFO] type=RUN userId=C9C86A7573EE92763714DCA35DE35433 message=Directory is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1414757771
+08/21/2014 07:51:19 (HttpSession.java 500) [INFO] type=RUN userId=C9C86A7573EE92763714DCA35DE35433 message=ALL 553 request=/kotlinServer?sessionId=-1&type=run&args=java
+08/21/2014 07:51:22 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=test&args=java ip: C9C86A7573EE92763714DCA35DE35433
+08/21/2014 07:51:22 (HttpSession.java 76) [INFO] type=INC_NUMBER_OF_REQUESTS userId=C9C86A7573EE92763714DCA35DE35433 ip=0 message=GET_RESOURCE
+08/21/2014 07:52:53 (HttpSession.java 393) [INFO] type=RUN userId=C9C86A7573EE92763714DCA35DE35433 message=PARSER 32355 size: = 3316
+08/21/2014 07:53:37 (HttpSession.java 500) [INFO] type=RUN userId=C9C86A7573EE92763714DCA35DE35433 message=ALL 135258 request=/kotlinServer?sessionId=-1&type=test&args=java
+08/21/2014 07:56:17 (ServerHandler.java 122) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/21/2014 07:56:17 (ServerHandler.java 329) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=loadHelpForWords&args=null
+08/21/2014 07:56:17 (ServerHandler.java 122) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/21/2014 07:56:17 (ServerHandler.java 329) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1&type=getSessionId&args=null
+08/21/2014 07:56:17 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=test&args=java ip: 94AD16559FA190834F9C5C92E6A4686E
+08/21/2014 07:56:17 (HttpSession.java 76) [INFO] type=INC_NUMBER_OF_REQUESTS userId=94AD16559FA190834F9C5C92E6A4686E ip=0 message=GET_RESOURCE
+08/21/2014 07:56:17 (ServerHandler.java 100) [INFO] GET_EXAMPLES_LIST
+08/21/2014 07:56:17 (HttpSession.java 402) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=PARSER 18 size: = 3572
+08/21/2014 07:56:17 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version ip: 412C1770405C0148677B23F03202AB98
+08/21/2014 07:56:17 (HttpSession.java 69) [INFO] type=INC_NUMBER_OF_REQUESTS userId=412C1770405C0148677B23F03202AB98 ip=0 message=LOAD_EXAMPLE
+08/21/2014 07:56:17 (HttpSession.java 510) [INFO] type=LOAD_EXAMPLE userId=412C1770405C0148677B23F03202AB98 message=ALL 28 request=/kotlinServer?sessionId=-1&type=loadExample&args=Hello,_world!&name=Simplest_version
+08/21/2014 07:56:17 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: 412C1770405C0148677B23F03202AB98
+08/21/2014 07:56:17 (HttpSession.java 402) [INFO] type=HIGHLIGHT userId=412C1770405C0148677B23F03202AB98 message=PARSER 0 size: = 61
+08/21/2014 07:56:19 (HttpSession.java 510) [INFO] type=HIGHLIGHT userId=412C1770405C0148677B23F03202AB98 message=ALL 1494 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/21/2014 07:56:22 (CompileAndRunExecutor.java 87) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=COMPILE correctNamespaces 999
+08/21/2014 07:56:22 (CompileAndRunExecutor.java 119) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=Write files on disk 9
+08/21/2014 07:56:22 (JavaRunner.java 137) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=RunUserProgram 238 timeout=false commandString=[/root/docs/java/jdk1.8.0_11/bin/java, -classpath, /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1845264112:/opt/apache-tomcat-7.0.55/webapps/ROOT/WEB-INF/lib/kotlin-runtime.jar:/opt/apache-tomcat-7.0.55/webapps/ROOT/, -Djava.security.manager, html.HtmlPackage]
+08/21/2014 07:56:22 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1845264112/html/TextElement.class
+08/21/2014 07:56:22 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1845264112/html/B.class
+08/21/2014 07:56:22 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1845264112/html/HtmlPackage$main$result$1$1$1.class
+08/21/2014 07:56:22 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1845264112/html/Head.class
+08/21/2014 07:56:22 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1845264112/html/HtmlPackage$main$result$1$2$6$1.class
+08/21/2014 07:56:22 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1845264112/html/HTML.class
+08/21/2014 07:56:22 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1845264112/html/UL.class
+08/21/2014 07:56:22 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1845264112/html/HtmlPackage$main$result$1$1.class
+08/21/2014 07:56:22 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1845264112/html/H1.class
+08/21/2014 07:56:22 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1845264112/html/Element.class
+08/21/2014 07:56:22 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1845264112/html/HtmlPackage$main$result$1$2$6$1$1.class
+08/21/2014 07:56:22 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1845264112/html/HtmlPackage$main$result$1.class
+08/21/2014 07:56:22 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1845264112/html/HtmlPackage$main$result$1$2$1.class
+08/21/2014 07:56:22 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1845264112/html/HtmlPackage$main$result$1$2$4$2.class
+08/21/2014 07:56:22 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1845264112/html/TagWithText.class
+08/21/2014 07:56:22 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1845264112/html/HtmlPackage$main$result$1$2$2.class
+08/21/2014 07:56:22 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1845264112/html/P.class
+08/21/2014 07:56:22 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1845264112/html/HtmlPackage$main$result$1$2$4.class
+08/21/2014 07:56:22 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1845264112/html/HtmlPackage$main$result$1$2.class
+08/21/2014 07:56:22 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1845264112/html/HtmlPackage.class
+08/21/2014 07:56:22 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1845264112/html/Tag.class
+08/21/2014 07:56:22 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1845264112/html/HtmlPackage-dummy-b9f6f59e.class
+08/21/2014 07:56:22 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1845264112/html/LI.class
+08/21/2014 07:56:22 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1845264112/html/BodyTag.class
+08/21/2014 07:56:22 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1845264112/html/HtmlPackage$main$result$1$2$3.class
+08/21/2014 07:56:22 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1845264112/html/HtmlPackage$main$result$1$2$4$1.class
+08/21/2014 07:56:22 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1845264112/html/Title.class
+08/21/2014 07:56:22 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1845264112/html/Element$$TImpl.class
+08/21/2014 07:56:22 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1845264112/html/HtmlPackage$main$result$1$2$6.class
+08/21/2014 07:56:22 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1845264112/html/HtmlPackage$main$result$1$2$5.class
+08/21/2014 07:56:22 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1845264112/html/Body.class
+08/21/2014 07:56:22 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1845264112/html/A.class
+08/21/2014 07:56:22 (JavaRunner.java 316) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=Directory is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1845264112/html
+08/21/2014 07:56:22 (JavaRunner.java 300) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=Directory is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1845264112
+08/21/2014 07:56:22 (HttpSession.java 510) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=ALL 5326 request=/kotlinServer?sessionId=-1&type=test&args=java
+08/21/2014 07:56:22 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=highlight&args=java ip: 94AD16559FA190834F9C5C92E6A4686E
+08/21/2014 07:56:22 (HttpSession.java 402) [INFO] type=HIGHLIGHT userId=94AD16559FA190834F9C5C92E6A4686E message=PARSER 0 size: = 61
+08/21/2014 07:56:22 (HttpSession.java 510) [INFO] type=HIGHLIGHT userId=94AD16559FA190834F9C5C92E6A4686E message=ALL 67 request=/kotlinServer?sessionId=-1&type=highlight&args=java
+08/21/2014 07:56:22 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=run&args=java ip: 94AD16559FA190834F9C5C92E6A4686E
+08/21/2014 07:56:22 (HttpSession.java 65) [INFO] type=INC_NUMBER_OF_REQUESTS userId=94AD16559FA190834F9C5C92E6A4686E ip=0 message=GET_RESOURCE
+08/21/2014 07:56:22 (HttpSession.java 402) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=PARSER 0 size: = 61
+08/21/2014 07:56:22 (CompileAndRunExecutor.java 87) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=COMPILE correctNamespaces 29
+08/21/2014 07:56:22 (CompileAndRunExecutor.java 119) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=Write files on disk 0
+08/21/2014 07:56:22 (JavaRunner.java 137) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=RunUserProgram 144 timeout=false commandString=[/root/docs/java/jdk1.8.0_11/bin/java, -classpath, /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1443688177:/opt/apache-tomcat-7.0.55/webapps/ROOT/WEB-INF/lib/kotlin-runtime.jar:/opt/apache-tomcat-7.0.55/webapps/ROOT/, -Djava.security.manager, _DefaultPackage]
+08/21/2014 07:56:22 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1443688177/_DefaultPackage-dummy-b9f6f59e.class
+08/21/2014 07:56:22 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1443688177/_DefaultPackage.class
+08/21/2014 07:56:22 (JavaRunner.java 316) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=Directory is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1443688177
+08/21/2014 07:56:22 (HttpSession.java 510) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=ALL 207 request=/kotlinServer?sessionId=-1&type=run&args=java
+08/21/2014 07:56:25 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=test&args=java ip: 94AD16559FA190834F9C5C92E6A4686E
+08/21/2014 07:56:25 (HttpSession.java 76) [INFO] type=INC_NUMBER_OF_REQUESTS userId=94AD16559FA190834F9C5C92E6A4686E ip=0 message=GET_RESOURCE
+08/21/2014 07:56:25 (HttpSession.java 402) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=PARSER 0 size: = 3572
+08/21/2014 07:56:26 (CompileAndRunExecutor.java 87) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=COMPILE correctNamespaces 744
+08/21/2014 07:56:26 (CompileAndRunExecutor.java 119) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=Write files on disk 7
+08/21/2014 07:56:26 (JavaRunner.java 137) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=RunUserProgram 167 timeout=false commandString=[/root/docs/java/jdk1.8.0_11/bin/java, -classpath, /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1039409560:/opt/apache-tomcat-7.0.55/webapps/ROOT/WEB-INF/lib/kotlin-runtime.jar:/opt/apache-tomcat-7.0.55/webapps/ROOT/, -Djava.security.manager, html.HtmlPackage]
+08/21/2014 07:56:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1039409560/html/TextElement.class
+08/21/2014 07:56:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1039409560/html/B.class
+08/21/2014 07:56:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1039409560/html/HtmlPackage$main$result$1$1$1.class
+08/21/2014 07:56:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1039409560/html/Head.class
+08/21/2014 07:56:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1039409560/html/HtmlPackage$main$result$1$2$6$1.class
+08/21/2014 07:56:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1039409560/html/HTML.class
+08/21/2014 07:56:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1039409560/html/UL.class
+08/21/2014 07:56:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1039409560/html/HtmlPackage$main$result$1$1.class
+08/21/2014 07:56:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1039409560/html/H1.class
+08/21/2014 07:56:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1039409560/html/Element.class
+08/21/2014 07:56:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1039409560/html/HtmlPackage$main$result$1$2$6$1$1.class
+08/21/2014 07:56:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1039409560/html/HtmlPackage$main$result$1.class
+08/21/2014 07:56:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1039409560/html/HtmlPackage$main$result$1$2$1.class
+08/21/2014 07:56:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1039409560/html/HtmlPackage$main$result$1$2$4$2.class
+08/21/2014 07:56:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1039409560/html/TagWithText.class
+08/21/2014 07:56:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1039409560/html/HtmlPackage$main$result$1$2$2.class
+08/21/2014 07:56:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1039409560/html/P.class
+08/21/2014 07:56:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1039409560/html/HtmlPackage$main$result$1$2$4.class
+08/21/2014 07:56:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1039409560/html/HtmlPackage$main$result$1$2.class
+08/21/2014 07:56:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1039409560/html/HtmlPackage.class
+08/21/2014 07:56:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1039409560/html/Tag.class
+08/21/2014 07:56:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1039409560/html/HtmlPackage-dummy-b9f6f59e.class
+08/21/2014 07:56:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1039409560/html/LI.class
+08/21/2014 07:56:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1039409560/html/BodyTag.class
+08/21/2014 07:56:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1039409560/html/HtmlPackage$main$result$1$2$3.class
+08/21/2014 07:56:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1039409560/html/HtmlPackage$main$result$1$2$4$1.class
+08/21/2014 07:56:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1039409560/html/Title.class
+08/21/2014 07:56:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1039409560/html/Element$$TImpl.class
+08/21/2014 07:56:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1039409560/html/HtmlPackage$main$result$1$2$6.class
+08/21/2014 07:56:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1039409560/html/HtmlPackage$main$result$1$2$5.class
+08/21/2014 07:56:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1039409560/html/Body.class
+08/21/2014 07:56:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1039409560/html/A.class
+08/21/2014 07:56:26 (JavaRunner.java 316) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=Directory is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1039409560/html
+08/21/2014 07:56:26 (JavaRunner.java 300) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=Directory is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1039409560
+08/21/2014 07:56:26 (HttpSession.java 510) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=ALL 1494 request=/kotlinServer?sessionId=-1&type=test&args=java
+08/21/2014 07:56:30 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=test&args=java ip: 94AD16559FA190834F9C5C92E6A4686E
+08/21/2014 07:56:30 (HttpSession.java 76) [INFO] type=INC_NUMBER_OF_REQUESTS userId=94AD16559FA190834F9C5C92E6A4686E ip=0 message=GET_RESOURCE
+08/21/2014 07:56:30 (HttpSession.java 402) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=PARSER 0 size: = 3572
+08/21/2014 07:56:31 (CompileAndRunExecutor.java 87) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=COMPILE correctNamespaces 457
+08/21/2014 07:56:31 (CompileAndRunExecutor.java 119) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=Write files on disk 3
+08/21/2014 07:56:31 (JavaRunner.java 137) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=RunUserProgram 149 timeout=false commandString=[/root/docs/java/jdk1.8.0_11/bin/java, -classpath, /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp907506128:/opt/apache-tomcat-7.0.55/webapps/ROOT/WEB-INF/lib/kotlin-runtime.jar:/opt/apache-tomcat-7.0.55/webapps/ROOT/, -Djava.security.manager, html.HtmlPackage]
+08/21/2014 07:56:31 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp907506128/html/TextElement.class
+08/21/2014 07:56:31 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp907506128/html/B.class
+08/21/2014 07:56:31 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp907506128/html/HtmlPackage$main$result$1$1$1.class
+08/21/2014 07:56:31 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp907506128/html/Head.class
+08/21/2014 07:56:31 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp907506128/html/HtmlPackage$main$result$1$2$6$1.class
+08/21/2014 07:56:31 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp907506128/html/HTML.class
+08/21/2014 07:56:31 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp907506128/html/UL.class
+08/21/2014 07:56:31 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp907506128/html/HtmlPackage$main$result$1$1.class
+08/21/2014 07:56:31 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp907506128/html/H1.class
+08/21/2014 07:56:31 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp907506128/html/Element.class
+08/21/2014 07:56:31 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp907506128/html/HtmlPackage$main$result$1$2$6$1$1.class
+08/21/2014 07:56:31 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp907506128/html/HtmlPackage$main$result$1.class
+08/21/2014 07:56:31 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp907506128/html/HtmlPackage$main$result$1$2$1.class
+08/21/2014 07:56:31 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp907506128/html/HtmlPackage$main$result$1$2$4$2.class
+08/21/2014 07:56:31 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp907506128/html/TagWithText.class
+08/21/2014 07:56:31 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp907506128/html/HtmlPackage$main$result$1$2$2.class
+08/21/2014 07:56:31 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp907506128/html/P.class
+08/21/2014 07:56:31 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp907506128/html/HtmlPackage$main$result$1$2$4.class
+08/21/2014 07:56:31 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp907506128/html/HtmlPackage$main$result$1$2.class
+08/21/2014 07:56:31 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp907506128/html/HtmlPackage.class
+08/21/2014 07:56:31 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp907506128/html/Tag.class
+08/21/2014 07:56:31 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp907506128/html/HtmlPackage-dummy-b9f6f59e.class
+08/21/2014 07:56:31 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp907506128/html/LI.class
+08/21/2014 07:56:31 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp907506128/html/BodyTag.class
+08/21/2014 07:56:31 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp907506128/html/HtmlPackage$main$result$1$2$3.class
+08/21/2014 07:56:31 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp907506128/html/HtmlPackage$main$result$1$2$4$1.class
+08/21/2014 07:56:31 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp907506128/html/Title.class
+08/21/2014 07:56:31 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp907506128/html/Element$$TImpl.class
+08/21/2014 07:56:31 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp907506128/html/HtmlPackage$main$result$1$2$6.class
+08/21/2014 07:56:31 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp907506128/html/HtmlPackage$main$result$1$2$5.class
+08/21/2014 07:56:31 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp907506128/html/Body.class
+08/21/2014 07:56:31 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp907506128/html/A.class
+08/21/2014 07:56:31 (JavaRunner.java 316) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=Directory is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp907506128/html
+08/21/2014 07:56:31 (JavaRunner.java 300) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=Directory is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp907506128
+08/21/2014 07:56:31 (HttpSession.java 510) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=ALL 1048 request=/kotlinServer?sessionId=-1&type=test&args=java
+08/21/2014 08:17:26 (ServerHandler.java 122) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1
+08/21/2014 08:17:26 (ServerHandler.java 329) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1
+08/21/2014 08:17:40 (ServerHandler.java 122) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1
+08/21/2014 08:17:40 (ServerHandler.java 329) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1
+08/21/2014 08:17:47 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=test&args=java ip: 94AD16559FA190834F9C5C92E6A4686E
+08/21/2014 08:17:47 (HttpSession.java 76) [INFO] type=INC_NUMBER_OF_REQUESTS userId=94AD16559FA190834F9C5C92E6A4686E ip=0 message=GET_RESOURCE
+08/21/2014 08:17:47 (HttpSession.java 402) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=PARSER 5 size: = 3572
+08/21/2014 08:17:48 (CompileAndRunExecutor.java 87) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=COMPILE correctNamespaces 487
+08/21/2014 08:17:48 (CompileAndRunExecutor.java 119) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=Write files on disk 3
+08/21/2014 08:17:49 (JavaRunner.java 137) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=RunUserProgram 192 timeout=false commandString=[/root/docs/java/jdk1.8.0_11/bin/java, -classpath, /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1933107077:/opt/apache-tomcat-7.0.55/webapps/ROOT/WEB-INF/lib/kotlin-runtime.jar:/opt/apache-tomcat-7.0.55/webapps/ROOT/, -Djava.security.manager, html.HtmlPackage]
+08/21/2014 08:17:49 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1933107077/html/TextElement.class
+08/21/2014 08:17:49 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1933107077/html/B.class
+08/21/2014 08:17:49 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1933107077/html/HtmlPackage$main$result$1$1$1.class
+08/21/2014 08:17:49 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1933107077/html/Head.class
+08/21/2014 08:17:49 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1933107077/html/HtmlPackage$main$result$1$2$6$1.class
+08/21/2014 08:17:49 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1933107077/html/HTML.class
+08/21/2014 08:17:49 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1933107077/html/UL.class
+08/21/2014 08:17:49 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1933107077/html/HtmlPackage$main$result$1$1.class
+08/21/2014 08:17:49 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1933107077/html/H1.class
+08/21/2014 08:17:49 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1933107077/html/Element.class
+08/21/2014 08:17:49 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1933107077/html/HtmlPackage$main$result$1$2$6$1$1.class
+08/21/2014 08:17:49 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1933107077/html/HtmlPackage$main$result$1.class
+08/21/2014 08:17:49 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1933107077/html/HtmlPackage$main$result$1$2$1.class
+08/21/2014 08:17:49 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1933107077/html/HtmlPackage$main$result$1$2$4$2.class
+08/21/2014 08:17:49 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1933107077/html/TagWithText.class
+08/21/2014 08:17:49 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1933107077/html/HtmlPackage$main$result$1$2$2.class
+08/21/2014 08:17:49 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1933107077/html/P.class
+08/21/2014 08:17:49 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1933107077/html/HtmlPackage$main$result$1$2$4.class
+08/21/2014 08:17:49 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1933107077/html/HtmlPackage$main$result$1$2.class
+08/21/2014 08:17:49 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1933107077/html/HtmlPackage.class
+08/21/2014 08:17:49 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1933107077/html/Tag.class
+08/21/2014 08:17:49 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1933107077/html/HtmlPackage-dummy-b9f6f59e.class
+08/21/2014 08:17:49 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1933107077/html/LI.class
+08/21/2014 08:17:49 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1933107077/html/BodyTag.class
+08/21/2014 08:17:49 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1933107077/html/HtmlPackage$main$result$1$2$3.class
+08/21/2014 08:17:49 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1933107077/html/HtmlPackage$main$result$1$2$4$1.class
+08/21/2014 08:17:49 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1933107077/html/Title.class
+08/21/2014 08:17:49 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1933107077/html/Element$$TImpl.class
+08/21/2014 08:17:49 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1933107077/html/HtmlPackage$main$result$1$2$6.class
+08/21/2014 08:17:49 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1933107077/html/HtmlPackage$main$result$1$2$5.class
+08/21/2014 08:17:49 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1933107077/html/Body.class
+08/21/2014 08:17:49 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1933107077/html/A.class
+08/21/2014 08:17:49 (JavaRunner.java 316) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=Directory is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1933107077/html
+08/21/2014 08:17:49 (JavaRunner.java 300) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=Directory is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1933107077
+08/21/2014 08:17:49 (HttpSession.java 510) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=ALL 1261 request=/kotlinServer?sessionId=-1&type=test&args=java
+08/21/2014 08:17:51 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=test&args=java ip: 94AD16559FA190834F9C5C92E6A4686E
+08/21/2014 08:17:51 (HttpSession.java 76) [INFO] type=INC_NUMBER_OF_REQUESTS userId=94AD16559FA190834F9C5C92E6A4686E ip=0 message=GET_RESOURCE
+08/21/2014 08:17:51 (HttpSession.java 402) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=PARSER 0 size: = 3572
+08/21/2014 08:17:52 (CompileAndRunExecutor.java 87) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=COMPILE correctNamespaces 1249
+08/21/2014 08:17:52 (CompileAndRunExecutor.java 119) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=Write files on disk 5
+08/21/2014 08:17:53 (JavaRunner.java 137) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=RunUserProgram 233 timeout=false commandString=[/root/docs/java/jdk1.8.0_11/bin/java, -classpath, /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-50139614:/opt/apache-tomcat-7.0.55/webapps/ROOT/WEB-INF/lib/kotlin-runtime.jar:/opt/apache-tomcat-7.0.55/webapps/ROOT/, -Djava.security.manager, html.HtmlPackage]
+08/21/2014 08:17:53 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-50139614/html/TextElement.class
+08/21/2014 08:17:53 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-50139614/html/B.class
+08/21/2014 08:17:53 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-50139614/html/HtmlPackage$main$result$1$1$1.class
+08/21/2014 08:17:53 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-50139614/html/Head.class
+08/21/2014 08:17:53 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-50139614/html/HtmlPackage$main$result$1$2$6$1.class
+08/21/2014 08:17:53 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-50139614/html/HTML.class
+08/21/2014 08:17:53 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-50139614/html/UL.class
+08/21/2014 08:17:53 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-50139614/html/HtmlPackage$main$result$1$1.class
+08/21/2014 08:17:53 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-50139614/html/H1.class
+08/21/2014 08:17:53 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-50139614/html/Element.class
+08/21/2014 08:17:53 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-50139614/html/HtmlPackage$main$result$1$2$6$1$1.class
+08/21/2014 08:17:53 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-50139614/html/HtmlPackage$main$result$1.class
+08/21/2014 08:17:53 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-50139614/html/HtmlPackage$main$result$1$2$1.class
+08/21/2014 08:17:53 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-50139614/html/HtmlPackage$main$result$1$2$4$2.class
+08/21/2014 08:17:53 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-50139614/html/TagWithText.class
+08/21/2014 08:17:53 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-50139614/html/HtmlPackage$main$result$1$2$2.class
+08/21/2014 08:17:53 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-50139614/html/P.class
+08/21/2014 08:17:53 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-50139614/html/HtmlPackage$main$result$1$2$4.class
+08/21/2014 08:17:53 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-50139614/html/HtmlPackage$main$result$1$2.class
+08/21/2014 08:17:53 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-50139614/html/HtmlPackage.class
+08/21/2014 08:17:53 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-50139614/html/Tag.class
+08/21/2014 08:17:53 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-50139614/html/HtmlPackage-dummy-b9f6f59e.class
+08/21/2014 08:17:53 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-50139614/html/LI.class
+08/21/2014 08:17:53 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-50139614/html/BodyTag.class
+08/21/2014 08:17:53 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-50139614/html/HtmlPackage$main$result$1$2$3.class
+08/21/2014 08:17:53 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-50139614/html/HtmlPackage$main$result$1$2$4$1.class
+08/21/2014 08:17:53 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-50139614/html/Title.class
+08/21/2014 08:17:53 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-50139614/html/Element$$TImpl.class
+08/21/2014 08:17:53 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-50139614/html/HtmlPackage$main$result$1$2$6.class
+08/21/2014 08:17:53 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-50139614/html/HtmlPackage$main$result$1$2$5.class
+08/21/2014 08:17:53 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-50139614/html/Body.class
+08/21/2014 08:17:53 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-50139614/html/A.class
+08/21/2014 08:17:53 (JavaRunner.java 316) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=Directory is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-50139614/html
+08/21/2014 08:17:53 (JavaRunner.java 300) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=Directory is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-50139614
+08/21/2014 08:17:53 (HttpSession.java 510) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=ALL 1926 request=/kotlinServer?sessionId=-1&type=test&args=java
+08/21/2014 08:17:59 (ServerHandler.java 122) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1
+08/21/2014 08:17:59 (ServerHandler.java 329) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1
+08/21/2014 08:18:07 (ServerHandler.java 122) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1
+08/21/2014 08:18:07 (ServerHandler.java 329) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1
+08/21/2014 08:18:16 (ServerHandler.java 122) [INFO] GET_RESOURCE /kotlinServer?sessionId=-1
+08/21/2014 08:18:16 (ServerHandler.java 329) [ERROR] type=GET_RESOURCE userId=-1 message=Resource doesn't downloaded from nginx: /kotlinServer?sessionId=-1
+08/21/2014 08:18:22 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=test&args=java ip: 94AD16559FA190834F9C5C92E6A4686E
+08/21/2014 08:18:22 (HttpSession.java 76) [INFO] type=INC_NUMBER_OF_REQUESTS userId=94AD16559FA190834F9C5C92E6A4686E ip=0 message=GET_RESOURCE
+08/21/2014 08:18:22 (HttpSession.java 402) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=PARSER 0 size: = 3572
+08/21/2014 08:18:22 (CompileAndRunExecutor.java 87) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=COMPILE correctNamespaces 494
+08/21/2014 08:18:22 (CompileAndRunExecutor.java 119) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=Write files on disk 4
+08/21/2014 08:18:23 (JavaRunner.java 137) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=RunUserProgram 240 timeout=false commandString=[/root/docs/java/jdk1.8.0_11/bin/java, -classpath, /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1073113233:/opt/apache-tomcat-7.0.55/webapps/ROOT/WEB-INF/lib/kotlin-runtime.jar:/opt/apache-tomcat-7.0.55/webapps/ROOT/, -Djava.security.manager, html.HtmlPackage]
+08/21/2014 08:18:23 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1073113233/html/TextElement.class
+08/21/2014 08:18:23 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1073113233/html/B.class
+08/21/2014 08:18:23 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1073113233/html/HtmlPackage$main$result$1$1$1.class
+08/21/2014 08:18:23 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1073113233/html/Head.class
+08/21/2014 08:18:23 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1073113233/html/HtmlPackage$main$result$1$2$6$1.class
+08/21/2014 08:18:23 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1073113233/html/HTML.class
+08/21/2014 08:18:23 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1073113233/html/UL.class
+08/21/2014 08:18:23 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1073113233/html/HtmlPackage$main$result$1$1.class
+08/21/2014 08:18:23 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1073113233/html/H1.class
+08/21/2014 08:18:23 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1073113233/html/Element.class
+08/21/2014 08:18:23 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1073113233/html/HtmlPackage$main$result$1$2$6$1$1.class
+08/21/2014 08:18:23 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1073113233/html/HtmlPackage$main$result$1.class
+08/21/2014 08:18:23 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1073113233/html/HtmlPackage$main$result$1$2$1.class
+08/21/2014 08:18:23 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1073113233/html/HtmlPackage$main$result$1$2$4$2.class
+08/21/2014 08:18:23 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1073113233/html/TagWithText.class
+08/21/2014 08:18:23 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1073113233/html/HtmlPackage$main$result$1$2$2.class
+08/21/2014 08:18:23 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1073113233/html/P.class
+08/21/2014 08:18:23 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1073113233/html/HtmlPackage$main$result$1$2$4.class
+08/21/2014 08:18:23 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1073113233/html/HtmlPackage$main$result$1$2.class
+08/21/2014 08:18:23 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1073113233/html/HtmlPackage.class
+08/21/2014 08:18:23 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1073113233/html/Tag.class
+08/21/2014 08:18:23 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1073113233/html/HtmlPackage-dummy-b9f6f59e.class
+08/21/2014 08:18:23 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1073113233/html/LI.class
+08/21/2014 08:18:23 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1073113233/html/BodyTag.class
+08/21/2014 08:18:23 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1073113233/html/HtmlPackage$main$result$1$2$3.class
+08/21/2014 08:18:23 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1073113233/html/HtmlPackage$main$result$1$2$4$1.class
+08/21/2014 08:18:23 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1073113233/html/Title.class
+08/21/2014 08:18:23 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1073113233/html/Element$$TImpl.class
+08/21/2014 08:18:23 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1073113233/html/HtmlPackage$main$result$1$2$6.class
+08/21/2014 08:18:23 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1073113233/html/HtmlPackage$main$result$1$2$5.class
+08/21/2014 08:18:23 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1073113233/html/Body.class
+08/21/2014 08:18:23 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1073113233/html/A.class
+08/21/2014 08:18:23 (JavaRunner.java 316) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=Directory is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1073113233/html
+08/21/2014 08:18:23 (JavaRunner.java 300) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=Directory is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1073113233
+08/21/2014 08:18:23 (HttpSession.java 510) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=ALL 1097 request=/kotlinServer?sessionId=-1&type=test&args=java
+08/21/2014 08:18:25 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=test&args=java ip: 94AD16559FA190834F9C5C92E6A4686E
+08/21/2014 08:18:25 (HttpSession.java 76) [INFO] type=INC_NUMBER_OF_REQUESTS userId=94AD16559FA190834F9C5C92E6A4686E ip=0 message=GET_RESOURCE
+08/21/2014 08:18:25 (HttpSession.java 402) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=PARSER 0 size: = 3572
+08/21/2014 08:18:26 (CompileAndRunExecutor.java 87) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=COMPILE correctNamespaces 333
+08/21/2014 08:18:26 (CompileAndRunExecutor.java 119) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=Write files on disk 2
+08/21/2014 08:18:26 (JavaRunner.java 137) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=RunUserProgram 157 timeout=false commandString=[/root/docs/java/jdk1.8.0_11/bin/java, -classpath, /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-86501063:/opt/apache-tomcat-7.0.55/webapps/ROOT/WEB-INF/lib/kotlin-runtime.jar:/opt/apache-tomcat-7.0.55/webapps/ROOT/, -Djava.security.manager, html.HtmlPackage]
+08/21/2014 08:18:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-86501063/html/TextElement.class
+08/21/2014 08:18:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-86501063/html/B.class
+08/21/2014 08:18:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-86501063/html/HtmlPackage$main$result$1$1$1.class
+08/21/2014 08:18:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-86501063/html/Head.class
+08/21/2014 08:18:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-86501063/html/HtmlPackage$main$result$1$2$6$1.class
+08/21/2014 08:18:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-86501063/html/HTML.class
+08/21/2014 08:18:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-86501063/html/UL.class
+08/21/2014 08:18:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-86501063/html/HtmlPackage$main$result$1$1.class
+08/21/2014 08:18:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-86501063/html/H1.class
+08/21/2014 08:18:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-86501063/html/Element.class
+08/21/2014 08:18:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-86501063/html/HtmlPackage$main$result$1$2$6$1$1.class
+08/21/2014 08:18:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-86501063/html/HtmlPackage$main$result$1.class
+08/21/2014 08:18:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-86501063/html/HtmlPackage$main$result$1$2$1.class
+08/21/2014 08:18:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-86501063/html/HtmlPackage$main$result$1$2$4$2.class
+08/21/2014 08:18:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-86501063/html/TagWithText.class
+08/21/2014 08:18:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-86501063/html/HtmlPackage$main$result$1$2$2.class
+08/21/2014 08:18:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-86501063/html/P.class
+08/21/2014 08:18:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-86501063/html/HtmlPackage$main$result$1$2$4.class
+08/21/2014 08:18:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-86501063/html/HtmlPackage$main$result$1$2.class
+08/21/2014 08:18:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-86501063/html/HtmlPackage.class
+08/21/2014 08:18:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-86501063/html/Tag.class
+08/21/2014 08:18:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-86501063/html/HtmlPackage-dummy-b9f6f59e.class
+08/21/2014 08:18:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-86501063/html/LI.class
+08/21/2014 08:18:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-86501063/html/BodyTag.class
+08/21/2014 08:18:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-86501063/html/HtmlPackage$main$result$1$2$3.class
+08/21/2014 08:18:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-86501063/html/HtmlPackage$main$result$1$2$4$1.class
+08/21/2014 08:18:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-86501063/html/Title.class
+08/21/2014 08:18:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-86501063/html/Element$$TImpl.class
+08/21/2014 08:18:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-86501063/html/HtmlPackage$main$result$1$2$6.class
+08/21/2014 08:18:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-86501063/html/HtmlPackage$main$result$1$2$5.class
+08/21/2014 08:18:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-86501063/html/Body.class
+08/21/2014 08:18:26 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-86501063/html/A.class
+08/21/2014 08:18:26 (JavaRunner.java 316) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=Directory is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-86501063/html
+08/21/2014 08:18:26 (JavaRunner.java 300) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=Directory is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-86501063
+08/21/2014 08:18:26 (HttpSession.java 510) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=ALL 848 request=/kotlinServer?sessionId=-1&type=test&args=java
+08/21/2014 08:18:27 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=test&args=java ip: 94AD16559FA190834F9C5C92E6A4686E
+08/21/2014 08:18:27 (HttpSession.java 76) [INFO] type=INC_NUMBER_OF_REQUESTS userId=94AD16559FA190834F9C5C92E6A4686E ip=0 message=GET_RESOURCE
+08/21/2014 08:18:27 (HttpSession.java 402) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=PARSER 0 size: = 3572
+08/21/2014 08:18:28 (CompileAndRunExecutor.java 87) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=COMPILE correctNamespaces 345
+08/21/2014 08:18:28 (CompileAndRunExecutor.java 119) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=Write files on disk 2
+08/21/2014 08:18:28 (JavaRunner.java 137) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=RunUserProgram 155 timeout=false commandString=[/root/docs/java/jdk1.8.0_11/bin/java, -classpath, /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1659420584:/opt/apache-tomcat-7.0.55/webapps/ROOT/WEB-INF/lib/kotlin-runtime.jar:/opt/apache-tomcat-7.0.55/webapps/ROOT/, -Djava.security.manager, html.HtmlPackage]
+08/21/2014 08:18:28 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1659420584/html/TextElement.class
+08/21/2014 08:18:28 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1659420584/html/B.class
+08/21/2014 08:18:28 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1659420584/html/HtmlPackage$main$result$1$1$1.class
+08/21/2014 08:18:28 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1659420584/html/Head.class
+08/21/2014 08:18:28 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1659420584/html/HtmlPackage$main$result$1$2$6$1.class
+08/21/2014 08:18:28 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1659420584/html/HTML.class
+08/21/2014 08:18:28 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1659420584/html/UL.class
+08/21/2014 08:18:28 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1659420584/html/HtmlPackage$main$result$1$1.class
+08/21/2014 08:18:28 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1659420584/html/H1.class
+08/21/2014 08:18:28 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1659420584/html/Element.class
+08/21/2014 08:18:28 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1659420584/html/HtmlPackage$main$result$1$2$6$1$1.class
+08/21/2014 08:18:28 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1659420584/html/HtmlPackage$main$result$1.class
+08/21/2014 08:18:28 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1659420584/html/HtmlPackage$main$result$1$2$1.class
+08/21/2014 08:18:28 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1659420584/html/HtmlPackage$main$result$1$2$4$2.class
+08/21/2014 08:18:28 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1659420584/html/TagWithText.class
+08/21/2014 08:18:28 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1659420584/html/HtmlPackage$main$result$1$2$2.class
+08/21/2014 08:18:28 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1659420584/html/P.class
+08/21/2014 08:18:28 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1659420584/html/HtmlPackage$main$result$1$2$4.class
+08/21/2014 08:18:28 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1659420584/html/HtmlPackage$main$result$1$2.class
+08/21/2014 08:18:28 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1659420584/html/HtmlPackage.class
+08/21/2014 08:18:28 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1659420584/html/Tag.class
+08/21/2014 08:18:28 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1659420584/html/HtmlPackage-dummy-b9f6f59e.class
+08/21/2014 08:18:28 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1659420584/html/LI.class
+08/21/2014 08:18:28 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1659420584/html/BodyTag.class
+08/21/2014 08:18:28 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1659420584/html/HtmlPackage$main$result$1$2$3.class
+08/21/2014 08:18:28 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1659420584/html/HtmlPackage$main$result$1$2$4$1.class
+08/21/2014 08:18:28 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1659420584/html/Title.class
+08/21/2014 08:18:28 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1659420584/html/Element$$TImpl.class
+08/21/2014 08:18:28 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1659420584/html/HtmlPackage$main$result$1$2$6.class
+08/21/2014 08:18:28 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1659420584/html/HtmlPackage$main$result$1$2$5.class
+08/21/2014 08:18:28 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1659420584/html/Body.class
+08/21/2014 08:18:28 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1659420584/html/A.class
+08/21/2014 08:18:28 (JavaRunner.java 316) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=Directory is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1659420584/html
+08/21/2014 08:18:28 (JavaRunner.java 300) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=Directory is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp-1659420584
+08/21/2014 08:18:28 (HttpSession.java 510) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=ALL 834 request=/kotlinServer?sessionId=-1&type=test&args=java
+08/21/2014 08:19:42 (HttpSession.java 62) [INFO] request: /kotlinServer?sessionId=-1&type=test&args=java ip: 94AD16559FA190834F9C5C92E6A4686E
+08/21/2014 08:19:42 (HttpSession.java 76) [INFO] type=INC_NUMBER_OF_REQUESTS userId=94AD16559FA190834F9C5C92E6A4686E ip=0 message=GET_RESOURCE
+08/21/2014 08:19:42 (HttpSession.java 402) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=PARSER 0 size: = 3572
+08/21/2014 08:19:43 (CompileAndRunExecutor.java 87) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=COMPILE correctNamespaces 323
+08/21/2014 08:19:43 (CompileAndRunExecutor.java 119) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=Write files on disk 6
+08/21/2014 08:19:43 (JavaRunner.java 137) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=RunUserProgram 180 timeout=false commandString=[/root/docs/java/jdk1.8.0_11/bin/java, -classpath, /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1642233137:/opt/apache-tomcat-7.0.55/webapps/ROOT/WEB-INF/lib/kotlin-runtime.jar:/opt/apache-tomcat-7.0.55/webapps/ROOT/, -Djava.security.manager, html.HtmlPackage]
+08/21/2014 08:19:43 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1642233137/html/TextElement.class
+08/21/2014 08:19:43 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1642233137/html/B.class
+08/21/2014 08:19:43 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1642233137/html/HtmlPackage$main$result$1$1$1.class
+08/21/2014 08:19:43 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1642233137/html/Head.class
+08/21/2014 08:19:43 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1642233137/html/HtmlPackage$main$result$1$2$6$1.class
+08/21/2014 08:19:43 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1642233137/html/HTML.class
+08/21/2014 08:19:43 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1642233137/html/UL.class
+08/21/2014 08:19:43 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1642233137/html/HtmlPackage$main$result$1$1.class
+08/21/2014 08:19:43 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1642233137/html/H1.class
+08/21/2014 08:19:43 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1642233137/html/Element.class
+08/21/2014 08:19:43 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1642233137/html/HtmlPackage$main$result$1$2$6$1$1.class
+08/21/2014 08:19:43 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1642233137/html/HtmlPackage$main$result$1.class
+08/21/2014 08:19:43 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1642233137/html/HtmlPackage$main$result$1$2$1.class
+08/21/2014 08:19:43 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1642233137/html/HtmlPackage$main$result$1$2$4$2.class
+08/21/2014 08:19:43 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1642233137/html/TagWithText.class
+08/21/2014 08:19:43 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1642233137/html/HtmlPackage$main$result$1$2$2.class
+08/21/2014 08:19:43 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1642233137/html/P.class
+08/21/2014 08:19:43 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1642233137/html/HtmlPackage$main$result$1$2$4.class
+08/21/2014 08:19:43 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1642233137/html/HtmlPackage$main$result$1$2.class
+08/21/2014 08:19:43 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1642233137/html/HtmlPackage.class
+08/21/2014 08:19:43 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1642233137/html/Tag.class
+08/21/2014 08:19:43 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1642233137/html/HtmlPackage-dummy-b9f6f59e.class
+08/21/2014 08:19:43 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1642233137/html/LI.class
+08/21/2014 08:19:43 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1642233137/html/BodyTag.class
+08/21/2014 08:19:43 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1642233137/html/HtmlPackage$main$result$1$2$3.class
+08/21/2014 08:19:43 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1642233137/html/HtmlPackage$main$result$1$2$4$1.class
+08/21/2014 08:19:43 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1642233137/html/Title.class
+08/21/2014 08:19:43 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1642233137/html/Element$$TImpl.class
+08/21/2014 08:19:43 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1642233137/html/HtmlPackage$main$result$1$2$6.class
+08/21/2014 08:19:43 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1642233137/html/HtmlPackage$main$result$1$2$5.class
+08/21/2014 08:19:43 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1642233137/html/Body.class
+08/21/2014 08:19:43 (JavaRunner.java 325) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=File is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1642233137/html/A.class
+08/21/2014 08:19:43 (JavaRunner.java 316) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=Directory is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1642233137/html
+08/21/2014 08:19:43 (JavaRunner.java 300) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=Directory is deleted : /root/IdeaProjects/kotlinnew/kotlin-web-demo/out/tmp1642233137
+08/21/2014 08:19:43 (HttpSession.java 510) [INFO] type=RUN userId=94AD16559FA190834F9C5C92E6A4686E message=ALL 811 request=/kotlinServer?sessionId=-1&type=test&args=java
+08/22/2014 12:59:20 (ServerHandler.java 105) [INFO] GET_HELP_FOR_WORDS
+08/22/2014 12:59:20 (ServerHandler.java 102) [INFO] GET_EXAMPLES_LIST
+08/22/2014 12:59:20 (HttpSession.java 76) [INFO] request: /kotlinServer?sessionId=475F147800C84F263968480E29BA98D3&type=loadExample&args=Hello,_world!&name=Simplest_version ip: 475F147800C84F263968480E29BA98D3
+08/22/2014 12:59:20 (HttpSession.java 83) [INFO] type=INC_NUMBER_OF_REQUESTS userId=475F147800C84F263968480E29BA98D3 ip=0 message=LOAD_EXAMPLE
+08/22/2014 12:59:20 (HttpSession.java 333) [INFO] type=LOAD_EXAMPLE userId=475F147800C84F263968480E29BA98D3 message=ALL 8 request=/kotlinServer?sessionId=475F147800C84F263968480E29BA98D3&type=loadExample&args=Hello,_world!&name=Simplest_version
+08/22/2014 12:59:20 (ServerHandler.java 327) [INFO] type=INC_NUMBER_OF_REQUESTS userId=475F147800C84F263968480E29BA98D3 ip=0 message=SEND_USER_DATA
+08/22/2014 12:59:20 (ServerHandler.java 328) [INFO] type=SEND_USER_DATA userId=475F147800C84F263968480E29BA98D3 message=browser: Netscape 5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36 system: Linux x86_64
+08/22/2014 12:59:24 (HttpSession.java 76) [INFO] request: /kotlinServer?sessionId=475F147800C84F263968480E29BA98D3&type=highlight&args=undefined ip: 475F147800C84F263968480E29BA98D3
+08/22/2014 12:59:24 (HttpSession.java 333) [INFO] type=HIGHLIGHT userId=475F147800C84F263968480E29BA98D3 message=ALL 40 request=/kotlinServer?sessionId=475F147800C84F263968480E29BA98D3&type=highlight&args=undefined
+08/22/2014 12:59:29 (HttpSession.java 76) [INFO] request: /kotlinServer?sessionId=475F147800C84F263968480E29BA98D3&type=highlight&args=undefined ip: 475F147800C84F263968480E29BA98D3
+08/22/2014 12:59:29 (HttpSession.java 333) [INFO] type=HIGHLIGHT userId=475F147800C84F263968480E29BA98D3 message=ALL 19 request=/kotlinServer?sessionId=475F147800C84F263968480E29BA98D3&type=highlight&args=undefined
+08/22/2014 12:59:33 (HttpSession.java 76) [INFO] request: /kotlinServer?sessionId=475F147800C84F263968480E29BA98D3&type=highlight&args=undefined ip: 475F147800C84F263968480E29BA98D3
+08/22/2014 12:59:33 (HttpSession.java 333) [INFO] type=HIGHLIGHT userId=475F147800C84F263968480E29BA98D3 message=ALL 24 request=/kotlinServer?sessionId=475F147800C84F263968480E29BA98D3&type=highlight&args=undefined
+08/22/2014 12:59:58 (ServerHandler.java 105) [INFO] GET_HELP_FOR_WORDS
+08/22/2014 12:59:58 (ServerHandler.java 105) [INFO] GET_HELP_FOR_WORDS
+08/22/2014 12:59:58 (ServerHandler.java 102) [INFO] GET_EXAMPLES_LIST
+08/22/2014 12:59:58 (ServerHandler.java 327) [INFO] type=INC_NUMBER_OF_REQUESTS userId=4D53E69875FB494EE8307982C99EFCB5 ip=0 message=SEND_USER_DATA
+08/22/2014 12:59:58 (ServerHandler.java 328) [INFO] type=SEND_USER_DATA userId=4D53E69875FB494EE8307982C99EFCB5 message=browser: Netscape 5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36 system: Linux x86_64
+08/22/2014 12:59:58 (ServerHandler.java 102) [INFO] GET_EXAMPLES_LIST
+08/22/2014 12:59:58 (ServerHandler.java 327) [INFO] type=INC_NUMBER_OF_REQUESTS userId=EC1868405701DA6B38BF75BACCF92B98 ip=0 message=SEND_USER_DATA
+08/22/2014 12:59:58 (ServerHandler.java 328) [INFO] type=SEND_USER_DATA userId=EC1868405701DA6B38BF75BACCF92B98 message=browser: Netscape 5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36 system: Linux x86_64
+08/22/2014 12:59:58 (HttpSession.java 76) [INFO] request: /kotlinServer?sessionId=4D53E69875FB494EE8307982C99EFCB5&type=loadExample&args=Hello,_world!&name=Simplest_version ip: EC1868405701DA6B38BF75BACCF92B98
+08/22/2014 12:59:58 (HttpSession.java 83) [INFO] type=INC_NUMBER_OF_REQUESTS userId=EC1868405701DA6B38BF75BACCF92B98 ip=0 message=LOAD_EXAMPLE
+08/22/2014 12:59:58 (HttpSession.java 333) [INFO] type=LOAD_EXAMPLE userId=EC1868405701DA6B38BF75BACCF92B98 message=ALL 12 request=/kotlinServer?sessionId=4D53E69875FB494EE8307982C99EFCB5&type=loadExample&args=Hello,_world!&name=Simplest_version
+08/22/2014 12:59:58 (HttpSession.java 76) [INFO] request: /kotlinServer?sessionId=F18862BC145C9B5F05046A6F452F107B&type=loadExample&args=Hello,_world!&name=Simplest_version ip: EC1868405701DA6B38BF75BACCF92B98
+08/22/2014 12:59:58 (HttpSession.java 83) [INFO] type=INC_NUMBER_OF_REQUESTS userId=EC1868405701DA6B38BF75BACCF92B98 ip=0 message=LOAD_EXAMPLE
+08/22/2014 12:59:58 (HttpSession.java 333) [INFO] type=LOAD_EXAMPLE userId=EC1868405701DA6B38BF75BACCF92B98 message=ALL 1 request=/kotlinServer?sessionId=F18862BC145C9B5F05046A6F452F107B&type=loadExample&args=Hello,_world!&name=Simplest_version
+08/22/2014 01:00:00 (HttpSession.java 76) [INFO] request: /kotlinServer?sessionId=F18862BC145C9B5F05046A6F452F107B&type=highlight&args=undefined ip: EC1868405701DA6B38BF75BACCF92B98
+08/22/2014 01:00:00 (HttpSession.java 333) [INFO] type=HIGHLIGHT userId=EC1868405701DA6B38BF75BACCF92B98 message=ALL 19 request=/kotlinServer?sessionId=F18862BC145C9B5F05046A6F452F107B&type=highlight&args=undefined
+08/22/2014 01:00:02 (HttpSession.java 76) [INFO] request: /kotlinServer?sessionId=F18862BC145C9B5F05046A6F452F107B&type=highlight&args=undefined ip: EC1868405701DA6B38BF75BACCF92B98
+08/22/2014 01:00:02 (HttpSession.java 333) [INFO] type=HIGHLIGHT userId=EC1868405701DA6B38BF75BACCF92B98 message=ALL 22 request=/kotlinServer?sessionId=F18862BC145C9B5F05046A6F452F107B&type=highlight&args=undefined

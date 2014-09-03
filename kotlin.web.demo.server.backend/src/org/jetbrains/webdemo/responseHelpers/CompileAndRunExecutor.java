@@ -43,28 +43,27 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.Random;
 
 public class CompileAndRunExecutor {
 
     private final List<PsiFile> currentPsiFiles;
-    private final String arguments;
 
     private final SessionInfo sessionInfo;
     private final ExampleObject example;
     private final Project currentProject;
 
-    public CompileAndRunExecutor(List<PsiFile> currentPsiFiles, Project currentProject, String arguments, SessionInfo info, ExampleObject example) {
+    public CompileAndRunExecutor(List<PsiFile> currentPsiFiles, Project currentProject, SessionInfo info, ExampleObject example) {
         this.currentPsiFiles = currentPsiFiles;
         this.currentProject = currentProject;
-        this.arguments = arguments;
         this.sessionInfo = info;
         this.example = example;
     }
 
     public String getResult() {
         ErrorAnalyzer analyzer = new ErrorAnalyzer(currentPsiFiles, sessionInfo, currentProject);
-        List<ErrorDescriptor> errors;
+        Map<String,List<ErrorDescriptor>> errors;
         try {
             errors = analyzer.getAllErrors();
         } catch (KotlinCoreException e) {
@@ -125,7 +124,7 @@ public class CompileAndRunExecutor {
             jsonObject.put("text", stringBuilder.toString());
 
 
-            JavaRunner runner = new JavaRunner(generationState.getBindingContext(), files, arguments, jsonArray, (JetFile) currentPsiFiles.get(0), sessionInfo, example);
+            JavaRunner runner = new JavaRunner(generationState.getBindingContext(), files, example.args, jsonArray, (JetFile) currentPsiFiles.get(0), sessionInfo, example);
 
             return runner.getResult(outputDir.getAbsolutePath());
 
@@ -142,10 +141,12 @@ public class CompileAndRunExecutor {
         return ans;
     }
 
-    private boolean isOnlyWarnings(List<ErrorDescriptor> list) {
-        for (ErrorDescriptor errorDescriptor : list) {
-            if (errorDescriptor.getSeverity() == Severity.ERROR) {
-                return false;
+    private boolean isOnlyWarnings(Map<String, List<ErrorDescriptor>> map) {
+        for(String key: map.keySet()) {
+            for (ErrorDescriptor errorDescriptor : map.get(key)) {
+                if (errorDescriptor.getSeverity() == Severity.ERROR) {
+                    return false;
+                }
             }
         }
         return true;

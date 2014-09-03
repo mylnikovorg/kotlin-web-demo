@@ -38,8 +38,8 @@ public class KotlinHttpServlet extends HttpServlet {
     @Override
     public void init(ServletConfig config) throws ServletException {
         super.init(config);
-        //System.setProperty("kotlin.running.in.server.mode", "true");
-        //System.setProperty("java.awt.headless", "true");
+        System.setProperty("kotlin.running.in.server.mode", "true");
+        System.setProperty("java.awt.headless", "true");
 
         ApplicationSettings.WEBAPP_ROOT_DIRECTORY = getServletContext().getRealPath("/");
         ApplicationSettings.LIBS_DIR = ApplicationSettings.WEBAPP_ROOT_DIRECTORY +"WEB-INF" + File.separator + "lib" +File.separator;
@@ -62,7 +62,6 @@ public class KotlinHttpServlet extends HttpServlet {
                 //HelpLoader.getInstance();
                 //Statistics.getInstance();
                 //MySqlConnector.getInstance();
-
             } else {
                 ErrorWriter.writeErrorToConsole("Initialisation of java core environment failed, server didn't start.");
             }

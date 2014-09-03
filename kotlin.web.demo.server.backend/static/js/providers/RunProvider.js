@@ -23,28 +23,24 @@
 
 var RunProvider = (function () {
 
-    function RunProvider() {
+    function RunProvider(onSuccess, onFail) {
 
         var instance = {
-            onExecutionFinish: function (data) {
-            },
-            onFail: function (message) {
-            },
             run: function (configuration, programText, args, example) {
                 run(configuration, programText, args, example);
             }
         };
 
-        function run(configuration, programText, args, example) {
+        function run(configuration, project, args) {
             if (configuration.type.runner == ConfigurationType.runner.JAVA) {
-                runJava(configuration, programText, args, example);
+                runJava(configuration, project, args);
             } else {
-                runJs(configuration, programText, args, example);
+                runJs(configuration, project, args);
             }
         }
 
 
-        function runJava(configuration, programText, args, example) {
+        function runJava(configuration, project, args) {
             var confTypeString = Configuration.getStringFromType(configuration.type);
             $.ajax({
                 url: generateAjaxUrl("run", confTypeString),
@@ -52,20 +48,20 @@ var RunProvider = (function () {
                 success: function (data) {
                     if (checkDataForNull(data)) {
                         if (checkDataForException(data)) {
-                            instance.onExecutionFinish(data);
+                            onSuccess(data);
                         } else {
-                            instance.onFail(data);
+                            onFail(data);
                         }
                     } else {
-                        instance.onFail("Incorrect data format.")
+                        onFail("Incorrect data format.")
                     }
                 },
                 dataType: "json",
                 type: "POST",
-                data: {text: programText, consoleArgs: args, example: example},
+                data: {project: JSON.stringify(project)},
                 timeout: 10000,
                 error: function (jqXHR, textStatus, errorThrown) {
-                    instance.onFail(textStatus + " : " + errorThrown);
+                    onFail(textStatus + " : " + errorThrown);
                 }
             });
 
@@ -88,19 +84,19 @@ var RunProvider = (function () {
                             try {
                                 dataJs = eval(data[0].text);
                             } catch (e) {
-                                instance.onFail(e);
+                                onFail(e);
                                 return;
                             }
                             var output = [
                                 {"text": safe_tags_replace(dataJs), "type": "out"},
                                 {"text": data[0].text, "type": "toggle-info"}
                             ];
-                            instance.onExecutionFinish(output);
+                            onSuccess(output);
                         } else {
-                            instance.onFail(data);
+                            onFail(data);
                         }
                     } else {
-                        instance.onFail("Incorrect data format.");
+                        onFail("Incorrect data format.");
                     }
                 },
                 dataType: "json",
@@ -108,7 +104,7 @@ var RunProvider = (function () {
                 data: {text: i, consoleArgs: arguments},
                 timeout: 10000,
                 error: function (jqXHR, textStatus, errorThrown) {
-                    instance.onFail(textStatus + " : " + errorThrown);
+                    onFail(textStatus + " : " + errorThrown);
                 }
             });
         }

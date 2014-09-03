@@ -36,12 +36,17 @@ public class ExamplesFolder {
     @JsonIgnore public Map<String, ExampleObject> examples = new HashMap<>();
     private String path;
 
+    public ExamplesFolder(String name){
+        this.name =name;
+    }
+
     @JsonCreator
     ExamplesFolder(@JsonProperty("folder") String folderName, @JsonProperty("examples") String[] exampleNames) {
         path = ApplicationSettings.EXAMPLES_DIRECTORY + File.separator + folderName;
         for (String exampleName : exampleNames) {
             try {
                 ExampleObject example = downloadExample(exampleName);
+                example.parent = folderName;
                 examplesOrder.add(example.name);
                 examples.put(exampleName, example);
             } catch (Exception e) {

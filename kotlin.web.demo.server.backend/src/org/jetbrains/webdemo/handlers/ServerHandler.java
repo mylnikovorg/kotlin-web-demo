@@ -16,30 +16,22 @@
 
 package org.jetbrains.webdemo.handlers;
 
-import com.fasterxml.jackson.databind.node.ArrayNode;
-import com.fasterxml.jackson.databind.node.JsonNodeFactory;
-import com.intellij.openapi.util.io.FileUtil;
 import org.jetbrains.annotations.Nullable;
-import org.jetbrains.webdemo.*;
-import org.jetbrains.webdemo.authorization.AuthorizationFacebookHelper;
-import org.jetbrains.webdemo.authorization.AuthorizationGoogleHelper;
-import org.jetbrains.webdemo.authorization.AuthorizationHelper;
-import org.jetbrains.webdemo.authorization.AuthorizationTwitterHelper;
-import org.jetbrains.webdemo.database.MySqlConnector;
-import org.jetbrains.webdemo.examplesLoader.ExamplesList;
-import org.jetbrains.webdemo.help.HelpLoader;
+import org.jetbrains.webdemo.ErrorWriter;
+import org.jetbrains.webdemo.ResponseUtils;
+import org.jetbrains.webdemo.Statistics;
 import org.jetbrains.webdemo.log.LogDownloader;
-import org.jetbrains.webdemo.server.ApplicationSettings;
 import org.jetbrains.webdemo.session.SessionInfo;
 import org.jetbrains.webdemo.session.UserInfo;
 import org.jetbrains.webdemo.sessions.HttpSession;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.*;
-import java.net.URLDecoder;
-import java.net.URLEncoder;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.PrintWriter;
 import java.util.Calendar;
+import java.util.Map;
 
 public class ServerHandler {
 
@@ -47,89 +39,88 @@ public class ServerHandler {
     public void handle(final HttpServletRequest request, final HttpServletResponse response) throws IOException {
 
         if (request.getQueryString() != null && request.getQueryString().equals("test")) {
-            PrintWriter out = null;
-            try {
-                out = response.getWriter();
+            try (PrintWriter out = response.getWriter()) {
                 out.write("ok");
             } catch (Throwable e) {
                 ErrorWriter.ERROR_WRITER.writeExceptionToExceptionAnalyzer(e,
                         "TEST", request.getHeader("Origin"), "null");
-            } finally {
-                ServerResponseUtils.close(out);
             }
-            return;
-        }
-
-        if (!ServerResponseUtils.isOriginAccepted(request)) {
+        } else if (!ServerResponseUtils.isOriginAccepted(request)) {
             ErrorWriter.ERROR_WRITER.writeInfo(request.getHeader("Origin") + " try to connect to server");
-            return;
-        }
+        } else {
+            SessionInfo sessionInfo;
 
-        SessionInfo sessionInfo;
+            String param = request.getRequestURI() + "?" + request.getQueryString();
+            try {
+                Map<String, String[]> parameters = request.getParameterMap();
+                switch (parameters.get("type")[0]) {
+                    case ("sendUserData"):
+                        sessionInfo = setSessionInfo(request, parameters.get("sessionId")[0]);
 
-        String param = request.getRequestURI() + "?" + request.getQueryString();
-        try {
-            RequestParameters parameters = RequestParameters.parseRequest(param);
-
-            /*if (parameters.compareType("getSessionId")) {
-                sessionInfo = setSessionInfo(request, parameters.getSessionId());
-                sendSessionId(request, response, sessionInfo, param);
-            } else */
-            if (parameters.compareType("getUserName")) {
-                sessionInfo = setSessionInfo(request, parameters.getSessionId());
-                sendUserName(request, response, sessionInfo, param);
-            /*} else if (parameters.compareType("authorization")) {
-                sessionInfo = setSessionInfo(request, parameters.getSessionId());
-                sendAuthorizationResult(request, response, parameters, sessionInfo);*/
-            /*} else if (parameters.compareType("updateExamples")) {
-                updateExamples(request, response);*/
-            /*} else if (param.startsWith("/logs") || parameters.compareType("updateStatistics")) {
-                ErrorWriterOnServer.LOG_FOR_INFO.info(SessionInfo.TypeOfRequest.GET_LOGS_LIST.name());
-                sessionInfo = setSessionInfo(request, parameters.getSessionId());
-                sendListLogs(request, response, parameters.compareType("updateStatistics"), sessionInfo);*/
-            /*} else if (parameters.compareType("showUserInfo")) {
-                ErrorWriterOnServer.LOG_FOR_INFO.info(SessionInfo.TypeOfRequest.GET_LOGS_LIST.name());
-                sendUserInfoForStatistics(request, response);
-            } else if (parameters.compareType("sortExceptions")) {
-                ErrorWriterOnServer.LOG_FOR_INFO.info(SessionInfo.TypeOfRequest.DOWNLOAD_LOG.name());
-                sendSortedExceptions(request, response, parameters);*/
-            /*} else if (parameters.compareType("downloadLog")) {
-                ErrorWriterOnServer.LOG_FOR_INFO.info(SessionInfo.TypeOfRequest.DOWNLOAD_LOG.name() + " " + param);
-                sendLog(request, response, parameters);*/
-            } else if (parameters.compareType("loadExample") && parameters.getArgs().equals("all")) {
-                ErrorWriterOnServer.LOG_FOR_INFO.info(SessionInfo.TypeOfRequest.GET_EXAMPLES_LIST.name());
-                sendExamplesList(request, response);
-            /*} else if (parameters.compareType("loadHelpForWords")) {
-                ErrorWriterOnServer.LOG_FOR_INFO.info(SessionInfo.TypeOfRequest.GET_HELP_FOR_WORDS.name());
-                sendHelpContentForWords(request, response);*/
-            } else if (parameters.compareType("highlight")
-                    || parameters.compareType("complete")
-                    || parameters.compareType("run")
-                    || parameters.compareType("convertToKotlin")
-                    || parameters.compareType("loadExample")) {
-                if (!parameters.compareType("writeLog")) {
-                    sessionInfo = setSessionInfo(request, parameters.getSessionId());
-                } else {
-                    sessionInfo = new SessionInfo(request.getSession().getId());
+                        break;
+                   /* case ("getSessionId"):
+                        sessionInfo = setSessionInfo(request, parameters.get("sessionId")[0]);
+                        sendSessionId(request, response, sessionInfo, param);
+                        break;
+                    case ("getUserName"):
+                        sessionInfo = setSessionInfo(request, parameters.get("sessionId")[0]);
+                        sendUserName(request, response, sessionInfo, param);
+                        break;
+                    case ("authorization"):
+                        sessionInfo = setSessionInfo(request, parameters.get("sessionId")[0]);
+                        sendAuthorizationResult(request, response, parameters, sessionInfo);
+                        break;*/
+                   /* case ("updateExamples"):
+                        updateExamples(request, response);
+                        break;
+                    case ("updateStatistics"):
+                        ErrorWriterOnServer.LOG_FOR_INFO.info(SessionInfo.TypeOfRequest.GET_LOGS_LIST.name());
+                        sessionInfo = setSessionInfo(request, parameters.get("sessionId")[0]);
+                        sendListLogs(request, response, parameters.get("type")[0].equals("updateStatistics"), sessionInfo);
+                        break;*/
+//                    case ("showUserInfo"):
+//                        ErrorWriterOnServer.LOG_FOR_INFO.info(SessionInfo.TypeOfRequest.GET_LOGS_LIST.name());
+//                        sendUserInfoForStatistics(request, response);
+//                        break;
+                    /*case ("sortExceptions"):
+                        ErrorWriterOnServer.LOG_FOR_INFO.info(SessionInfo.TypeOfRequest.DOWNLOAD_LOG.name());
+                        sendSortedExceptions(request, response, parameters);
+                        break;*/
+                    /*case ("downloadLog"):
+                        ErrorWriterOnServer.LOG_FOR_INFO.info(SessionInfo.TypeOfRequest.DOWNLOAD_LOG.name() + " " + param);
+                        sendLog(request, response, parameters);
+                        break;*/
+                   /* case ("loadExampleHeaders"):
+                        ErrorWriterOnServer.LOG_FOR_INFO.info(SessionInfo.TypeOfRequest.GET_EXAMPLES_LIST.name());
+                        sendExamplesList(request, response);
+                        break;*/
+                    /*case ("loadHelpForWords"):
+                        ErrorWriterOnServer.LOG_FOR_INFO.info(SessionInfo.TypeOfRequest.GET_HELP_FOR_WORDS.name());
+                        sendHelpContentForWords(request, response);
+                        break;*/
+                    default: {
+                        if (!parameters.get("type")[0].equals("writeLog")) {
+                            sessionInfo = setSessionInfo(request, parameters.get("sessionId")[0]);
+                        } else {
+                            sessionInfo = new SessionInfo(request.getSession().getId());
+                        }
+                        /*if (!parameters.get("sessionId")[0].equals(sessionInfo.getId())) {
+                            parameters.put("sessionId", new String[]{sessionInfo.getId()});
+                        }*/
+                        HttpSession session = new HttpSession(sessionInfo, parameters);
+                        session.handle(request, response);
+                    }
                 }
-                if (!parameters.getSessionId().equals(sessionInfo.getId())) {
-                    parameters.setSessionId(sessionInfo.getId());
-                }
-                HttpSession session = new HttpSession(sessionInfo, parameters);
-                session.handle(request, response);
-            } else {
-                ErrorWriterOnServer.LOG_FOR_INFO.info(SessionInfo.TypeOfRequest.GET_RESOURCE.name() + " " + param);
-                sendResourceFile(request, response);
+            } catch (Throwable e) {
+                //Do not stop server
+                ErrorWriter.ERROR_WRITER.writeExceptionToExceptionAnalyzer(e,
+                        "UNKNOWN", "unknown", param);
+                ServerResponseUtils.writeResponse(request, response, "Internal server error", HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
             }
-        } catch (Throwable e) {
-            //Do not stop server
-            ErrorWriter.ERROR_WRITER.writeExceptionToExceptionAnalyzer(e,
-                    "UNKNOWN", "unknown", param);
-            ServerResponseUtils.writeResponse(request, response, "Internal server error", HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
         }
     }
 
-    private void sendSessionId(HttpServletRequest request, HttpServletResponse response, SessionInfo sessionInfo, String param) {
+   /* private void sendSessionId(HttpServletRequest request, HttpServletResponse response, SessionInfo sessionInfo, String param) {
         try {
             String id = sessionInfo.getId();
             ArrayNode array = new ArrayNode(JsonNodeFactory.instance);
@@ -143,9 +134,9 @@ public class ServerHandler {
             ErrorWriter.ERROR_WRITER.writeExceptionToExceptionAnalyzer(e,
                     "UNKNOWN", sessionInfo.getOriginUrl(), param);
         }
-    }
+    }*/
 
-    private void sendUserName(HttpServletRequest request, HttpServletResponse response, SessionInfo sessionInfo, String param) {
+    /*private void sendUserName(HttpServletRequest request, HttpServletResponse response, SessionInfo sessionInfo, String param) {
         try {
             ArrayNode array = new ArrayNode(JsonNodeFactory.instance);
             if (sessionInfo.getUserInfo().isLogin()) {
@@ -158,25 +149,29 @@ public class ServerHandler {
             ErrorWriter.ERROR_WRITER.writeExceptionToExceptionAnalyzer(e,
                     "UNKNOWN", sessionInfo.getOriginUrl(), param);
         }
-    }
+    }*/
 
-    private void sendAuthorizationResult(HttpServletRequest request, HttpServletResponse response, RequestParameters parameters, SessionInfo sessionInfo) {
-        if (parameters.getArgs().equals("logout")) {
+    /*private void sendAuthorizationResult(HttpServletRequest request, HttpServletResponse response, Map<String, String[]> parameters, SessionInfo sessionInfo) {
+        if (parameters.get("args")[0].equals("logout")) {
             sessionInfo.getUserInfo().logout();
             request.getSession().setAttribute("userInfo", sessionInfo.getUserInfo());
         } else {
             AuthorizationHelper helper;
-            if (parameters.getArgs().contains("twitter")) {
+            if (parameters.get("args")[0].equals("twitter")) {
                 helper = new AuthorizationTwitterHelper();
-            } else if (parameters.getArgs().contains("google")) {
+            } else if (parameters.get("args")[0].equals("google")) {
                 helper = new AuthorizationGoogleHelper();
             } else {
                 helper = new AuthorizationFacebookHelper();
             }
-            if (parameters.getArgs().contains("oauth_verifier") || parameters.getArgs().contains("code=")) {
-                UserInfo info = helper.verify(parameters.getArgs());
+            if (parameters.containsKey("oauth_verifier") || parameters.containsKey("code")) {
+                UserInfo info;
+                if (parameters.containsKey("oauth_verifier")) {
+                    info = helper.verify(parameters.get("oauth_verifier")[0]);
+                } else {
+                    info = helper.verify(parameters.get("code")[0]);
+                }
                 if (info != null) {
-
                     sessionInfo.setUserInfo(info);
                     MySqlConnector.getInstance().addNewUser(sessionInfo.getUserInfo());
                     request.getSession().setAttribute("userInfo", sessionInfo.getUserInfo());
@@ -187,7 +182,7 @@ public class ServerHandler {
                     ErrorWriter.ERROR_WRITER.writeExceptionToExceptionAnalyzer(e,
                             "UNKNOWN", sessionInfo.getOriginUrl(), "cannot redirect to http://" + ApplicationSettings.AUTH_REDIRECT);
                 }
-            } else if (parameters.getArgs().contains("denied=")) {
+            } else if (parameters.containsKey("denied")) {
                 try {
                     response.sendRedirect("http://" + ApplicationSettings.AUTH_REDIRECT);
                 } catch (IOException e) {
@@ -196,37 +191,33 @@ public class ServerHandler {
                 }
             } else {
                 String verifyKey = helper.authorize();
-                PrintWriter out = null;
-                try {
-                    out = response.getWriter();
+                try (PrintWriter out = response.getWriter()) {
                     out.write(verifyKey);
                 } catch (Throwable e) {
                     ErrorWriter.ERROR_WRITER.writeExceptionToExceptionAnalyzer(e,
                             "UNKNOWN", sessionInfo.getOriginUrl(), request.getRequestURI() + "/" + request.getQueryString());
-                } finally {
-                    ServerResponseUtils.close(out);
                 }
             }
         }
-    }
+    }*/
 
     private void sendUserInfoForStatistics(HttpServletRequest request, final HttpServletResponse response) {
         writeResponse(request, response, Statistics.getInstance().showMap(), HttpServletResponse.SC_OK);
     }
 
 
-    private void updateExamples(HttpServletRequest request, final HttpServletResponse response) {
+    /*private void updateExamples(HttpServletRequest request, final HttpServletResponse response) {
         String responseStr = ExamplesList.updateList();
         responseStr += HelpLoader.updateExamplesHelp();
         writeResponse(request, response, responseStr, HttpServletResponse.SC_OK);
-    }
+    }*/
 
-    private void sendSortedExceptions(final HttpServletRequest request, final HttpServletResponse response, RequestParameters parameters) {
-        if (parameters.getArgs().contains("download")) {
+    private void sendSortedExceptions(final HttpServletRequest request, final HttpServletResponse response, Map<String, String[]> parameters) {
+        if (parameters.get("args")[0].contains("download")) {
             response.addHeader("Content-type", "application/x-download");
         }
-        String from = ResponseUtils.substringBetween(parameters.getArgs(), "from=", "&to=");
-        String to = ResponseUtils.substringAfter(parameters.getArgs(), "&to=");
+        String from = ResponseUtils.substringBetween(parameters.get("args")[0], "from=", "&to=");
+        String to = ResponseUtils.substringAfter(parameters.get("args")[0], "&to=");
 
         writeResponse(request, response, new LogDownloader().getSortedExceptions(from, to), 200);
     }
@@ -248,23 +239,21 @@ public class ServerHandler {
         return sessionInfo;
     }
 
-    private void sendHelpContentForWords(HttpServletRequest request, final HttpServletResponse response) {
-        writeResponse(request, response, HelpLoader.getInstance().getHelpForWords(), 200);
-    }
 
-    private void sendLog(final HttpServletRequest request, final HttpServletResponse response, RequestParameters parameters) {
+
+   /* private void sendLog(final HttpServletRequest request, final HttpServletResponse response, Map<String, String[]> parameters) {
         String path;
-        if (parameters.getArgs().contains("&download")) {
+        if (parameters.get("args")[0].contains("&download")) {
             response.addHeader("Content-type", "application/x-download");
         }
-        if (parameters.getArgs().contains("&view")) {
-            path = ResponseUtils.substringBefore(parameters.getArgs(), "&view");
+        if (parameters.get("args")[0].contains("&view")) {
+            path = ResponseUtils.substringBefore(parameters.get("args")[0], "&view");
         } else {
-            path = ResponseUtils.substringBefore(parameters.getArgs(), "&download");
+            path = ResponseUtils.substringBefore(parameters.get("args")[0], "&download");
         }
         path = path.replaceAll("%5C", "/");
         writeResponse(request, response, new LogDownloader().download(path), 200);
-    }
+    }*/
 
     private void sendListLogs(final HttpServletRequest request, final HttpServletResponse response, boolean updateStatistics, SessionInfo sessionInfo) {
         String responseStr = null;
@@ -293,11 +282,11 @@ public class ServerHandler {
         writeResponse(request, response, responseStr, 200);
     }
 
-    private void sendExamplesList(HttpServletRequest request, final HttpServletResponse response) {
+    /*private void sendExamplesList(HttpServletRequest request, final HttpServletResponse response) {
         writeResponse(request, response, ExamplesList.getInstance().getListAsString(), HttpServletResponse.SC_OK);
-    }
+    }*/
 
-    private void sendUserInformation(final HttpServletRequest request, final HttpServletResponse response, SessionInfo info) {
+   /* private void sendUserInformation(final HttpServletRequest request, final HttpServletResponse response, SessionInfo info) {
         StringBuilder reqResponse = new StringBuilder();
         InputStream is = null;
         try {
@@ -321,72 +310,7 @@ public class ServerHandler {
         ErrorWriterOnServer.LOG_FOR_INFO.info(ErrorWriter.getInfoForLogWoIp(SessionInfo.TypeOfRequest.SEND_USER_DATA.name(), info.getId(), ResponseUtils.substringAfter(reqResponse.toString(), "text=")));
         writeResponse(request, response, "OK", HttpServletResponse.SC_OK);
     }
-
-    private void sendResourceFile(HttpServletRequest request, HttpServletResponse response) {
-        String path = request.getRequestURI() + "?" + request.getQueryString();
-        path = ResponseUtils.substringAfterReturnAll(path, "resources");
-        ErrorWriterOnServer.LOG_FOR_INFO.error(ErrorWriter.getInfoForLogWoIp(SessionInfo.TypeOfRequest.GET_RESOURCE.name(), "-1", "Resource doesn't downloaded from nginx: " + path));
-        if (path.equals("")) {
-            ErrorWriter.ERROR_WRITER.writeExceptionToExceptionAnalyzer(
-                    new UnsupportedOperationException("Empty path to resource"),
-                    SessionInfo.TypeOfRequest.GET_RESOURCE.name(), request.getHeader("Origin"), path);
-            writeResponse(request, response, "Path to the file is incorrect.", HttpServletResponse.SC_NOT_FOUND);
-            return;
-        } else if (path.startsWith("/messages/")) {
-            writeResponse(request, response, "", HttpServletResponse.SC_OK);
-            return;
-        } else if (path.equals("/") || path.equals("/index.html")) {
-            path = "/index.html";
-            StringBuilder responseStr = new StringBuilder();
-            InputStream is = null;
-            try {
-                is = ServerHandler.class.getResourceAsStream(path);
-                responseStr.append(ResponseUtils.readData(is, true));
-            } catch (FileNotFoundException e) {
-                ErrorWriter.ERROR_WRITER.writeExceptionToExceptionAnalyzer(e,
-                        SessionInfo.TypeOfRequest.GET_RESOURCE.name(), request.getHeader("Origin"), "index.html not found");
-                writeResponse(request, response, "Cannot open this page", HttpServletResponse.SC_BAD_GATEWAY);
-                return;
-            } catch (IOException e) {
-                ErrorWriter.ERROR_WRITER.writeExceptionToExceptionAnalyzer(e,
-                        SessionInfo.TypeOfRequest.GET_RESOURCE.name(), request.getHeader("Origin"), "index.html not found");
-                writeResponse(request, response, "Cannot open this page", HttpServletResponse.SC_BAD_GATEWAY);
-                return;
-            } finally {
-                ServerResponseUtils.close(is);
-            }
-
-            OutputStream os = null;
-            try {
-                os = response.getOutputStream();
-                os.write(responseStr.toString().getBytes());
-            } catch (IOException e) {
-                //This is an exception we can't send data to client
-            } finally {
-                ServerResponseUtils.close(os);
-            }
-            return;
-        }
-
-        InputStream is = ServerHandler.class.getResourceAsStream(path);
-        if (is == null) {
-            if (request.getQueryString() != null) {
-                ErrorWriter.ERROR_WRITER.writeExceptionToExceptionAnalyzer(
-                        new UnsupportedOperationException("Broken path to resource"),
-                        SessionInfo.TypeOfRequest.GET_RESOURCE.name(), request.getHeader("Origin"), request.getRequestURI() + "?" + request.getQueryString());
-            }
-            writeResponse(request, response, ("Resource not found. " + path), HttpServletResponse.SC_NOT_FOUND);
-            return;
-        }
-
-        try {
-            FileUtil.copy(is, response.getOutputStream());
-        } catch (IOException e) {
-            ErrorWriter.ERROR_WRITER.writeExceptionToExceptionAnalyzer(e,
-                    SessionInfo.TypeOfRequest.GET_RESOURCE.name(), request.getHeader("Origin"), request.getRequestURI() + "?" + request.getQueryString());
-            writeResponse(request, response, "Could not load the resource from the server", HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
-        }
-    }
+*/
 
     //Send Response
     private void writeResponse(HttpServletRequest request, HttpServletResponse response, String responseBody, int errorCode) {

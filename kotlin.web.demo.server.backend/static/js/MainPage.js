@@ -56,15 +56,6 @@ var ActionStatusMessages = {
 
 var sessionId = -1;
 
-function Example() {
-    var name;
-    var args;
-    var text;
-    var runner;
-    var dependencies;
-    var defaultDependencies;
-}
-
 var configurationManager = new ConfigurationComponent();
 var actionManager = new ActionManager();
 
@@ -124,41 +115,94 @@ var helpViewForWords = new HelpView("Words", $("#words-help-text"), helpModelFor
 helpViewForWords.hide();
 
 
-var runProvider = new RunProvider();
+var runProvider = (function () {
+
+    function onSuccess (output) {
+        run_button.button("option", "disabled", false);
+        if (configurationManager.getConfiguration().type == Configuration.type.JUNIT) {
+            junitView.setOutput(output);
+        } else {
+            consoleView.setOutput(output);
+        }
+        statusBarView.html(ActionStatusMessages.run_java_ok);
+    }
+
+    function onFail (error) {
+        run_button.button("option", "disabled", false);
+        consoleView.writeException(error);
+        statusBarView.html(ActionStatusMessages.run_java_fail);
+    }
+
+    return new RunProvider(onSuccess, onFail);
+})();
 
 var loginProvider = new LoginProvider();
 var loginView = new LoginView(loginProvider);
-var converterProvider = new ConverterProvider();
+
+var converterProvider = (function () {
+    function onSuccess(data){
+        converterView.closeDialog();
+        editor.refreshMode();
+        editor.setText(data);
+        editor.indentAll();
+        statusBarView.html(ActionStatusMessages.convert_java_to_kotlin_ok);
+    }
+
+    function onFail(error){
+        converterView.closeDialog();
+        consoleView.writeException(error);
+        statusBarView.html(ActionStatusMessages.convert_java_to_kotlin_fail);
+    }
+
+    return new ConverterProvider(onSuccess, onFail);
+})();
+
+var highlightingProvider = (function () {
+    function onSuccess(data, callback) {
+        accordion.getSelectedProject().processHighlightingResult(data);
+        problemsView.addMessages(data);
+        statusBarView.html(ActionStatusMessages.get_highlighting_ok);
+        callback(data);
+    }
+
+    function onFail(error) {
+        run_button.button("option", "disabled", false);
+        consoleView.writeException(error);
+        statusBarView.html(ActionStatusMessages.get_highlighting_fail);
+    }
+
+    return new HighlichtingProvider(onSuccess, onFail)
+})();
+
+var completionProvider = (function () {
+    function onSuccess(completionObject) {
+        editor.showCompletionResult(completionObject);
+        statusBarView.html(ActionStatusMessages.get_completion_ok);
+    }
+    function onFail(error) {
+        consoleView.writeException(error);
+        statusBarView.html(ActionStatusMessages.get_completion_fail);
+    }
+
+    return new CompletionProvider(onSuccess, onFail);
+})();
+
 var converterView = new ConverterView($("#java2kotlin"), converterProvider);
-
 var accordion = new AccordionView($("#examples-list"));
-var highlighting = new HighlightingFromServer();
 
-editor.setHighlighterDecorator(highlighting);
+
+
 
 
 ConfirmDialog.isEditorContentChanged = editor.isEditorContentChanged;
 ConfirmDialog.isLoggedIn = loginView.isLoggedIn;
 ConfirmDialog.saveProgram = accordion.saveProgram;
 
-converterProvider.onConvert = function (text) {
-    converterView.closeDialog();
-    editor.refreshMode();
-    editor.setText(text);
-    editor.indentAll();
-    statusBarView.html(ActionStatusMessages.convert_java_to_kotlin_ok);
-};
-
-converterProvider.onFail = function (exception) {
-    converterView.closeDialog();
-    consoleView.writeException(exception);
-    statusBarView.html(ActionStatusMessages.convert_java_to_kotlin_fail);
-};
 
 configurationManager.onChange = function (configuration) {
     editor.setConfiguration(configuration);
     consoleView.setConfiguration(configuration);
-    accordion.setConfiguration(configuration);
+//    accordion.setConfiguration(configuration);
 };
 
 configurationManager.onFail = function (exception) {
@@ -199,41 +243,24 @@ var run_button = $("#run-button")
     .button()
     .click(function () {
         run_button.button("option", "disabled", true);
+        editor.save();
         var localConfiguration = configurationManager.getConfiguration();
-        highlighting.getHighlighting(localConfiguration.type, editor.getProgramText(), function (highlightingResult) {
-            editor.addMarkers(highlightingResult);
-            if (!checkIfThereAreErrorsInHighlightingResult(highlightingResult)) {
+        highlightingProvider.getHighlighting(localConfiguration.type, accordion.getSelectedProject().getModifiableContent(), function (highlightingResult) {
+            var example = accordion.getSelectedProject();
+            example.processHighlightingResult(highlightingResult);
+            if (!example.errorsExists()) {
                 //Create canvas element before run it in browser
                 if (localConfiguration.type == Configuration.type.CANVAS) {
                     canvasDialog.dialog("open");
                 }
-                runProvider.run(configurationManager.getConfiguration(), editor.getProgramText(), argumentsView.val(), accordion.getSelectedExample());
+                runProvider.run(configurationManager.getConfiguration(), accordion.getSelectedProject().getModifiableContent(), argumentsView.val(), accordion.getSelectedProject());
             } else {
                 run_button.button("option", "disabled", false);
             }
         });
     });
-
-
-runProvider.onExecutionFinish = function (output) {
-    run_button.button("option", "disabled", false);
-    if(configurationManager.getConfiguration().type == Configuration.type.JUNIT) {
-        junitView.setOutput(output);
-    } else{
-        consoleView.setOutput(output);
-    }
-    statusBarView.html(ActionStatusMessages.run_java_ok);
-};
-
-runProvider.onFail = function (error) {
-    run_button.button("option", "disabled", false);
-    consoleView.writeException(error);
-    statusBarView.html(ActionStatusMessages.run_java_fail);
-};
-
-ProgramsView.isLoggedIn = loginView.isLoggedIn;
-ProgramsModel.getEditorContent = editor.getProgramText;
-ProgramsModel.getArguments = argumentsView.val;
+//ProgramsModel.getEditorContent = editor.getProgramText;
+//ProgramsModel.getArguments = argumentsView.val;
 
 
 accordion.onFail = function (exception, actionCode) {
@@ -244,17 +271,14 @@ accordion.onLoadCode = function (element, isProgram) {
     if (!isProgram) {
         helpViewForExamples.showHelp(element.help);
         statusBarView.html(ActionStatusMessages.load_example_ok);
+        argumentsView.val(element.args);
+        configurationManager.updateConfiguration(getFirstConfiguration(element.confType));
     } else {
         helpViewForExamples.hide();
         statusBarView.html(ActionStatusMessages.load_program_ok);
+        argumentsView.val(element.args);
+        configurationManager.updateConfiguration(getFirstConfiguration(element.confType));
     }
-
-    var text = element.files[0].content;
-
-    editor.setText(text);
-    argumentsView.val(element.args);
-    configurationManager.updateConfiguration(getFirstConfiguration(element.confType));
-
 };
 
 accordion.onDeleteProgram = function () {
@@ -268,7 +292,7 @@ accordion.onSaveProgram = function () {
 
 loginProvider.onLogin = function (data) {
     loginView.setUserName(data);
-        statusBarView.html(ActionStatusMessages.login_ok);
+    statusBarView.html(ActionStatusMessages.login_ok);
     accordion.loadAllContent();
 };
 
@@ -282,7 +306,7 @@ loginProvider.onLogout = function () {
 
 loginProvider.onFail = function (exception, actionCode) {
     consoleView.writeException(exception);
-    statusBarView.setMessage(actionCode);
+    statusBarView.html(actionCode);
 };
 
 $(document).keydown(function (e) {
@@ -313,24 +337,6 @@ $(".toggleShortcuts").click(function () {
 
 $("#help3").toggle(true);
 
-//function loadShortcuts() {
-//    var text = $("#help3").html();
-//    text = text.replace("@shortcut-autocomplete@", actionManager.getShortcutByName("org.jetbrains.web.demo.autocomplete").getName());
-//    text = text.replace("@shortcut-run@", actionManager.getShortcutByName("org.jetbrains.web.demo.run").getName());
-//    text = text.replace("@shortcut-reformat@", actionManager.getShortcutByName("org.jetbrains.web.demo.reformat").getName());
-//    text = text.replace("@shortcut-save@", actionManager.getShortcutByName("org.jetbrains.web.demo.save").getName());
-//    $("#help3").html(text);
-//}
-
-$("#whatimgjavatokotlin").click(function () {
-    $("#dialogAboutJavaToKotlinConverter").dialog("open");
-});
-
-$("#dialogAboutJavaToKotlinConverter").dialog({
-    modal: "true",
-    width: 300,
-    autoOpen: false
-});
 
 function generateAjaxUrl(type, args) {
     var url = [location.protocol, '//', location.host, "/"].join('');
@@ -385,6 +391,12 @@ function loadShortcuts() {
     text = text.replace("@reformat_shortcut@", actionManager.getShortcutByName("org.jetbrains.web.demo.reformat").getName());
     text = text.replace("@save_shortcut@", actionManager.getShortcutByName("org.jetbrains.web.demo.save").getName());
     $("#shortcuts-help").html(text);
+}
+
+window.onbeforeunload = closingCode;
+function closingCode(){
+    editor.save();
+    return null;
 }
 
 helpDialog = $("#help-dialog");

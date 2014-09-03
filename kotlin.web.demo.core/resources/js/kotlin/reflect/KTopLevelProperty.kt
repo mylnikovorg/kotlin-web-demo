@@ -1,5 +1,5 @@
 /*
- * Copyright 2000-2012 JetBrains s.r.o.
+ * Copyright 2010-2014 JetBrains s.r.o.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,16 +14,8 @@
  * limitations under the License.
  */
 
-package org.jetbrains.webdemo.authorization;
+package kotlin.reflect
 
-import org.jetbrains.annotations.Nullable;
-import org.jetbrains.webdemo.session.UserInfo;
+public trait KTopLevelProperty<out R> : KProperty<R>
 
-public abstract class AuthorizationHelper {
-    protected String type;
-
-    public abstract String authorize();
-
-    @Nullable
-    public abstract UserInfo verify(String url);
-}
+public trait KMutableTopLevelProperty<R> : KTopLevelProperty<R>, KMutableProperty<R>

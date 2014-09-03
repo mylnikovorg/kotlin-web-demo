@@ -16,41 +16,52 @@
 
 package org.jetbrains.webdemo.sessions;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.intellij.openapi.project.Project;
+import com.intellij.openapi.util.io.FileUtil;
 import com.intellij.openapi.util.text.StringUtil;
 import com.intellij.psi.PsiFile;
 import org.jetbrains.annotations.NonNls;
 import org.jetbrains.annotations.Nullable;
 import org.jetbrains.webdemo.*;
-import org.jetbrains.webdemo.database.MySqlConnector;
-import org.jetbrains.webdemo.examplesLoader.ExampleFile;
 import org.jetbrains.webdemo.examplesLoader.ExampleObject;
 import org.jetbrains.webdemo.examplesLoader.ExamplesList;
+import org.jetbrains.webdemo.handlers.ServerHandler;
 import org.jetbrains.webdemo.handlers.ServerResponseUtils;
 import org.jetbrains.webdemo.responseHelpers.*;
 import org.jetbrains.webdemo.session.SessionInfo;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.Closeable;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.UnsupportedEncodingException;
-import java.util.*;
+import java.io.*;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+
+//import org.jetbrains.webdemo.database.MySqlConnector;
 
 public class HttpSession {
+    @NonNls
+    private static final String[] REPLACES_REFS = {"&lt;", "&gt;", "&amp;", "&#39;", "&quot;"};
+    @NonNls
+    private static final String[] REPLACES_DISP = {"<", ">", "&", "'", "\""};
+    private final SessionInfo sessionInfo;
+    private final Map<String, String[]> parameters;
     protected Project currentProject;
     protected PsiFile currentPsiFile;
-
     private HttpServletRequest request;
     private HttpServletResponse response;
+    private ObjectMapper objectMapper = new ObjectMapper();
 
-    private final SessionInfo sessionInfo;
-    private final RequestParameters parameters;
-
-    public HttpSession(SessionInfo info, RequestParameters parameters) {
+    public HttpSession(SessionInfo info, Map<String, String[]> parameters) {
         this.sessionInfo = info;
         this.parameters = parameters;
+    }
+
+    public static String unescapeXml(@Nullable final String text) {
+        if (text == null) return null;
+        return StringUtil.replace(text, REPLACES_REFS, REPLACES_DISP);
     }
 
     public void handle(final HttpServletRequest request, final HttpServletResponse response) {
@@ -61,40 +72,68 @@ public class HttpSession {
 
             ErrorWriterOnServer.LOG_FOR_INFO.info("request: " + param + " ip: " + sessionInfo.getId());
 
-            if (parameters.compareType("run")) {
-                ErrorWriterOnServer.LOG_FOR_INFO.info(ErrorWriter.getInfoForLog(SessionInfo.TypeOfRequest.INC_NUMBER_OF_REQUESTS.name(), sessionInfo.getId(), sessionInfo.getType()));
-                sendExecutorResult();
-            } else if (parameters.compareType("loadExample")) {
-                sessionInfo.setType(SessionInfo.TypeOfRequest.LOAD_EXAMPLE);
-                ErrorWriterOnServer.LOG_FOR_INFO.info(ErrorWriter.getInfoForLog(SessionInfo.TypeOfRequest.INC_NUMBER_OF_REQUESTS.name(), sessionInfo.getId(), sessionInfo.getType()));
-                sendExampleContent();
-            } else if (parameters.compareType("highlight")) {
-                sessionInfo.setType(SessionInfo.TypeOfRequest.HIGHLIGHT);
-                sessionInfo.setRunConfiguration(parameters.getArgs());
-                sendHighlightingResult();
-            /*} else if (parameters.compareType("writeLog")) {
-                sessionInfo.setType(SessionInfo.TypeOfRequest.WRITE_LOG);
-                sendWriteLogResult();*/
-            } else if (parameters.compareType("convertToKotlin")) {
-                sessionInfo.setType(SessionInfo.TypeOfRequest.CONVERT_TO_KOTLIN);
-                sendConversationResult();
-            /*} else if (parameters.compareType("saveProgram")) {
-                sendSaveProgramResult();
-            } else if (parameters.compareType("loadProgram")) {
-                sendLoadProgramResult();
-            } else if (parameters.compareType("deleteProgram")) {
-                sendDeleteProgramResult();
-            } else if (parameters.compareType("generatePublicLink")) {
-                sendGeneratePublicLinkResult();*/
-            } else if (parameters.compareType("complete")) {
-                sessionInfo.setType(SessionInfo.TypeOfRequest.COMPLETE);
-                ErrorWriterOnServer.LOG_FOR_INFO.info(ErrorWriter.getInfoForLog(SessionInfo.TypeOfRequest.INC_NUMBER_OF_REQUESTS.name(), sessionInfo.getId(), sessionInfo.getType()));
-                sendCompletionResult();
-            } else {
-                ErrorWriter.ERROR_WRITER.writeExceptionToExceptionAnalyzer(new UnsupportedOperationException("Incorrect request"), sessionInfo.getType(), sessionInfo.getOriginUrl(), param);
-                writeResponse(ResponseUtils.getErrorInJson("Incorrect request"), HttpServletResponse.SC_BAD_REQUEST);
+            switch (parameters.get("type")[0]) {
+                case("run"):
+                    ErrorWriterOnServer.LOG_FOR_INFO.info(ErrorWriter.getInfoForLog(SessionInfo.TypeOfRequest.INC_NUMBER_OF_REQUESTS.name(), sessionInfo.getId(), sessionInfo.getType()));
+                    sendExecutorResult();
+                    break;
+                /*case("loadExample"):
+                    sessionInfo.setType(SessionInfo.TypeOfRequest.LOAD_EXAMPLE);
+                    ErrorWriterOnServer.LOG_FOR_INFO.info(ErrorWriter.getInfoForLog(SessionInfo.TypeOfRequest.INC_NUMBER_OF_REQUESTS.name(), sessionInfo.getId(), sessionInfo.getType()));
+                    sendExampleContent();
+                    break;*/
+                case("highlight"):
+                    sendHighlightingResult();
+                    break;
+                case("test"):
+                    sendExecutorResultTest();
+                    break;
+                /*case("writeLog"):
+                    sessionInfo.setType(SessionInfo.TypeOfRequest.WRITE_LOG);
+                    sendWriteLogResult();
+                    break;*/
+                case("convertToKotlin"):
+                    sessionInfo.setType(SessionInfo.TypeOfRequest.CONVERT_TO_KOTLIN);
+                    sendConversationResult();
+                    break;
+                /*case("saveFile"):
+                    sendSaveFileResult();
+                    break;
+                case("addProject"):
+                    MySqlConnector.getInstance().addProject(sessionInfo.getUserInfo(), parameters.get("args")[0]);
+                    break;
+                case("addExampleProject"):
+                    addExampleProject();
+                    break;
+                case ("deleteProject"):
+                    MySqlConnector.getInstance().deleteProject(sessionInfo.getUserInfo(), parameters.get("args")[0], parameters.get("name")[0]);
+                    break;
+                case ("saveProject"):
+                    sendSaveProjectResult();
+                    break;
+                case("loadProject"):
+                    sendLoadProjectResult();
+                    break;
+                case("addFile"):
+                    MySqlConnector.getInstance().addFile(sessionInfo.getUserInfo(), parameters.get("args")[0], parameters.get("name")[0], parameters.get("filename")[0]);
+                case("deleteFile"):
+                    sendDeleteProgramResult();
+                    break;
+                case("generatePublicLink"):
+                    sendGeneratePublicLinkResult();
+                    break;*/
+                case("complete"):
+                    sessionInfo.setType(SessionInfo.TypeOfRequest.COMPLETE);
+                    ErrorWriterOnServer.LOG_FOR_INFO.info(ErrorWriter.getInfoForLog(SessionInfo.TypeOfRequest.INC_NUMBER_OF_REQUESTS.name(), sessionInfo.getId(), sessionInfo.getType()));
+                    sendCompletionResult();
+                    break;
+                default:
+                    ErrorWriterOnServer.LOG_FOR_INFO.info(SessionInfo.TypeOfRequest.GET_RESOURCE.name() + " " + param);
+                    sendResourceFile(request, response);
+                    break;
             }
         } catch (Throwable e) {
+            e.printStackTrace();
             if (sessionInfo != null && sessionInfo.getType() != null && currentPsiFile != null && currentPsiFile.getText() != null) {
                 ErrorWriter.ERROR_WRITER.writeExceptionToExceptionAnalyzer(e, sessionInfo.getType(), sessionInfo.getOriginUrl(), currentPsiFile.getText());
             } else {
@@ -110,7 +149,7 @@ public class HttpSession {
     }
 
     private void sendWriteLogResult() {
-        String type = parameters.getArgs();
+        String type = parameters.get("args")[0];
         if (type.equals("info")) {
             String tmp = getPostDataFromRequest(true).text;
             ErrorWriterOnServer.LOG_FOR_INFO.info(tmp);
@@ -127,77 +166,165 @@ public class HttpSession {
         writeResponse("Data sent", HttpServletResponse.SC_OK);
     }
 
-    @NonNls
-    private static final String[] REPLACES_REFS = {"&lt;", "&gt;", "&amp;", "&#39;", "&quot;"};
-    @NonNls
-    private static final String[] REPLACES_DISP = {"<", ">", "&", "'", "\""};
 
-    public static String unescapeXml(@Nullable final String text) {
-        if (text == null) return null;
-        return StringUtil.replace(text, REPLACES_REFS, REPLACES_DISP);
-    }
-
-    private void sendGeneratePublicLinkResult() {
-        String result;
-        String programId = ResponseUtils.getExampleOrProgramNameByUrl(parameters.getArgs());
-        result = MySqlConnector.getInstance().generatePublicLink(programId);
-        writeResponse(result, HttpServletResponse.SC_OK);
-    }
-
-    private void sendDeleteProgramResult() {
-        String result;
-        String programId = ResponseUtils.getExampleOrProgramNameByUrl(parameters.getArgs());
-        result = MySqlConnector.getInstance().deleteProgram(sessionInfo.getUserInfo(), programId);
-        writeResponse(result, HttpServletResponse.SC_OK);
-    }
-
-    private void sendLoadProgramResult() {
-        String result;
-        if (parameters.getArgs().equals("all")) {
-            result = MySqlConnector.getInstance().getListOfProgramsForUser(sessionInfo.getUserInfo());
-        } else {
-            String id;
-            if (parameters.getArgs().contains("publicLink")) {
-                id = ResponseUtils.getExampleOrProgramNameByUrl(parameters.getArgs());
-                result = MySqlConnector.getInstance().getProgramTextByPublicLink(id);
-            } else {
-                id = ResponseUtils.getExampleOrProgramNameByUrl(parameters.getArgs());
-                result = MySqlConnector.getInstance().getProgramText(id);
-            }
-        }
-        writeResponse(result, HttpServletResponse.SC_OK);
-    }
-
-    private void sendSaveProgramResult() {
-        String result;
-        if (parameters.getArgs().startsWith("id=")) {
-            String url = ResponseUtils.substringBefore(parameters.getArgs(), "&runConf=");
-            String id = ResponseUtils.getExampleOrProgramNameByUrl(url);
-            PostData data = getPostDataFromRequest();
-            result = MySqlConnector.getInstance().updateProgram(id, data.text, data.arguments, ResponseUtils.substringAfter(parameters.getArgs(), "&runConf="));
-        } else {
-            PostData data = getPostDataFromRequest();
-            String id = ResponseUtils.substringBefore(parameters.getArgs(), "&runConf=");
-            result = MySqlConnector.getInstance().saveProgram(sessionInfo.getUserInfo(), id, data.text, data.arguments, ResponseUtils.substringAfter(parameters.getArgs(), "&runConf="));
-        }
-        writeResponse(result, HttpServletResponse.SC_OK);
-    }
-
-    private void sendExecutorResult() {
-        PostData data = getPostDataFromRequest();
+    private void sendExecutorResultTest() {
+        PostData data = new PostData("/**\n" +
+                " * This is an example of a Type-Safe Groovy-style Builder\n" +
+                " *\n" +
+                " * Builders are good for declaratively describing data in your code.\n" +
+                " * In this example we show how to describe an HTML page in Kotlin.\n" +
+                " *\n" +
+                " * See this page for details:\n" +
+                " * http://confluence.jetbrains.net/display/Kotlin/Type-safe+Groovy-style+builders\n" +
+                " */\n" +
+                "package html\n" +
+                "\n" +
+                "import java.util.*\n" +
+                "\n" +
+                "fun main(args: Array<String>) {\n" +
+                "  val result =\n" +
+                "      html {\n" +
+                "        head {\n" +
+                "          title { +\"XML encoding with Kotlin\" }\n" +
+                "        }\n" +
+                "        body {\n" +
+                "          h1 { +\"XML encoding with Kotlin\" }\n" +
+                "          p { +\"this format can be used as an alternative markup to XML\" }\n" +
+                "\n" +
+                "          // an element with attributes and text content\n" +
+                "          a(href = \"http://jetbrains.com/kotlin\") { +\"Kotlin\" }\n" +
+                "\n" +
+                "          // mixed content\n" +
+                "          p {\n" +
+                "            +\"This is some\"\n" +
+                "            b { +\"mixed\" }\n" +
+                "            +\"text. For more see the\"\n" +
+                "            a(href = \"http://jetbrains.com/kotlin\") { +\"Kotlin\" }\n" +
+                "            +\"project\"\n" +
+                "          }\n" +
+                "          p { +\"some text\" }\n" +
+                "\n" +
+                "          // content generated from command-line arguments\n" +
+                "          p {\n" +
+                "            +\"Command line arguments were:\"\n" +
+                "            ul {\n" +
+                "              for (arg in args)\n" +
+                "                li { +arg }\n" +
+                "            }\n" +
+                "          }\n" +
+                "        }\n" +
+                "      }\n" +
+                "  println(result)\n" +
+                "}\n" +
+                "\n" +
+                "trait Element {\n" +
+                "  fun render(builder: StringBuilder, indent: String)\n" +
+                "\n" +
+                "  override fun toString(): String {\n" +
+                "    val builder = StringBuilder()\n" +
+                "    render(builder, \"\")\n" +
+                "    return builder.toString()\n" +
+                "  }\n" +
+                "}\n" +
+                "\n" +
+                "class TextElement(val text: String): Element {\n" +
+                "  override fun render(builder: StringBuilder, indent: String) {\n" +
+                "    builder.append(\"$indent$text\\n\")\n" +
+                "  }\n" +
+                "}\n" +
+                "\n" +
+                "abstract class Tag(val name: String): Element {\n" +
+                "  val children: ArrayList<Element> = ArrayList<Element>()\n" +
+                "  val attributes = HashMap<String, String>()\n" +
+                "\n" +
+                "  protected fun initTag<T: Element>(tag: T, init: T.() -> Unit): T {\n" +
+                "    tag.init()\n" +
+                "    children.add(tag)\n" +
+                "    return tag\n" +
+                "  }\n" +
+                "\n" +
+                "  override fun render(builder: StringBuilder, indent: String) {\n" +
+                "    builder.append(\"$indent<$name${renderAttributes()}>\\n\") \n" +
+                "    for (c in children) {\n" +
+                "      c.render(builder, indent + \"  \")\n" +
+                "    } \n" +
+                "    builder.append(\"$indent</$name>\\n\") \n" +
+                "  }\n" +
+                "\n" +
+                "  private fun renderAttributes(): String? {\n" +
+                "    val builder = StringBuilder()\n" +
+                "    for (a in attributes.keySet()) {\n" +
+                "      builder.append(\" $a=\\\"${attributes[a]}\\\"\")\n" +
+                "    }\n" +
+                "    return builder.toString()\n" +
+                "  }\n" +
+                "}\n" +
+                "\n" +
+                "abstract class TagWithText(name: String): Tag(name) {\n" +
+                "  fun String.plus() {\n" +
+                "    children.add(TextElement(this))\n" +
+                "  }\n" +
+                "}\n" +
+                "\n" +
+                "class HTML(): TagWithText(\"html\") {\n" +
+                "  fun head(init: Head.() -> Unit) = initTag(Head(), init)\n" +
+                "\n" +
+                "  fun body(init: Body.() -> Unit) = initTag(Body(), init)\n" +
+                "}\n" +
+                "\n" +
+                "class Head(): TagWithText(\"head\") {\n" +
+                "  fun title(init: Title.() -> Unit) = initTag(Title(), init)\n" +
+                "}\n" +
+                "\n" +
+                "class Title(): TagWithText(\"title\")\n" +
+                "\n" +
+                "abstract class BodyTag(name: String): TagWithText(name) {\n" +
+                "  fun b(init: B.() -> Unit) = initTag(B(), init)\n" +
+                "  fun p(init: P.() -> Unit) = initTag(P(), init)\n" +
+                "  fun h1(init: H1.() -> Unit) = initTag(H1(), init)\n" +
+                "  fun ul(init: UL.() -> Unit) = initTag(UL(), init)\n" +
+                "  fun a(href: String, init: A.() -> Unit) {\n" +
+                "    val a = initTag(A(), init)\n" +
+                "    a.href = href\n" +
+                "  }\n" +
+                "}\n" +
+                "\n" +
+                "class Body(): BodyTag(\"body\")\n" +
+                "class UL(): BodyTag(\"ul\") {\n" +
+                "  fun li(init: LI.() -> Unit) = initTag(LI(), init)\n" +
+                "}\n" +
+                "\n" +
+                "class B(): BodyTag(\"b\")\n" +
+                "class LI(): BodyTag(\"li\")\n" +
+                "class P(): BodyTag(\"p\")\n" +
+                "class H1(): BodyTag(\"h1\")\n" +
+                "class A(): BodyTag(\"a\") {\n" +
+                "  public var href: String\n" +
+                "    get() = attributes[\"href\"]!!\n" +
+                "    set(value) {\n" +
+                "      attributes[\"href\"] = value\n" +
+                "    }\n" +
+                "}\n" +
+                "\n" +
+                "fun html(init: HTML.() -> Unit): HTML {\n" +
+                "  val html = HTML()\n" +
+                "  html.init()\n" +
+                "  return html\n" +
+                "}\n");
 
         /*String consoleArgs = ResponseUtils.substringBefore(data.arguments, "&example");
 
         ExampleObject example = ExamplesList.getExampleObject(ResponseUtils.substringAfter(data.arguments, "&example=").replaceAll("_", " "));*/
-        String consoleArgs=data.arguments;
-        ExampleObject example = ExamplesList.getExampleObject(data.example , data.exampleFolder);
+        String consoleArgs="";
+        ExampleObject example = ExamplesList.getExampleObject("Simplest version" , "Hello, world!");
 
-        sessionInfo.setRunConfiguration(parameters.getArgs());
+
+        sessionInfo.setRunConfiguration(example.confType);
         if (sessionInfo.getRunConfiguration().equals(SessionInfo.RunConfiguration.JAVA) || sessionInfo.getRunConfiguration().equals(SessionInfo.RunConfiguration.JUNIT)) {
             sessionInfo.setType(SessionInfo.TypeOfRequest.RUN);
-            List<PsiFile> psiFiles = setGlobalVariables(data.text, example);
+            List<PsiFile> psiFiles = createProjectPsiFiles(example);
 
-            CompileAndRunExecutor responseForCompilation = new CompileAndRunExecutor(psiFiles, currentProject, consoleArgs, sessionInfo, example);
+            CompileAndRunExecutor responseForCompilation = new CompileAndRunExecutor(psiFiles, currentProject, sessionInfo, example);
             writeResponse(responseForCompilation.getResult(), HttpServletResponse.SC_OK);
         } else {
             sessionInfo.setType(SessionInfo.TypeOfRequest.CONVERT_TO_JS);
@@ -205,53 +332,72 @@ public class HttpSession {
         }
     }
 
-    private void sendExampleContent() {
-        writeResponse(ExamplesList.loadExample(parameters.getArgs()), HttpServletResponse.SC_OK);
 
-    }
 
-    private List<PsiFile> setGlobalVariables(@Nullable String text, @Nullable ExampleObject example) {
-        List<PsiFile> ans = new ArrayList<>();
 
-        currentProject = Initializer.INITIALIZER.getEnvironment().getProject();
-        if (text == null) {
-            text = "fun main(args : Array<String>) {\n" +
-                    "  println(\"Hello, world!\")\n" +
-                    "}";
+    private void sendExecutorResult() {
+        try{
 
-        }
-        sessionInfo.getTimeManager().saveCurrentTime();
-        currentPsiFile = JetPsiFactoryUtil.createFile(currentProject, text);
-        ans.add(currentPsiFile);
+            ExampleObject example = addUnmodifiableDataToExample(objectMapper.readValue(parameters.get("project")[0], ExampleObject.class));
 
-        if (example != null) {
-            for (ExampleFile exampleFile : example.files) {
-                if (exampleFile.type.equals(ExampleFile.Type.TEST_FILE)) {
-                    ans.add(JetPsiFactoryUtil.createFile(currentProject, exampleFile.content));
-                }
+            sessionInfo.setRunConfiguration(example.confType);
+            if (sessionInfo.getRunConfiguration().equals(SessionInfo.RunConfiguration.JAVA) || sessionInfo.getRunConfiguration().equals(SessionInfo.RunConfiguration.JUNIT)) {
+                sessionInfo.setType(SessionInfo.TypeOfRequest.RUN);
+                List<PsiFile> psiFiles = createProjectPsiFiles(example);
+
+                CompileAndRunExecutor responseForCompilation = new CompileAndRunExecutor(psiFiles, currentProject, sessionInfo, example);
+                writeResponse(responseForCompilation.getResult(), HttpServletResponse.SC_OK);
+            } else {
+                sessionInfo.setType(SessionInfo.TypeOfRequest.CONVERT_TO_JS);
+//                writeResponse(new JsConverter(sessionInfo).getResult(data.text, consoleArgs), HttpServletResponse.SC_OK);
             }
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-
-        ErrorWriterOnServer.LOG_FOR_INFO.info(ErrorWriter.getInfoForLogWoIp(sessionInfo.getType(), sessionInfo.getId(), "PARSER " + sessionInfo.getTimeManager().getMillisecondsFromSavedTime() + " size: = " + currentPsiFile.getTextLength()));
-        return ans;
     }
 
-    private void sendCompletionResult() {
-        String positionString = ResponseUtils.substringBefore(parameters.getArgs(), "&runConf=");
-        sessionInfo.setRunConfiguration(ResponseUtils.substringAfter(parameters.getArgs(), "&runConf="));
-        String[] position = positionString.split(",");
-        setGlobalVariables(getPostDataFromRequest().text, null);
 
-        JsonResponseForCompletion jsonResponseForCompletion = new JsonResponseForCompletion(Integer.parseInt(position[0]), Integer.parseInt(position[1]), currentPsiFile, sessionInfo);
-        writeResponse(jsonResponseForCompletion.getResult(), HttpServletResponse.SC_OK);
+
+    private void sendExampleContent() {
+        writeResponse(ExamplesList.loadExample(parameters.get("args")[0].replaceAll("_", " "), parameters.get("name")[0].replaceAll("_", " ")), HttpServletResponse.SC_OK);
     }
 
-    private void sendHighlightingResult() {
-        setGlobalVariables(getPostDataFromRequest().text, null);
-        JsonResponseForHighlighting responseForHighlighting = new JsonResponseForHighlighting(Collections.singletonList(currentPsiFile), sessionInfo, currentProject);
-        String response = responseForHighlighting.getResult();
-        response = response.replaceAll("\\n", "");
-        writeResponse(response, HttpServletResponse.SC_OK);
+    private List<PsiFile> createProjectPsiFiles(ExampleObject example) {
+        currentProject = Initializer.INITIALIZER.getEnvironment().getProject();
+        return example.files.stream().map(file -> JetPsiFactoryUtil.createFile(currentProject, file.name, file.content)).collect(Collectors.toList());
+    }
+
+    public void sendCompletionResult() {
+        try{
+            String fileName = parameters.get("filename")[0];
+            int line = Integer.parseInt(parameters.get("line")[0]);
+            int ch = Integer.parseInt(parameters.get("ch")[0]);
+            ExampleObject example = addUnmodifiableDataToExample(objectMapper.readValue(parameters.get("project")[0], ExampleObject.class));
+
+            List<PsiFile> psiFiles = createProjectPsiFiles(example);
+            sessionInfo.setRunConfiguration(parameters.get("runConf")[0]);
+
+            JsonResponseForCompletion jsonResponseForCompletion = new JsonResponseForCompletion(psiFiles, sessionInfo, fileName, line, ch);
+            writeResponse(jsonResponseForCompletion.getResult(), HttpServletResponse.SC_OK);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void sendHighlightingResult() {
+        sessionInfo.setType(SessionInfo.TypeOfRequest.HIGHLIGHT);
+        sessionInfo.setRunConfiguration(parameters.get("args")[0]);
+        try{
+            ExampleObject example = addUnmodifiableDataToExample(objectMapper.readValue(parameters.get("project")[0], ExampleObject.class));
+
+            List<PsiFile> psiFiles = createProjectPsiFiles(example);
+            JsonResponseForHighlighting responseForHighlighting = new JsonResponseForHighlighting(psiFiles, sessionInfo, currentProject);
+            String response = responseForHighlighting.getResult();
+            response = response.replaceAll("\\n", "");
+            writeResponse(response, HttpServletResponse.SC_OK);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 
@@ -261,16 +407,12 @@ public class HttpSession {
 
     private PostData getPostDataFromRequest(boolean withNewLines) {
         StringBuilder reqResponse = new StringBuilder();
-        InputStream is = null;
-        try {
-            is = request.getInputStream();
+        try (InputStream is = request.getInputStream()) {
             reqResponse.append(ResponseUtils.readData(is, withNewLines));
         } catch (IOException e) {
             ErrorWriter.ERROR_WRITER.writeExceptionToExceptionAnalyzer(e, sessionInfo.getType(), sessionInfo.getOriginUrl(), request.getQueryString());
             writeResponse("Cannot read data from file", HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
             return new PostData("", "");
-        } finally {
-            close(is);
         }
 
         String finalResponse;
@@ -285,30 +427,28 @@ public class HttpSession {
             return new PostData("", "");
         }
         finalResponse = finalResponse.replaceAll("<br>", "\n");
-
         String[] parts = finalResponse.split("&");
-        PostData out=new PostData("fun main(args : Array<String>) {" +
-            "  println(\"Hello, world!\")\n" +
-                    "}");
+        PostData out = new PostData("fun main(args : Array<String>) {" +
+                "  println(\"Hello, world!\")\n" +
+                "}");
 
         Map Request = new HashMap<>();
-        for(String tmp: parts)
-        {
-            Request.put(ResponseUtils.substringBefore(tmp, "="),ResponseUtils.substringAfter(tmp, "="));
+        for (String tmp : parts) {
+            Request.put(ResponseUtils.substringBefore(tmp, "="), ResponseUtils.substringAfter(tmp, "="));
         }
 
-        if(Request.containsKey("text"))
-            out.text=(String)Request.get("text");
+        if (Request.containsKey("text"))
+            out.text = (String) Request.get("text");
 
-        if(Request.containsKey("consoleArgs"))
-            out.arguments=(String)Request.get("consoleArgs");
+        if (Request.containsKey("consoleArgs"))
+            out.arguments = (String) Request.get("consoleArgs");
 
-        if(Request.containsKey("example"))
-            out.exampleFolder=(String)Request.get("example");
+        if (Request.containsKey("example"))
+            out.exampleFolder = (String) Request.get("example");
 
-        if(Request.containsKey("name"))
-            out.example=(String)Request.get("name");
-        return  out;
+        if (Request.containsKey("name"))
+            out.example = (String) Request.get("name");
+        return out;
 
         /*
         if (finalResponse != null) {
@@ -347,11 +487,18 @@ public class HttpSession {
         }
     }
 
+    private ExampleObject addUnmodifiableDataToExample(ExampleObject exampleObject) {
+        ExampleObject storedExample = ExamplesList.getExampleObject(exampleObject.name, exampleObject.parent);
+        exampleObject.files.addAll(storedExample.files.stream().filter((file) -> !file.modifiable).collect(Collectors.toList()));
+        exampleObject.testClasses = storedExample.testClasses;
+        return exampleObject;
+    }
+
     private class PostData {
         public String text;
         public String arguments = null;
-        public String example =null;
-        public String exampleFolder =null;
+        public String example = null;
+        public String exampleFolder = null;
 
         private PostData(String text) {
             this.text = text;
@@ -365,12 +512,83 @@ public class HttpSession {
         private PostData(String text, String arguments, String example) {
             this.text = text;
             this.arguments = arguments;
-            this.example=example;
+            this.example = example;
         }
     }
 
-    private void close(Closeable closeable) {
-        ServerResponseUtils.close(closeable);
+
+    private void sendResourceFile(HttpServletRequest request, HttpServletResponse response) {
+        String path = request.getRequestURI() + "?" + request.getQueryString();
+        path = ResponseUtils.substringAfterReturnAll(path, "resources");
+        ErrorWriterOnServer.LOG_FOR_INFO.error(ErrorWriter.getInfoForLogWoIp(SessionInfo.TypeOfRequest.GET_RESOURCE.name(), "-1", "Resource doesn't downloaded from nginx: " + path));
+        if (path.equals("")) {
+            ErrorWriter.ERROR_WRITER.writeExceptionToExceptionAnalyzer(
+                    new UnsupportedOperationException("Empty path to resource"),
+                    SessionInfo.TypeOfRequest.GET_RESOURCE.name(), request.getHeader("Origin"), path);
+            writeResponse(request, response, "Path to the file is incorrect.", HttpServletResponse.SC_NOT_FOUND);
+            return;
+        } else if (path.startsWith("/messages/")) {
+            writeResponse(request, response, "", HttpServletResponse.SC_OK);
+            return;
+        } else if (path.equals("/") || path.equals("/index.html")) {
+            path = "/index.html";
+            StringBuilder responseStr = new StringBuilder();
+            InputStream is = null;
+            try {
+                is = ServerHandler.class.getResourceAsStream(path);
+                responseStr.append(ResponseUtils.readData(is, true));
+            } catch (FileNotFoundException e) {
+                ErrorWriter.ERROR_WRITER.writeExceptionToExceptionAnalyzer(e,
+                        SessionInfo.TypeOfRequest.GET_RESOURCE.name(), request.getHeader("Origin"), "index.html not found");
+                writeResponse(request, response, "Cannot open this page", HttpServletResponse.SC_BAD_GATEWAY);
+                return;
+            } catch (IOException e) {
+                ErrorWriter.ERROR_WRITER.writeExceptionToExceptionAnalyzer(e,
+                        SessionInfo.TypeOfRequest.GET_RESOURCE.name(), request.getHeader("Origin"), "index.html not found");
+                writeResponse(request, response, "Cannot open this page", HttpServletResponse.SC_BAD_GATEWAY);
+                return;
+            } finally {
+                ServerResponseUtils.close(is);
+            }
+
+            OutputStream os = null;
+            try {
+                os = response.getOutputStream();
+                os.write(responseStr.toString().getBytes());
+            } catch (IOException e) {
+                //This is an exception we can't send data to client
+            } finally {
+                ServerResponseUtils.close(os);
+            }
+            return;
+        }
+
+        InputStream is = ServerHandler.class.getResourceAsStream(path);
+        if (is == null) {
+            if (request.getQueryString() != null) {
+                ErrorWriter.ERROR_WRITER.writeExceptionToExceptionAnalyzer(
+                        new UnsupportedOperationException("Broken path to resource"),
+                        SessionInfo.TypeOfRequest.GET_RESOURCE.name(), request.getHeader("Origin"), request.getRequestURI() + "?" + request.getQueryString());
+            }
+            writeResponse(request, response, ("Resource not found. " + path), HttpServletResponse.SC_NOT_FOUND);
+            return;
+        }
+
+        try {
+            FileUtil.copy(is, response.getOutputStream());
+        } catch (IOException e) {
+            ErrorWriter.ERROR_WRITER.writeExceptionToExceptionAnalyzer(e,
+                    SessionInfo.TypeOfRequest.GET_RESOURCE.name(), request.getHeader("Origin"), request.getRequestURI() + "?" + request.getQueryString());
+            writeResponse(request, response, "Could not load the resource from the server", HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+        }
     }
 
+    private void writeResponse(HttpServletRequest request, HttpServletResponse response, String responseBody, int errorCode) {
+        try {
+            ServerResponseUtils.writeResponse(request, response, responseBody, errorCode);
+        } catch (IOException e) {
+            //This is an exception we can't send data to client
+            ErrorWriter.ERROR_WRITER.writeExceptionToExceptionAnalyzer(e, "UNKNOWN", request.getHeader("Origin"), "null");
+        }
+    }
 }
